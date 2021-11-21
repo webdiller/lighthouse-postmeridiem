@@ -1,0 +1,14 @@
+.top-message {
+  background-color: $accent;
+  &__container {
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 13px;
+    color: #fff;
+  }
+}

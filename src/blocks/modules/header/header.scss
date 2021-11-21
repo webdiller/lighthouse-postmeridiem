@@ -1,0 +1,467 @@
+.header {
+  @include media("<=1200px") {
+  }
+  @include media("<=991px") {
+  }
+  @include media("<=768px") {
+  }
+  @include media("<=480px") {
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__menu {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 22px;
+    min-width: 22px;
+    flex: 0 0 22px;
+    margin-right: 15px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+    &.active {
+      .header__menu-icon-bar {
+        display: none;
+      }
+      .header__menu-icon-close {
+        display: block;
+      }
+    }
+  }
+
+  &__menu-icon-bar {
+    pointer-events: none;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__menu-icon-close {
+    display: none;
+    pointer-events: none;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+    &_left {
+      margin-right: 40px;
+      @include media("<=1200px") {
+      }
+      @include media("<=991px") {
+      }
+      @include media("<=768px") {
+      }
+      @include media("<=480px") {
+      }
+    }
+
+    &_right {
+      margin-right: 40px;
+      @include media("<=1200px") {
+      }
+      @include media("<=991px") {
+      }
+      @include media("<=768px") {
+      }
+      @include media("<=480px") {
+      }
+    }
+  }
+
+  &__item {
+    text-decoration: none;
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+    &_lang {
+      @include media("<=1200px") {
+      }
+      @include media("<=991px") {
+      }
+      @include media("<=768px") {
+      }
+      @include media("<=480px") {
+      }
+    }
+    &_phone {
+      font-feature-settings: "pnum" on, "lnum" on;
+      @include media("<=1200px") {
+      }
+      @include media("<=991px") {
+      }
+      @include media("<=768px") {
+      }
+      @include media("<=480px") {
+      }
+    }
+
+    &_cart {
+      @include media("<=1200px") {
+      }
+      @include media("<=991px") {
+      }
+      @include media("<=768px") {
+      }
+      @include media("<=480px") {
+      }
+    }
+  }
+
+  &__search {
+    position: relative;
+    padding-right: 20px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+    &.active {
+      padding-right: 40px;
+      border-bottom-color: $accent;
+      .header__input {
+        width: 200px;
+        max-width: none;
+        flex: 0 0 200px;
+      }
+    }
+  }
+
+  &__input {
+    width: 0;
+    max-width: 0;
+    flex: 0 0 0;
+    transition: all 0.3s ease;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__center {
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__logo-link {
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__logo-img {
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  //   navigation
+  &__navigation {
+    position: absolute;
+    top: calc(65px + 28px);
+    height: calc(100vh - (65px + 28px));
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: all 0.3s ease;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      z-index: 100;
+    }
+
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__navigation-container {
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__navigation-all-items {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px 80px 0;
+    width: 50%;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+  &__navigation-items {
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__navigation-item {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+    &_title {
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 15px;
+      @include media("<=1200px") {
+      }
+      @include media("<=991px") {
+      }
+      @include media("<=768px") {
+      }
+      @include media("<=480px") {
+      }
+    }
+
+    &_link {
+      display: block;
+      color: $greyLight;
+      @include media("<=1200px") {
+      }
+      @include media("<=991px") {
+      }
+      @include media("<=768px") {
+      }
+      @include media("<=480px") {
+      }
+    }
+  }
+  &__navigation-item-icon {
+    display: none;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  // results
+  &__results {
+    position: absolute;
+    top: calc(65px + 28px);
+    height: calc(100vh - (65px + 28px));
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: all 0.3s ease;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      z-index: 100;
+    }
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__results-container {
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__results-items {
+    padding: 25px 30px 0 20px;
+    width: 50%;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__results-card {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+}

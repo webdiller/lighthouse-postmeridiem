@@ -1,0 +1,105 @@
+header.header
+    .header__top
+        .container.header__container 
+            .header__left
+                button.header__menu.js-header-menu
+                    img.header__menu-icon-bar(src="./img/svg/icon-bar.svg", alt="")
+                    img.header__menu-icon-close(src="./img/svg/icon-close.svg", alt="")
+                nav.header__items.header__items_left 
+                    a.text.header__item(href="#") Каталог
+                    a.text.header__item(href="#") Платья
+                .header__search.js-header-search
+                    input.ui-input.header__input(type="text", placeholder="Платье-комбинации")
+                    img.header__input-icon(src="./img/svg/icon-search.svg", alt="")
+            .header__center(href="#")  
+                a.header__logo-link
+                    img.header__logo-img(src="./img/svg/icon-logo.svg", alt="")
+            .header__right 
+                nav.header__items.header__items_right
+                    a.text.header__item.header__item_phone(href="tel:+7 (967) 130-55-22") +7 (967) 130-55-22
+                    a.text.header__item(href="#") О нас
+                    a.text.ttu.header__item.header__item_lang(href="#") RU
+                a.header__item.header__item_cart(href="#") 
+                    img.header__item.header__item_cart(src="./img/svg/icon-cart.svg", alt="")
+    .header__results.active
+        .container.header__results-container
+            .header__results-items
+                .ui-card.header__results-card
+                    .ui-card__container
+                        picture.ui-card__picture 
+                            img(src='./img/ui-card-1.png' alt="").ui-card__img
+                        .ui-card__content
+                            p.text.text_type-1.ui-card__name Платье-миди на прямом корсете
+                            p.text.text_type-2.ui-card__code Артикул: 00001868
+                            .ui-card__sizes-and-colors
+                                .ui-card__sizes
+                                    p.text.text_type-3.ui-card__size XS
+                                .ui-card__colors
+                                    p.ui-card__color(style="--bgColor:#03A3BD")
+                            .ui-card__price 13 500 ₽
+                .ui-card.header__results-card
+                    .ui-card__container
+                        picture.ui-card__picture 
+                            img(src='./img/ui-card-2.png' alt="").ui-card__img
+                        .ui-card__content
+                            p.text.text_type-1.ui-card__name Платье-миди на прямом корсете
+                            p.text.text_type-2.ui-card__code Артикул: 00001868
+                            .ui-card__sizes-and-colors
+                                .ui-card__sizes
+                                    p.text.text_type-3.ui-card__size XS
+                                .ui-card__colors
+                                    p.ui-card__color(style="--bgColor:#03A3BD")
+                            .ui-card__price 13 500 ₽
+                .ui-card.header__results-card
+                    .ui-card__container
+                        picture.ui-card__picture 
+                            img(src='./img/ui-card-3.png' alt="").ui-card__img
+                        .ui-card__content
+                            p.text.text_type-1.ui-card__name Платье-миди на прямом корсете
+                            p.text.text_type-2.ui-card__code Артикул: 00001868
+                            .ui-card__sizes-and-colors
+                                .ui-card__sizes
+                                    p.text.text_type-3.ui-card__size XS
+                                .ui-card__colors
+                                    p.ui-card__color(style="--bgColor:#03A3BD")
+                            .ui-card__price 13 500 ₽
+
+    .header__navigation.js-header-navigation
+        .container.header__navigation-container
+            .header__navigation-all-items
+                nav.header__navigation-items
+                    p.ttu.header__navigation-item.header__navigation-item_title категории
+                        img.header__navigation-item-icon(src="./img/svg/icon-arrow-up.svg", alt="")
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") 
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Верхняя одежда
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Костюмы
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Платья
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Рубашки и футболки
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Топы и баски
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Юбки
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Аксессуары
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Брюки и шорты
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Смотреть все
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") New
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Sale
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Sample sale
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Предзаказ
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Подарочный сертификат
+
+                nav.header__navigation-items
+                    p.ttu.header__navigation-item.header__navigation-item_title коллекции
+                        img.header__navigation-item-icon(src="./img/svg/icon-arrow-up.svg", alt="")
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Посмотреть все
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Коллекция круиз
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Вечерний образ
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Базовая коллекция
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Классические силуэты
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Свадебный сезон
+
+                nav.header__navigation-items
+                    p.ttu.header__navigation-item.header__navigation-item_title поркупателю
+                        img.header__navigation-item-icon(src="./img/svg/icon-arrow-up.svg", alt="")
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") О нас
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Магазины
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Контакты
+                    a.text.header__navigation-item.header__navigation-item_link(href="#") Материалы

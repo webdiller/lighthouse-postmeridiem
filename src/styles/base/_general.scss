@@ -21,15 +21,21 @@ html {
   overflow-x: hidden;
 }
 
-a, button, input, input::placeholder, textarea, textarea::placeholder {
-  font-family: "DINProDev", "sans serif";
+a,
+button,
+input,
+input::placeholder,
+textarea,
+textarea::placeholder {
+  font-family: "RalewayDev", "MontserratDev", "sans serif";
 }
 
 body {
   margin: 0;
   min-width: 320px;
   overflow-x: hidden;
-  font-family: "DINProDev", "sans serif";
+  font-family: "RalewayDev", "MontserratDev", "sans serif";
+  color: $accent;
 }
 
 img {
@@ -45,5 +51,230 @@ button,
 input {
   &:hover {
     cursor: pointer;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: calc(1320px + 40px);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  @include media("<=991px") {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.text {
+  font-size: 15px;
+  line-height: 150%;
+  color: $accent;
+  @include media("<=991px") {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  &_type-1 {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 150%;
+  }
+  &_type-2 {
+    font-size: 12px;
+    line-height: 150%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #a0a0a0;
+  }
+  &_type-3 {
+    font-size: 15px;
+    line-height: 150%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: $grey;
+  }
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+
+.ui-input {
+  border: 0;
+  outline: 0;
+  font-size: 13px;
+  line-height: 19px;
+  height: 40px;
+  &::placeholder {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  &_icon {
+    padding-right: 40px;
+  }
+}
+
+.ui-card {
+  &__container {
+    display: flex;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__picture {
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__img {
+    max-height: 133px;
+    width: auto;
+    display: block;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 97px;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__name {
+    margin-bottom: 5px;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__code {
+    margin-bottom: 22px;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__sizes-and-colors {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__sizes {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__size {
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__colors {
+    display: flex;
+    align-items: center;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__color {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid $greyLight;
+    background-color: var(--bgColor);
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__price {
+    margin-top: auto;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 0.15em;
+    font-feature-settings: "pnum" on, "lnum" on;
+
+    color: #000000;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
   }
 }

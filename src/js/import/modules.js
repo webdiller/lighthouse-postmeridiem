@@ -1,1 +1,1 @@
-// import "%modules%/module/module";
+import "%modules%/header/header";
