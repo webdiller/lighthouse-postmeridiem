@@ -1,13 +1,25 @@
-modules.define('materials', ['i-bem-dom'], function(provide, bemDom) {
-
-provide(bemDom.declBlock(this.name, {
-    onSetMod: {
-        js: {
-            inited: function() {
-                
-            }
-        }
-    }
-}));
-
+const materialsSlider = new Swiper(".js-materials-swiper", {
+  loop: true,
+  slidesPerView: 1.4,
+  spaceBetween: 10,
+  centeredSlides: true,
+  breakpoints: {
+    576: {
+      slidesPerView: 2.4,
+    },
+    768: {
+      spaceBetween: 20,
+      slidesPerView: 3.4,
+    },
+    991: {
+      slidesPerView: 3,
+      centeredSlides: false,
+    },
+    1200: {
+      draggable: false,
+      centeredSlides: false,
+      slidesPerView: 3,
+      loop: false,
+    },
+  },
 });

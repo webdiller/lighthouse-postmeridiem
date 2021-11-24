@@ -1,2 +1,55 @@
+//- .compilations
+//-     .container.compilations__container 
+//-         .compilations__aside 
+//-             p.title-1.compilations__aside-title Подборка от стилистов
+//-             p.compilations__aside-text 
+//-                 | Найдите свою историю путешествия вместе с нашей новой круизной коллекцией. Найдите свою историю путешествия вместе с нашей новой круизной коллекцией.
+//-             .compilations__aside-next-btn
+//-                 img(src='./img/svg/icon-logn-right.svg' alt="").compilations__aside-next-icon
+//-                 span.compilations__aside-next-text Далее
+
+//-         .compilations__swiper
+//-             .compilations__swiper.js-compilations-swiper
+//-                 .swiper-wrapper
+//-                     .swiper-slide.compilations__slide
+//-                     .swiper-slide.compilations__slide
+//-                     .swiper-slide.compilations__slide
+//-                     .swiper-slide.compilations__slide
+//-                     .swiper-slide.compilations__slide
+
+
 .compilations
-    .container.compilations__container 
+    .compilations__container 
+    
+        .compilations__aside 
+            p.title-1.compilations__title Материалы для вас
+            a.btn-link.btn-link_black.compilations__overlay-link(href="#") Смотреть все
+
+        .compilations__swiper
+            .compilations__swiper.js-compilations-swiper
+                .swiper-wrapper
+                
+                    .swiper-slide.compilations__slide
+                        .ui-card3
+                            .ui-card3__wrapper 
+                                picture.ui-card3__picture 
+                                    img(src='./img/ui-card-1.png' alt="").ui-card3__img
+                                a.ui-card3__link(href="#") 
+                                    span.ui-card3__link-text Кожа
+                                    img.ui-card3__link-icon(src="./img/svg/icon-middle-right.svg", alt="")
+                    .swiper-slide.compilations__slide
+                        .ui-card3
+                            .ui-card3__wrapper 
+                                picture.ui-card3__picture 
+                                    img(src='./img/ui-card-2.png' alt="").ui-card3__img
+                                a.ui-card3__link(href="#") 
+                                    span.ui-card3__link-text Специальный орагнический котон
+                                    img.ui-card3__link-icon(src="./img/svg/icon-middle-right.svg", alt="")
+                    .swiper-slide.compilations__slide
+                        .ui-card3
+                            .ui-card3__wrapper 
+                                picture.ui-card3__picture 
+                                    img(src='./img/ui-card-3.png' alt="").ui-card3__img
+                                a.ui-card3__link(href="#") 
+                                    span.ui-card3__link-text Шелк
+                                    img.ui-card3__link-icon(src="./img/svg/icon-middle-right.svg", alt="")

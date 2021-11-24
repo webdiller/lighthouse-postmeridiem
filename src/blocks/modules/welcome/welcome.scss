@@ -1,0 +1,138 @@
+.welcome {
+  &__container {
+  }
+
+  &__my-swiper {
+    position: relative;
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__overlay-content {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+
+    text-align: center;
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__overlay-title {
+    margin-bottom: 30px;
+    @include media("<=991px") {
+      margin-bottom: 20px;
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__overlay-link {
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__swiper {
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__slide {
+    position: relative;
+    height: 490px;
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+      height: 558px;
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+  .swiper-wrapper {
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+  .swiper-slide {
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+  .swiper-pagination {
+    bottom: 20px;
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+  .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #ffffff;
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+}

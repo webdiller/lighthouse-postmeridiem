@@ -94,13 +94,23 @@
 /***/ (function(module, exports) {
 
 var headerSearch = document.querySelector(".js-header-search");
+var headerMobileSearch = document.querySelector(".js-header-item-search"); // mobile search
+
 var headerSearchInput = document.querySelector(".js-header-search input");
 var headerMenu = document.querySelector(".js-header-menu");
 var headerNavigation = document.querySelector(".js-header-navigation");
+var headerResults = document.querySelector(".js-header-results");
+var headerCenter = document.querySelector(".js-header-center");
+var headerNavigationItemsTitle = document.querySelectorAll(".js-header-navigation-all-items .header__navigation-item_title");
 headerSearch.addEventListener("click", function (e) {
   if (!e.target.parentElement.classList.contains("active")) {
     e.target.parentElement.classList.toggle("active");
     headerSearchInput.focus();
+    headerResults.classList.toggle("active");
+
+    if (window.innerWidth <= 1200) {
+      headerCenter.classList.toggle("disabled");
+    }
   } else {
     console.log("search");
   }
@@ -108,6 +118,110 @@ headerSearch.addEventListener("click", function (e) {
 headerMenu.addEventListener("click", function (e) {
   e.target.classList.toggle("active");
   headerNavigation.classList.toggle("active");
+});
+headerNavigationItemsTitle.forEach(function (item) {
+  if (window.innerWidth <= 768) {
+    try {
+      item.addEventListener("click", function (e) {
+        item.classList.toggle("active");
+      });
+    } catch (error) {}
+  }
+});
+headerMobileSearch.addEventListener("click", function (e) {
+  headerResults.classList.toggle("active");
+});
+
+/***/ }),
+
+/***/ "./src/blocks/modules/large-slider/large-slider.js":
+/*!*********************************************************!*\
+  !*** ./src/blocks/modules/large-slider/large-slider.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var largeSlider = new Swiper(".js-large-slider-swiper", {
+  loop: true,
+  slidesPerView: 1.4,
+  spaceBetween: 10,
+  centeredSlides: true,
+  navigation: {
+    nextEl: ".large-slider__swiper .large-slider__navigation-item_next",
+    prevEl: ".large-slider__swiper .large-slider__navigation-item_prev"
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2.4
+    },
+    768: {
+      spaceBetween: 20,
+      slidesPerView: 3.4
+    },
+    991: {
+      slidesPerView: 3,
+      centeredSlides: false
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./src/blocks/modules/materials/materials.js":
+/*!***************************************************!*\
+  !*** ./src/blocks/modules/materials/materials.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var materialsSlider = new Swiper(".js-materials-swiper", {
+  loop: true,
+  slidesPerView: 1.4,
+  spaceBetween: 10,
+  centeredSlides: true,
+  breakpoints: {
+    576: {
+      slidesPerView: 2.4
+    },
+    768: {
+      spaceBetween: 20,
+      slidesPerView: 3.4
+    },
+    991: {
+      slidesPerView: 3,
+      centeredSlides: false
+    },
+    1200: {
+      draggable: false,
+      centeredSlides: false,
+      slidesPerView: 3,
+      loop: false
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./src/blocks/modules/welcome/welcome.js":
+/*!***********************************************!*\
+  !*** ./src/blocks/modules/welcome/welcome.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var welcomeSwiper = new Swiper(".js-welcome-swiper", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2
+    }
+  }
 });
 
 /***/ }),
@@ -119,7 +233,31 @@ headerMenu.addEventListener("click", function (e) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+var complectationsSwiper = new Swiper(".js-compilations-swiper", {
+  loop: true,
+  slidesPerView: 1.4,
+  spaceBetween: 10,
+  centeredSlides: true,
+  breakpoints: {
+    576: {
+      slidesPerView: 2.4
+    },
+    768: {
+      spaceBetween: 20,
+      slidesPerView: 3.4
+    },
+    991: {
+      slidesPerView: 3,
+      centeredSlides: false
+    },
+    1200: {
+      draggable: true,
+      centeredSlides: false,
+      slidesPerView: 3,
+      loop: true
+    }
+  }
+});
 
 /***/ }),
 
@@ -134,6 +272,15 @@ headerMenu.addEventListener("click", function (e) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _modules_welcome_welcome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/welcome/welcome */ "./src/blocks/modules/welcome/welcome.js");
+/* harmony import */ var _modules_welcome_welcome__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_welcome_welcome__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _modules_large_slider_large_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/large-slider/large-slider */ "./src/blocks/modules/large-slider/large-slider.js");
+/* harmony import */ var _modules_large_slider_large_slider__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_large_slider_large_slider__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _modules_materials_materials__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/materials/materials */ "./src/blocks/modules/materials/materials.js");
+/* harmony import */ var _modules_materials_materials__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_materials_materials__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
 
 
 /***/ }),

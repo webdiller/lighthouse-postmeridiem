@@ -1,0 +1,50 @@
+.preorder {
+  &__container {
+    margin-bottom: 100px;
+    position: relative;
+    @include media("<=991px") {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__overlay-content {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+
+    text-align: center;
+    @include media("<=991px") {
+      bottom: 40px;
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__overlay-title {
+    margin-bottom: 30px;
+    @include media("<=991px") {
+      margin-bottom: 20px;
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__overlay-link {
+  }
+
+  &__picture {
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
