@@ -116,6 +116,16 @@ input {
     border-color: #000;
     color: #000;
   }
+  &_mobile-small {
+    @include media("<=768px") {
+      font-size: 13px;
+      line-height: 150%;
+      color: #2c2c2c;
+      padding: 0;
+      min-height: auto;
+      border: 0;
+    }
+  }
 }
 
 .text {
@@ -632,5 +642,32 @@ input {
     }
     @include media("<=480px") {
     }
+  }
+}
+
+.title-arrow {
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  cursor: pointer;
+  img {
+    margin-right: 10px;
+  }
+}
+
+.hide-768 {
+  @include media("<=768px") {
+    display: none !important;
+  }
+}
+
+.show-block-768 {
+  display: none !important;
+  @include media("<=768px") {
+    display: block !important;
   }
 }

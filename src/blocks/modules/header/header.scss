@@ -374,6 +374,7 @@
       width: 75%;
     }
     @include media("<=768px") {
+      width: 100%;
       display: block;
       padding: 55px 0 0 0;
     }
@@ -442,6 +443,7 @@
       @include media("<=991px") {
       }
       @include media("<=768px") {
+        cursor: pointer;
         display: flex;
         justify-content: space-between;
         align-items: center;

@@ -1,10 +1,10 @@
 .large-slider {
   &__container {
     margin-top: 50px;
-    overflow: hidden;
+    margin-bottom: 80px;
     @include media("<=991px") {
       margin-top: 26px;
-      margin-bottom: 20px;
+      margin-bottom: 50px;
     }
     @include media("<=768px") {
     }
@@ -24,16 +24,21 @@
     }
   }
 
-  &__swiper {
-    margin-bottom: 60px;
-    overflow: hidden;
+  &__swiper-wrapper {
     @include media("<=991px") {
-      margin-bottom: 30px;
-      overflow: visible;
     }
     @include media("<=768px") {
     }
     @include media("<=480px") {
+    }
+  }
+
+  &__swiper {
+    overflow: hidden;
+    margin-bottom: 60px;
+    @include media("<=991px") {
+      overflow: visible;
+      margin-bottom: 30px;
     }
   }
 
@@ -59,6 +64,8 @@
       justify-content: center;
     }
     @include media("<=480px") {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
@@ -68,6 +75,7 @@
     @include media("<=768px") {
     }
     @include media("<=480px") {
+      width: 100%;
     }
   }
 

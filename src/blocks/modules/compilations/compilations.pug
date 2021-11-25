@@ -1,55 +1,104 @@
-//- .compilations
-//-     .container.compilations__container 
-//-         .compilations__aside 
-//-             p.title-1.compilations__aside-title Подборка от стилистов
-//-             p.compilations__aside-text 
-//-                 | Найдите свою историю путешествия вместе с нашей новой круизной коллекцией. Найдите свою историю путешествия вместе с нашей новой круизной коллекцией.
-//-             .compilations__aside-next-btn
-//-                 img(src='./img/svg/icon-logn-right.svg' alt="").compilations__aside-next-icon
-//-                 span.compilations__aside-next-text Далее
-
-//-         .compilations__swiper
-//-             .compilations__swiper.js-compilations-swiper
-//-                 .swiper-wrapper
-//-                     .swiper-slide.compilations__slide
-//-                     .swiper-slide.compilations__slide
-//-                     .swiper-slide.compilations__slide
-//-                     .swiper-slide.compilations__slide
-//-                     .swiper-slide.compilations__slide
-
-
 .compilations
     .compilations__container 
-    
-        .compilations__aside 
-            p.title-1.compilations__title Материалы для вас
-            a.btn-link.btn-link_black.compilations__overlay-link(href="#") Смотреть все
 
-        .compilations__swiper
-            .compilations__swiper.js-compilations-swiper
+        .compilations__aside
+            .compilations__aside-wrapper 
+                p.title-1.compilations__title 
+                    span.hide-768 Подборка от стилистов
+                    span.show-block-768 
+                        | Подборка 
+                        br 
+                        |от стилистов
+                p.compilations__description
+                    | Найдите свою историю путешествия
+                    br
+                    | вместе с нашей новой круизной коллекцией. Найдите свою историю путешествия
+                    br
+                    | вместе с нашей новой круизной коллекцией.
+                p.title-arrow.compilations__title-arrow.js-compilations-title-arrow
+                    img(src='./img/svg/icon-logn-right.svg' alt="")
+                    | Далее
+
+        .compilations__swiper-wrapper
+            .swiper.compilations__swiper.js-compilations-swiper
                 .swiper-wrapper
-                
                     .swiper-slide.compilations__slide
-                        .ui-card3
-                            .ui-card3__wrapper 
-                                picture.ui-card3__picture 
-                                    img(src='./img/ui-card-1.png' alt="").ui-card3__img
-                                a.ui-card3__link(href="#") 
-                                    span.ui-card3__link-text Кожа
-                                    img.ui-card3__link-icon(src="./img/svg/icon-middle-right.svg", alt="")
+                        .ui-card2
+                            .ui-card2__wrapper  
+                                picture.ui-card2__picture 
+                                    img(src='./img/ui-card-1.png' alt="").ui-card2__img
+                                .ui-card2__name-and-price
+                                    p.ui-card2__name Платье-рубашка с камнями
+                                    p.ui-card2__price 13 500 ₽
+                                .ui-card2__sizes-and-colors
+                                    .ui-card2__sizes
+                                        p.text.ui-card2__size XS
+                                        p.text.ui-card2__size.active S
+                                        p.text.ui-card2__size M
+                                    .ui-card2__colors
+                                        p.ui-card2__color(style="--bgColor:#fff")
+                                        p.ui-card2__color(style="--bgColor:#2C2C2C")
                     .swiper-slide.compilations__slide
-                        .ui-card3
-                            .ui-card3__wrapper 
-                                picture.ui-card3__picture 
-                                    img(src='./img/ui-card-2.png' alt="").ui-card3__img
-                                a.ui-card3__link(href="#") 
-                                    span.ui-card3__link-text Специальный орагнический котон
-                                    img.ui-card3__link-icon(src="./img/svg/icon-middle-right.svg", alt="")
+                        .ui-card2
+                            .ui-card2__wrapper  
+                                picture.ui-card2__picture 
+                                    img(src='./img/ui-card-1.png' alt="").ui-card2__img
+                                .ui-card2__name-and-price
+                                    p.ui-card2__name Платье-рубашка с камнями
+                                    p.ui-card2__price 13 500 ₽
+                                .ui-card2__sizes-and-colors
+                                    .ui-card2__sizes
+                                        p.text.ui-card2__size XS
+                                        p.text.ui-card2__size.active S
+                                        p.text.ui-card2__size M
+                                    .ui-card2__colors
+                                        p.ui-card2__color(style="--bgColor:#fff")
+                                        p.ui-card2__color(style="--bgColor:#2C2C2C")
                     .swiper-slide.compilations__slide
-                        .ui-card3
-                            .ui-card3__wrapper 
-                                picture.ui-card3__picture 
-                                    img(src='./img/ui-card-3.png' alt="").ui-card3__img
-                                a.ui-card3__link(href="#") 
-                                    span.ui-card3__link-text Шелк
-                                    img.ui-card3__link-icon(src="./img/svg/icon-middle-right.svg", alt="")
+                        .ui-card2
+                            .ui-card2__wrapper  
+                                picture.ui-card2__picture 
+                                    img(src='./img/ui-card-1.png' alt="").ui-card2__img
+                                .ui-card2__name-and-price
+                                    p.ui-card2__name Платье-рубашка с камнями
+                                    p.ui-card2__price 13 500 ₽
+                                .ui-card2__sizes-and-colors
+                                    .ui-card2__sizes
+                                        p.text.ui-card2__size XS
+                                        p.text.ui-card2__size.active S
+                                        p.text.ui-card2__size M
+                                    .ui-card2__colors
+                                        p.ui-card2__color(style="--bgColor:#fff")
+                                        p.ui-card2__color(style="--bgColor:#2C2C2C")
+                    .swiper-slide.compilations__slide
+                        .ui-card2
+                            .ui-card2__wrapper  
+                                picture.ui-card2__picture 
+                                    img(src='./img/ui-card-1.png' alt="").ui-card2__img
+                                .ui-card2__name-and-price
+                                    p.ui-card2__name Платье-рубашка с камнями
+                                    p.ui-card2__price 13 500 ₽
+                                .ui-card2__sizes-and-colors
+                                    .ui-card2__sizes
+                                        p.text.ui-card2__size XS
+                                        p.text.ui-card2__size.active S
+                                        p.text.ui-card2__size M
+                                    .ui-card2__colors
+                                        p.ui-card2__color(style="--bgColor:#fff")
+                                        p.ui-card2__color(style="--bgColor:#2C2C2C")
+                    .swiper-slide.compilations__slide
+                        .ui-card2
+                            .ui-card2__wrapper  
+                                picture.ui-card2__picture 
+                                    img(src='./img/ui-card-1.png' alt="").ui-card2__img
+                                .ui-card2__name-and-price
+                                    p.ui-card2__name Платье-рубашка с камнями
+                                    p.ui-card2__price 13 500 ₽
+                                .ui-card2__sizes-and-colors
+                                    .ui-card2__sizes
+                                        p.text.ui-card2__size XS
+                                        p.text.ui-card2__size.active S
+                                        p.text.ui-card2__size M
+                                    .ui-card2__colors
+                                        p.ui-card2__color(style="--bgColor:#fff")
+                                        p.ui-card2__color(style="--bgColor:#2C2C2C")

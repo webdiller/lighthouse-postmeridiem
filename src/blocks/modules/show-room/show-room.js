@@ -1,13 +1,17 @@
-modules.define('show-room', ['i-bem-dom'], function(provide, bemDom) {
+const showRoomArrowRight = document.querySelector(".js-show-room-title-arrow");
 
-provide(bemDom.declBlock(this.name, {
-    onSetMod: {
-        js: {
-            inited: function() {
-                
-            }
-        }
-    }
-}));
-
-});
+const showRoomSwiper = new Swiper(".js-show-room-swiper", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
+      768: {
+        loop: false,
+        draggable: false,
+      },
+    },
+  });
+  
+showRoomArrowRight.addEventListener('click', function (e) {
+  showRoomSwiper.slideNext();
+})

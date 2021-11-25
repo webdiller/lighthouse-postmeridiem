@@ -1,81 +1,25 @@
-// .compilations {
-//     &__container {
-//       position: relative;
-//       display: flex;
-//       margin-top: 100px;
-//       margin-bottom: 150px;
-//     }
-
-//     &__aside {
-//       flex: 0 0 360px;
-//       margin-right: 85px;
-//     }
-
-//     &__aside-title {
-//       margin-bottom: 15px;
-//     }
-
-//     &__aside-text {
-//       font-size: 13px;
-//       line-height: 150%;
-//       font-feature-settings: "pnum" on, "lnum" on;
-//       color: #5c5c5c;
-//       margin-bottom: 79px;
-//     }
-
-//     &__aside-next-btn {
-//       @include reset-btn();
-//       display: inline-flex;
-//       align-items: center;
-//     }
-
-//     &__aside-next-icon {
-//       margin-right: 10px;
-//     }
-
-//     &__aside-next-text {
-//       font-weight: bold;
-//       font-size: 14px;
-//       line-height: 110%;
-//       text-transform: uppercase;
-//       color: #2c2c2c;
-//     }
-
-//     &__swiper {
-//       width: calc(100% - (360px + 85px));
-//       flex: 0 0 calc(100% - (360px + 85px));
-//       position: relative;
-//       overflow: hidden;
-//     }
-//     &__slide {
-//       background-color: red;
-//       height: 500px;
-//     }
-
-//     .swiper-wrapper {
-//     }
-//     .swiper-slide {
-//     }
-//   }
-
 .compilations {
   &__container {
-    display: grid;
-    grid-template-columns: 310px 1fr;
-    column-gap: 54px;
-    overflow: hidden;
+    position: relative;
+    // display: grid;
+    // grid-template-columns: 350px 1fr;
+    // column-gap: 95px;
 
-    max-width: calc(1320px + 40px);
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    // padding-left: 20px;
+    // padding-right: 20px;
+    // margin-left: auto;
+    // margin-right: auto;
+
+    margin-top: 100px;
+    margin-bottom: 125px;
 
     @include media("<=1200px") {
       grid-template-columns: 1fr;
       row-gap: 23px;
     }
     @include media("<=991px") {
+      margin-top: 50px;
+      margin-bottom: 50px;
       padding-left: 0;
       padding-right: 0;
     }
@@ -85,10 +29,32 @@
     }
   }
 
-  &__swiper {
+  &__swiper-wrapper {
     position: relative;
-    overflow: hidden;
     @include media("<=1200px") {
+      max-width: calc(1320px + 40px);
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__swiper {
+    margin-left: 50vw;
+    overflow: hidden;
+    @include media("<=1920px") {
+      margin-left: 35%;
+    }
+    @include media("<=1200px") {
+      margin-left: 0;
+      overflow: visible;
     }
     @include media("<=991px") {
     }
@@ -110,8 +76,37 @@
   }
 
   &__aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-left: 20px;
+    max-width: calc(1320px + 40px);
+    margin-left: auto;
+    margin-right: auto;
     @include media("<=1200px") {
-      order: -1;
+      position: static;
+      width: 100%;
+      max-width: calc(1320px + 40px);
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-bottom: 23px;
+    }
+  }
+
+  &__aside-wrapper {
+    position: relative;
+    z-index: 100;
+    width: 350px;
+    height: auto;
+    text-align: left;
+    @include media("<=1200px") {
+      width: auto;
+      position: static;
       text-align: center;
     }
     @include media("<=991px") {
@@ -124,7 +119,9 @@
 
   &__title {
     margin-bottom: 23px;
+    text-align: left;
     @include media("<=1200px") {
+      text-align: center;
     }
     @include media("<=991px") {
     }
@@ -134,8 +131,14 @@
     }
   }
 
-  &__overlay-link {
+  &__description {
+    margin-bottom: 79px;
+    font-size: 13px;
+    line-height: 150%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #5c5c5c;
     @include media("<=1200px") {
+      display: none;
     }
     @include media("<=991px") {
     }
@@ -144,6 +147,13 @@
     @include media("<=480px") {
     }
   }
+
+  &__title-arrow {
+    @include media("<=1200px") {
+      display: none;
+    }
+  }
+
   .swiper-wrapper {
   }
   .swiper-slide {

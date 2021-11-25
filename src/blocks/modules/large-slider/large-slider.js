@@ -4,8 +4,8 @@ const largeSlider = new Swiper(".js-large-slider-swiper", {
     spaceBetween: 10,
     centeredSlides: true,
     navigation: {
-      nextEl: ".large-slider__swiper .large-slider__navigation-item_next",
-      prevEl: ".large-slider__swiper .large-slider__navigation-item_prev",
+      nextEl: ".large-slider__swiper-wrapper .large-slider__navigation-item_next",
+      prevEl: ".large-slider__swiper-wrapper .large-slider__navigation-item_prev",
     },
     breakpoints: {
       576: {

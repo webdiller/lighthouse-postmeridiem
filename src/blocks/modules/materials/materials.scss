@@ -10,14 +10,30 @@
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 125px;
 
     @include media("<=1200px") {
       grid-template-columns: 1fr;
       row-gap: 23px;
     }
     @include media("<=991px") {
+      margin-top: 50px;
+      margin-bottom: 80px;
       padding-left: 0;
       padding-right: 0;
+    }
+    @include media("<=768px") {
+    }
+    @include media("<=480px") {
+    }
+  }
+
+  &__swiper-wrapper {
+    overflow: hidden;
+    @include media("<=1200px") {
+    }
+    @include media("<=991px") {
     }
     @include media("<=768px") {
     }
@@ -69,6 +85,9 @@
     @include media("<=991px") {
     }
     @include media("<=768px") {
+      max-width: 180px;
+      margin-left: auto;
+      margin-right: auto;
     }
     @include media("<=480px") {
     }
