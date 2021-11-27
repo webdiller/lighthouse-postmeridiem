@@ -93,34 +93,36 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var complectationsArrowRight = document.querySelector(".js-compilations-title-arrow");
-var compilationsSlider = new Swiper(".js-compilations-swiper", {
-  loop: true,
-  slidesPerView: 1.4,
-  spaceBetween: 10,
-  centeredSlides: true,
-  breakpoints: {
-    576: {
-      slidesPerView: 2.4
-    },
-    768: {
-      spaceBetween: 20,
-      slidesPerView: 3.3
-    },
-    991: {
-      slidesPerView: 3,
-      centeredSlides: false
-    },
-    1200: {
-      centeredSlides: false,
-      slidesPerView: 2.8,
-      loop: false
+try {
+  var complectationsArrowRight = document.querySelector(".js-compilations-title-arrow");
+  var compilationsSlider = new Swiper(".js-compilations-swiper", {
+    loop: true,
+    slidesPerView: 1.4,
+    spaceBetween: 10,
+    centeredSlides: true,
+    breakpoints: {
+      576: {
+        slidesPerView: 2.4
+      },
+      768: {
+        spaceBetween: 20,
+        slidesPerView: 3.3
+      },
+      991: {
+        slidesPerView: 3,
+        centeredSlides: false
+      },
+      1200: {
+        centeredSlides: false,
+        slidesPerView: 2.8,
+        loop: false
+      }
     }
-  }
-});
-complectationsArrowRight.addEventListener('click', function (e) {
-  compilationsSlider.slideNext();
-});
+  });
+  complectationsArrowRight.addEventListener("click", function (e) {
+    compilationsSlider.slideNext();
+  });
+} catch (error) {}
 
 /***/ }),
 
@@ -179,29 +181,31 @@ headerMobileSearch.addEventListener("click", function (e) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var largeSlider = new Swiper(".js-large-slider-swiper", {
-  loop: true,
-  slidesPerView: 1.4,
-  spaceBetween: 10,
-  centeredSlides: true,
-  navigation: {
-    nextEl: ".large-slider__swiper-wrapper .large-slider__navigation-item_next",
-    prevEl: ".large-slider__swiper-wrapper .large-slider__navigation-item_prev"
-  },
-  breakpoints: {
-    576: {
-      slidesPerView: 2.4
+try {
+  var largeSlider = new Swiper(".js-large-slider-swiper", {
+    loop: true,
+    slidesPerView: 1.4,
+    spaceBetween: 10,
+    centeredSlides: true,
+    navigation: {
+      nextEl: ".large-slider__swiper-wrapper .large-slider__navigation-item_next",
+      prevEl: ".large-slider__swiper-wrapper .large-slider__navigation-item_prev"
     },
-    768: {
-      spaceBetween: 20,
-      slidesPerView: 3.4
-    },
-    991: {
-      slidesPerView: 3,
-      centeredSlides: false
+    breakpoints: {
+      576: {
+        slidesPerView: 2.4
+      },
+      768: {
+        spaceBetween: 20,
+        slidesPerView: 3.4
+      },
+      991: {
+        slidesPerView: 3,
+        centeredSlides: false
+      }
     }
-  }
-});
+  });
+} catch (error) {}
 
 /***/ }),
 
@@ -240,6 +244,50 @@ var materialsSlider = new Swiper(".js-materials-swiper", {
 
 /***/ }),
 
+/***/ "./src/blocks/modules/product-card/product-card.js":
+/*!*********************************************************!*\
+  !*** ./src/blocks/modules/product-card/product-card.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _readOnlyError(name) { throw new TypeError("\"" + name + "\" is read-only"); }
+
+try {
+  var productCardSwiper = null;
+  var sizes = document.querySelector(".js-product-card-tabs");
+
+  if (window.innerWidth <= 768) {
+    new Swiper(".js-product-card-swiper", {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      draggable: false
+    }), _readOnlyError("productCardSwiper");
+  }
+} catch (error) {}
+
+/***/ }),
+
+/***/ "./src/blocks/modules/product-ordering/product-ordering.js":
+/*!*****************************************************************!*\
+  !*** ./src/blocks/modules/product-ordering/product-ordering.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+modules.define('product-ordering', ['i-bem-dom'], function (provide, bemDom) {
+  provide(bemDom.declBlock(this.name, {
+    onSetMod: {
+      js: {
+        inited: function inited() {}
+      }
+    }
+  }));
+});
+
+/***/ }),
+
 /***/ "./src/blocks/modules/show-room/show-room.js":
 /*!***************************************************!*\
   !*** ./src/blocks/modules/show-room/show-room.js ***!
@@ -247,21 +295,23 @@ var materialsSlider = new Swiper(".js-materials-swiper", {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var showRoomArrowRight = document.querySelector(".js-show-room-title-arrow");
-var showRoomSwiper = new Swiper(".js-show-room-swiper", {
-  loop: true,
-  slidesPerView: 1,
-  spaceBetween: 20,
-  breakpoints: {
-    768: {
-      loop: false,
-      draggable: false
+try {
+  var showRoomArrowRight = document.querySelector(".js-show-room-title-arrow");
+  var showRoomSwiper = new Swiper(".js-show-room-swiper", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
+      768: {
+        loop: false,
+        draggable: false
+      }
     }
-  }
-});
-showRoomArrowRight.addEventListener('click', function (e) {
-  showRoomSwiper.slideNext();
-});
+  });
+  showRoomArrowRight.addEventListener("click", function (e) {
+    showRoomSwiper.slideNext();
+  });
+} catch (error) {}
 
 /***/ }),
 
@@ -272,20 +322,22 @@ showRoomArrowRight.addEventListener('click', function (e) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var welcomeSwiper = new Swiper(".js-welcome-swiper", {
-  loop: true,
-  slidesPerView: 1,
-  spaceBetween: 0,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 2
+try {
+  var welcomeSwiper = new Swiper(".js-welcome-swiper", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2
+      }
     }
-  }
-});
+  });
+} catch (error) {}
 
 /***/ }),
 
@@ -321,6 +373,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_compilations_compilations__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_compilations_compilations__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _modules_show_room_show_room__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/show-room/show-room */ "./src/blocks/modules/show-room/show-room.js");
 /* harmony import */ var _modules_show_room_show_room__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_show_room_show_room__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _modules_product_card_product_card__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/product-card/product-card */ "./src/blocks/modules/product-card/product-card.js");
+/* harmony import */ var _modules_product_card_product_card__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_product_card_product_card__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _modules_product_ordering_product_ordering__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/product-ordering/product-ordering */ "./src/blocks/modules/product-ordering/product-ordering.js");
+/* harmony import */ var _modules_product_ordering_product_ordering__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_product_ordering_product_ordering__WEBPACK_IMPORTED_MODULE_7__);
+
+
 
 
 

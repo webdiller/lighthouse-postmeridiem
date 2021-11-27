@@ -1,11 +1,14 @@
-const largeSlider = new Swiper(".js-large-slider-swiper", {
+try {
+  const largeSlider = new Swiper(".js-large-slider-swiper", {
     loop: true,
     slidesPerView: 1.4,
     spaceBetween: 10,
     centeredSlides: true,
     navigation: {
-      nextEl: ".large-slider__swiper-wrapper .large-slider__navigation-item_next",
-      prevEl: ".large-slider__swiper-wrapper .large-slider__navigation-item_prev",
+      nextEl:
+        ".large-slider__swiper-wrapper .large-slider__navigation-item_next",
+      prevEl:
+        ".large-slider__swiper-wrapper .large-slider__navigation-item_prev",
     },
     breakpoints: {
       576: {
@@ -21,4 +24,4 @@ const largeSlider = new Swiper(".js-large-slider-swiper", {
       },
     },
   });
-  
+} catch (error) {}

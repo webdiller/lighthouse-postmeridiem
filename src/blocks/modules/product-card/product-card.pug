@@ -1,0 +1,77 @@
+.product-card
+    .container.product-card__container 
+
+        //- Якоря
+        .product-card__anchors
+            a.product-card__anchor(href="#item1") 
+                picture.product-card__anchor-picture 
+                    img(src='./img/ui-card-1.png' alt="" loading="lazy").product-card__anchor-img
+            a.product-card__anchor(href="#item2") 
+                picture.product-card__anchor-picture 
+                    img(src='./img/ui-card-2.png' alt="" loading="lazy").product-card__anchor-img
+            a.product-card__anchor(href="#item3") 
+                picture.product-card__anchor-picture 
+                    img(src='./img/ui-card-3.png' alt="" loading="lazy").product-card__anchor-img
+
+        //- Большие изображения / Свайпер на мобилке 
+        .product-card__swiper-wrapper 
+            .swiper.js-product-card-swiper
+                .swiper-wrapper
+                    .swiper-slide.product-card__slide(id="item1")
+                        picture.product-card__slide-picture 
+                            img(src='./img/ui-card-1.png' alt="" loading="lazy").product-card__slide-img
+                    .swiper-slide.product-card__slide(id="item2")
+                        picture.product-card__slide-picture 
+                            img(src='./img/ui-card-2.png' alt="" loading="lazy").product-card__slide-img
+                    .swiper-slide.product-card__slide(id="item3")
+                        picture.product-card__slide-picture 
+                            img(src='./img/ui-card-3.png' alt="" loading="lazy").product-card__slide-img
+
+        //- Контент карточки
+        .product-card__content 
+            .product-card__content-wrapper
+                .product-card__name-price-code 
+                    p.product-card__name Платье миди "веер" с разрезами и летящей юбкой
+                    p.product-card__price 13 120 ₽
+                    p.product-card__code Артикул: 00001865
+
+                .product-card__sizes-button
+                    .product-card__sizes-items
+                        p.product-card__sizes-title Размер:
+                        button.product-card__size.active XS
+                        button.product-card__size S
+                        button.product-card__size M
+                        button.product-card__size L
+                        button.product-card__size XL
+                    .product-card__sizes-btn-wrapper
+                        button.product-card__sizes-btn Гид по размерам
+
+                .product-card__tabs
+
+                    input.product-card__tabs-input(checked type="radio" name="content" id="description")
+                    label.product-card__tabs-label(for="description") Описание 
+
+                    input.product-card__tabs-input(type="radio" name="content" id="details")
+                    label.product-card__tabs-label(for="details") Детали 
+
+                    input.product-card__tabs-input(type="radio" name="content" id="delivery")
+                    label.product-card__tabs-label(for="delivery") Доставка
+
+                    .product-card__items
+                        .product-card__item.product-card__item_description 
+                            | Платье миди "веер" с разрезами и летящей юбкой.
+                            br
+                            br
+                            | Следует отметить, что укрепление и развитие внутренней структуры прекрасно подходит для реализации новых принципов формирования материально-технической и кадровой базы.
+                        .product-card__item.product-card__item_details
+                            | Платье миди "веер" с разрезами и летящей юбкой. 2
+                            br
+                            br
+                            | Следует отметить, что укрепление и развитие внутренней структуры прекрасно подходит для реализации новых принципов формирования материально-технической и кадровой базы.
+                        .product-card__item.product-card__item_delivery
+                            | Платье миди "веер" с разрезами и летящей юбкой. 3
+                            br
+                            br
+                            | Следует отметить, что укрепление и развитие внутренней структуры прекрасно подходит для реализации новых принципов формирования материально-технической и кадровой базы.
+                .product-card__buy-btn-wrapper
+                    button.product-card__buy-btn.btn-link_fill-black В корзину

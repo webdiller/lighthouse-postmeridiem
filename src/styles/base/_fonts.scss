@@ -31,32 +31,32 @@
 // Circe
 @font-face {
   font-family: "CirceDev";
-  src: local("Circe Thin"), local("../fonts/Circe-Thin"),
-    url("../fonts/Circe-Thin.woff") format("woff");
+  src: local("Circe Thin"), local("../fonts/Circe/Circe-Thin"),
+    url("../fonts/Circe/Circe-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "CirceDev";
-  src: local("Circe Light"), local("../fonts/Circe-Light"),
-    url("../fonts/Circe-Light.woff") format("woff");
+  src: local("Circe Light"), local("../fonts/Circe/Circe-Light"),
+    url("../fonts/Circe/Circe-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "CirceDev";
-  src: local("Circe Bold"), local("../fonts/Circe-Bold"),
-    url("../fonts/Circe-Bold.woff") format("woff");
+  src: local("Circe Bold"), local("../fonts/Circe/Circe-Bold"),
+    url("../fonts/Circe/Circe-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "CirceDev";
-  src: local("Circe ExtraBold"), local("../fonts/Circe-ExtraBold"),
-    url("../fonts/Circe-ExtraBold.woff") format("woff");
+  src: local("Circe ExtraBold"), local("../fonts/Circe/Circe-ExtraBold"),
+    url("../fonts/Circe/Circe-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }

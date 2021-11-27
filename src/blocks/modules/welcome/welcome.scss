@@ -8,7 +8,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -24,7 +24,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -35,7 +35,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -44,7 +44,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -53,7 +53,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -65,7 +65,7 @@
     @include media("<=768px") {
       height: 558px;
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -86,7 +86,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
   .swiper-wrapper {
@@ -94,7 +94,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
   .swiper-slide {
@@ -102,7 +102,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
   .swiper-pagination {
@@ -111,7 +111,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
   .swiper-pagination-bullet {
@@ -123,7 +123,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
   .swiper-pagination-bullet-active {
@@ -132,7 +132,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 }

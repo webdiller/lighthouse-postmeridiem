@@ -8,7 +8,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -20,7 +20,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -29,7 +29,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -47,7 +47,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -63,7 +63,7 @@
     @include media("<=768px") {
       justify-content: center;
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
       padding-left: 0;
       padding-right: 0;
     }
@@ -74,7 +74,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
       width: 100%;
     }
   }
@@ -88,7 +88,7 @@
     @include media("<=768px") {
       display: none;
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
     &_prev {
     }
@@ -107,7 +107,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -117,7 +117,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
     &_prev {
       margin-left: 9px;
@@ -125,7 +125,7 @@
       }
       @include media("<=768px") {
       }
-      @include media("<=480px") {
+      @include media("<=576px") {
       }
     }
 
@@ -135,7 +135,7 @@
       }
       @include media("<=768px") {
       }
-      @include media("<=480px") {
+      @include media("<=576px") {
       }
     }
   }
@@ -145,7 +145,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
   .swiper-slide {
@@ -153,7 +153,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -162,7 +162,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
   .swiper-button-prev {
@@ -170,7 +170,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
   .swiper-button-next {
@@ -178,7 +178,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 }

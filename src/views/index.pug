@@ -6,16 +6,11 @@ block variables
 
 block content
 	main.main
-		include ../blocks/modules/top-message/top-message
-		include ../blocks/modules/header/header
-		include ../blocks/modules/welcome/welcome
-		include ../blocks/modules/large-slider/large-slider
-		include ../blocks/modules/preorder/preorder
-		include ../blocks/modules/compilations/compilations
-		include ../blocks/modules/materials/materials
-		include ../blocks/modules/show-room/show-room
-		include ../blocks/modules/pre-footer/pre-footer
-		include ../blocks/modules/footer/footer
+		.container.review-site
+			a.btn-link.btn-link_outline-black(href="/main.html") Главная 
+			a.btn-link.btn-link_outline-black(href="/success.html") Успех 
+			a.btn-link.btn-link_outline-black(href="/product-card.html") Продукт
+			a.btn-link.btn-link_outline-black(href="/product-ordering.html") Оформление заказа
 
 block scripts
 	script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")

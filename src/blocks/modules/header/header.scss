@@ -5,7 +5,7 @@
   }
   @include media("<=768px") {
   }
-  @include media("<=480px") {
+  @include media("<=576px") {
   }
   &__container {
     display: flex;
@@ -19,7 +19,7 @@
     @include media("<=768px") {
       height: 41px;
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -32,7 +32,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -54,7 +54,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
     &.active {
       .header__menu-icon-bar {
@@ -78,7 +78,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -92,7 +92,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -105,7 +105,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -119,7 +119,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
     &_left {
       margin-right: 40px;
@@ -129,7 +129,7 @@
       }
       @include media("<=768px") {
       }
-      @include media("<=480px") {
+      @include media("<=576px") {
       }
     }
 
@@ -141,7 +141,7 @@
       }
       @include media("<=768px") {
       }
-      @include media("<=480px") {
+      @include media("<=576px") {
       }
     }
   }
@@ -160,7 +160,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
     &_lang {
       @include media("<=1200px") {
@@ -169,7 +169,7 @@
       }
       @include media("<=768px") {
       }
-      @include media("<=480px") {
+      @include media("<=576px") {
       }
     }
     &_phone {
@@ -180,7 +180,7 @@
       }
       @include media("<=768px") {
       }
-      @include media("<=480px") {
+      @include media("<=576px") {
       }
     }
     &_cart {
@@ -193,7 +193,7 @@
       }
       @include media("<=768px") {
       }
-      @include media("<=480px") {
+      @include media("<=576px") {
       }
     }
     &_search {
@@ -220,7 +220,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
     &.active {
       padding-right: 40px;
@@ -244,7 +244,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -259,7 +259,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -279,7 +279,7 @@
       width: 150px;
       flex: 0 0 150px;
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -290,7 +290,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -302,7 +302,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -315,7 +315,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -348,7 +348,7 @@
       top: calc(41px + 28px);
       height: auto;
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -359,7 +359,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -378,7 +378,7 @@
       display: block;
       padding: 55px 0 0 0;
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -395,7 +395,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
     &_mobile {
       display: none;
@@ -417,7 +417,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
     &_title {
       margin-bottom: 20px;
@@ -448,7 +448,7 @@
         justify-content: space-between;
         align-items: center;
       }
-      @include media("<=480px") {
+      @include media("<=576px") {
       }
     }
 
@@ -461,7 +461,7 @@
       }
       @include media("<=768px") {
       }
-      @include media("<=480px") {
+      @include media("<=576px") {
       }
     }
   }
@@ -476,7 +476,7 @@
     @include media("<=768px") {
       display: inline-block;
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -517,7 +517,7 @@
     @include media("<=768px") {
       top: calc(41px + 28px);
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -528,7 +528,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -568,7 +568,7 @@
     @include media("<=768px") {
       gap: 30px 10px;
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -587,7 +587,7 @@
     }
     @include media("<=768px") {
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 

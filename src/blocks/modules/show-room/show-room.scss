@@ -23,7 +23,7 @@
     @include media("<=768px") {
       display: block;
     }
-    @include media("<=480px") {
+    @include media("<=576px") {
     }
   }
 
@@ -43,7 +43,7 @@
       @include media("<=768px") {
         display: none;
       }
-      @include media("<=480px") {
+      @include media("<=576px") {
       }
     }
     &_mobile {
@@ -53,7 +53,7 @@
         display: block;
         text-align: center;
       }
-      @include media("<=480px") {
+      @include media("<=576px") {
       }
     }
   }

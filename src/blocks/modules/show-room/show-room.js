@@ -1,6 +1,9 @@
-const showRoomArrowRight = document.querySelector(".js-show-room-title-arrow");
+try {
+  const showRoomArrowRight = document.querySelector(
+    ".js-show-room-title-arrow"
+  );
 
-const showRoomSwiper = new Swiper(".js-show-room-swiper", {
+  const showRoomSwiper = new Swiper(".js-show-room-swiper", {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 20,
@@ -11,7 +14,8 @@ const showRoomSwiper = new Swiper(".js-show-room-swiper", {
       },
     },
   });
-  
-showRoomArrowRight.addEventListener('click', function (e) {
-  showRoomSwiper.slideNext();
-})
+
+  showRoomArrowRight.addEventListener("click", function (e) {
+    showRoomSwiper.slideNext();
+  });
+} catch (error) {}

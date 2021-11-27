@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-pug-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body>
+    <main class="main">
+      <div class="top-message">
+        <div class="container top-message__container"> 
+          <p class="top-message__text">Бесплатная доставка от 20.000 Р</p>
+        </div>
+      </div>
+      <header class="header">
+        <div class="header__top">
+          <div class="container header__container"> 
+            <div class="header__left">
+              <button class="header__menu js-header-menu"><img class="header__menu-icon-bar" src="./img/svg/icon-bar.svg" alt=""><img class="header__menu-icon-bar-mobile" src="./img/svg/icon-bar-mobile.svg" alt=""><img class="header__menu-icon-close" src="./img/svg/icon-close.svg" alt=""></button>
+              <nav class="header__items header__items_left"> <a class="text header__item" href="#">Каталог</a><a class="text header__item" href="#">Платья</a></nav>
+              <div class="header__search js-header-search">
+                <input class="ui-input header__input" type="text" placeholder="Платье-комбинации"><img class="header__input-icon" src="./img/svg/icon-search.svg" alt="">
+              </div>
+            </div>
+            <div class="header__center js-header-center"><a class="header__logo-link" href="/index.html"> <img class="header__logo-img" src="./img/svg/icon-logo.svg" alt=""></a></div>
+            <div class="header__right"> 
+              <nav class="header__items header__items_right"><a class="text header__item header__item_phone" href="tel:+7 (967) 130-55-22">+7 (967) 130-55-22</a><a class="text header__item" href="#">О нас</a><a class="text ttu header__item header__item_lang" href="#">RU</a></nav>
+              <button class="header__item header__item_search js-header-item-search"><img class="header__item-icon" width="19" height="19" src="./img/svg/icon-search.svg" alt=""></button><a class="header__item header__item_cart" href="#"> <img class="header__item-icon" width="15" height="15" src="./img/svg/icon-cart.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="header__results js-header-results">
+          <div class="container header__results-container">
+            <div class="header__results-search">
+              <input class="ui-input header__results-search-input" type="text" placeholder="Платье-комбинац">
+            </div>
+            <div class="header__results-navs"><a class="header__results-navs-item" href="#">Платья</a><a class="header__results-navs-item" href="#">Рубашки и футболки</a><a class="header__results-navs-item" href="#">Топы и баски</a><a class="header__results-navs-item" href="#">Юбки</a></div>
+            <div class="header__results-items">
+              <div class="ui-card header__results-card">
+                <div class="ui-card__container">
+                  <picture class="ui-card__picture"> <img class="ui-card__img" src="./img/ui-card-1.png" alt="" loading="lazy"></picture>
+                  <div class="ui-card__content">
+                    <p class="text ui-card__name">Платье-миди на прямом корсете</p>
+                    <p class="text ui-card__code">Артикул: 00001868</p>
+                    <div class="ui-card__sizes-and-colors">
+                      <div class="ui-card__sizes">
+                        <p class="text ui-card__size">XS</p>
+                      </div>
+                      <div class="ui-card__colors">
+                        <p class="ui-card__color" style="--bgColor:#03A3BD"></p>
+                      </div>
+                    </div>
+                    <div class="ui-card__price">13 500 ₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-card header__results-card">
+                <div class="ui-card__container">
+                  <picture class="ui-card__picture"> <img class="ui-card__img" src="./img/ui-card-2.png" alt="" loading="lazy"></picture>
+                  <div class="ui-card__content">
+                    <p class="text ui-card__name">Платье-миди на прямом корсете</p>
+                    <p class="text ui-card__code">Артикул: 00001868</p>
+                    <div class="ui-card__sizes-and-colors">
+                      <div class="ui-card__sizes">
+                        <p class="text ui-card__size">XS</p>
+                      </div>
+                      <div class="ui-card__colors">
+                        <p class="ui-card__color" style="--bgColor:#03A3BD"></p>
+                      </div>
+                    </div>
+                    <div class="ui-card__price">13 500 ₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-card header__results-card">
+                <div class="ui-card__container">
+                  <picture class="ui-card__picture"> <img class="ui-card__img" src="./img/ui-card-2.png" alt="" loading="lazy"></picture>
+                  <div class="ui-card__content">
+                    <p class="text ui-card__name">Платье-миди на прямом корсете</p>
+                    <p class="text ui-card__code">Артикул: 00001868</p>
+                    <div class="ui-card__sizes-and-colors">
+                      <div class="ui-card__sizes">
+                        <p class="text ui-card__size">XS</p>
+                      </div>
+                      <div class="ui-card__colors">
+                        <p class="ui-card__color" style="--bgColor:#03A3BD"></p>
+                      </div>
+                    </div>
+                    <div class="ui-card__price">13 500 ₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-card header__results-card">
+                <div class="ui-card__container">
+                  <picture class="ui-card__picture"> <img class="ui-card__img" src="./img/ui-card-3.png" alt="" loading="lazy"></picture>
+                  <div class="ui-card__content">
+                    <p class="text ui-card__name">Платье-миди на прямом корсете</p>
+                    <p class="text ui-card__code">Артикул: 00001868</p>
+                    <div class="ui-card__sizes-and-colors">
+                      <div class="ui-card__sizes">
+                        <p class="text ui-card__size">XS</p>
+                      </div>
+                      <div class="ui-card__colors">
+                        <p class="ui-card__color" style="--bgColor:#03A3BD"></p>
+                      </div>
+                    </div>
+                    <div class="ui-card__price">13 500 ₽</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__navigation js-header-navigation">
+          <div class="container header__navigation-container">
+            <div class="header__navigation-all-items js-header-navigation-all-items">
+              <div class="header__navigation-items">
+                <p class="ttu header__navigation-item header__navigation-item_title">категории<img class="header__navigation-item-icon" src="./img/svg/icon-arrow-down.svg" alt=""></p>
+                <div class="header__navigation-items-menu"><a class="text header__navigation-item header__navigation-item_link" href="#">Верхняя одежда</a><a class="text header__navigation-item header__navigation-item_link" href="#">Костюмы</a><a class="text header__navigation-item header__navigation-item_link" href="#">Платья</a><a class="text header__navigation-item header__navigation-item_link" href="#">Рубашки и футболки</a><a class="text header__navigation-item header__navigation-item_link" href="#">Топы и баски</a><a class="text header__navigation-item header__navigation-item_link" href="#">Юбки</a><a class="text header__navigation-item header__navigation-item_link" href="#">Аксессуары</a><a class="text header__navigation-item header__navigation-item_link" href="#">Брюки и шорты</a><a class="text header__navigation-item header__navigation-item_link" href="#">Смотреть все</a><a class="text header__navigation-item header__navigation-item_link" href="#">New</a><a class="text header__navigation-item header__navigation-item_link" href="#">Sale</a><a class="text header__navigation-item header__navigation-item_link" href="#">Sample sale</a><a class="text header__navigation-item header__navigation-item_link" href="#">Предзаказ</a><a class="text header__navigation-item header__navigation-item_link" href="#">Подарочный сертификат</a></div>
+              </div>
+              <div class="header__navigation-items">
+                <p class="ttu header__navigation-item header__navigation-item_title">коллекции<img class="header__navigation-item-icon" src="./img/svg/icon-arrow-down.svg" alt=""></p>
+                <div class="header__navigation-items-menu"><a class="text header__navigation-item header__navigation-item_link" href="#">Посмотреть все</a><a class="text header__navigation-item header__navigation-item_link" href="#">Коллекция круиз</a><a class="text header__navigation-item header__navigation-item_link" href="#">Вечерний образ</a><a class="text header__navigation-item header__navigation-item_link" href="#">Базовая коллекция</a><a class="text header__navigation-item header__navigation-item_link" href="#">Классические силуэты</a><a class="text header__navigation-item header__navigation-item_link" href="#">Свадебный сезон</a></div>
+              </div>
+              <div class="header__navigation-items">
+                <p class="ttu header__navigation-item header__navigation-item_title">поркупателю<img class="header__navigation-item-icon" src="./img/svg/icon-arrow-down.svg" alt=""></p>
+                <div class="header__navigation-items-menu"><a class="text header__navigation-item header__navigation-item_link" href="#">О нас</a><a class="text header__navigation-item header__navigation-item_link" href="#">Магазины</a><a class="text header__navigation-item header__navigation-item_link" href="#">Контакты</a><a class="text header__navigation-item header__navigation-item_link" href="#">Материалы</a></div>
+              </div>
+              <div class="header__navigation-items header__navigation-items_mobile"><a class="ttu header__navigation-item header__navigation-item_title" href="#">О нас</a><a class="ttu header__navigation-item header__navigation-item_title" href="#">Доставка и возврат</a><a class="ttu header__navigation-item header__navigation-item_title" href="#">Контакты</a></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="welcome">
+        <div class="welcome__container"> 
+          <div class="welcome__my-swiper"> 
+            <div class="welcome__overlay-content"> 
+              <p class="title-1 title-1_white welcome__overlay-title">Новая колекция</p><a class="btn-link btn-link_outline-white welcome__overlay-link" href="#">Смотреть</a>
+            </div>
+            <div class="swiper welcome__swiper js-welcome-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide welcome__slide">
+                  <picture class="welcome__picture"> <img class="welcome__img" src="./img/ui-card-1.png" alt="" loading="lazy"></picture>
+                </div>
+                <div class="swiper-slide welcome__slide">
+                  <picture class="welcome__picture"> <img class="welcome__img" src="./img/ui-card-1.png" alt="" loading="lazy"></picture>
+                </div>
+                <div class="swiper-slide welcome__slide">
+                  <picture class="welcome__picture"> <img class="welcome__img" src="./img/ui-card-1.png" alt="" loading="lazy"></picture>
+                </div>
+                <div class="swiper-slide welcome__slide">
+                  <picture class="welcome__picture"> <img class="welcome__img" src="./img/ui-card-1.png" alt="" loading="lazy"></picture>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="large-slider">
+        <div class="container large-slider__container"> 
+          <p class="title-1 large-slider__title">new</p>
+          <div class="large-slider__swiper-wrapper">
+            <div class="swiper large-slider__swiper js-large-slider-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide large-slider__slide">
+                  <div class="ui-card2">
+                    <div class="ui-card2__wrapper"> 
+                      <picture class="ui-card2__picture"> <img class="ui-card2__img" src="./img/ui-card-1.png" alt="" loading="lazy"></picture>
+                      <div class="ui-card2__name-and-price">
+                        <p class="ui-card2__name">Платье-рубашка с камнями</p>
+                        <p class="ui-card2__price">13 500 ₽</p>
+                      </div>
+                      <div class="ui-card2__sizes-and-colors">
+                        <div class="ui-card2__sizes">
+                          <p class="text ui-card2__size">XS</p>
+                          <p class="text ui-card2__size active">S</p>
+                          <p class="text ui-card2__size">M</p>
+                        </div>
+                        <div class="ui-card2__colors">
+                          <p class="ui-card2__color" style="--bgColor:#fff"></p>
+                          <p class="ui-card2__color" style="--bgColor:#2C2C2C"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-slide large-slider__slide">
+                  <div class="ui-card2">
+                    <div class="ui-card2__wrapper"> 
+                      <picture class="ui-card2__picture"> <img class="ui-card2__img" src="./img/ui-card-2.png" alt="" loading="lazy"></picture>
+                      <div class="ui-card2__name-and-price">
+                        <p class="ui-card2__name">Платье-рубашка с камнями</p>
+                        <p class="ui-card2__price">13 500 ₽</p>
+                      </div>
+                      <div class="ui-card2__sizes-and-colors">
+                        <div class="ui-card2__sizes">
+                          <p class="text ui-card2__size active">XS</p>
+                          <p class="text ui-card2__size">S</p>
+                          <p class="text ui-card2__size">M</p>
+                        </div>
+                        <div class="ui-card2__colors">
+                          <p class="ui-card2__color" style="--bgColor:#fff"></p>
+                          <p class="ui-card2__color" style="--bgColor:#2C2C2C"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide large-slider__slide">
+                  <div class="ui-card2">
+                    <div class="ui-card2__wrapper"> 
+                      <picture class="ui-card2__picture"> <img class="ui-card2__img" src="./img/ui-card-3.png" alt="" loading="lazy"></picture>
+                      <div class="ui-card2__name-and-price">
+                        <p class="ui-card2__name">Платье-рубашка с камнями</p>
+                        <p class="ui-card2__price">13 500 ₽</p>
+                      </div>
+                      <div class="ui-card2__sizes-and-colors">
+                        <div class="ui-card2__sizes">
+                          <p class="text ui-card2__size active">XS</p>
+                          <p class="text ui-card2__size">S</p>
+                          <p class="text ui-card2__size">M</p>
+                        </div>
+                        <div class="ui-card2__colors">
+                          <p class="ui-card2__color" style="--bgColor:#fff"></p>
+                          <p class="ui-card2__color" style="--bgColor:#2C2C2C"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="large-slider__navigation">
+              <div class="large-slider__navigation-item large-slider__navigation-item_prev"><span class="large-slider__navigation-text">Назад</span><img class="large-slider__navigation-icon large-slider__navigation-icon_prev" src="./img/svg/icon-logn-left.svg" alt="" loading="lazy"></div><a class="btn-link btn-link_outline-black large-slider__navigation-link" href="#">В каталог</a>
+              <div class="large-slider__navigation-item large-slider__navigation-item_next"> <img class="large-slider__navigation-icon large-slider__navigation-icon_next" src="./img/svg/icon-logn-right.svg" alt="" loading="lazy"><span class="large-slider__navigation-text">Далее</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="preorder">
+        <div class="preorder__container">
+          <div class="preorder__overlay-content"> 
+            <p class="title-1 preorder__overlay-title">Новая колекция</p><a class="btn-link btn-link_outline-black preorder__overlay-link" href="#">Смотреть</a>
+          </div>
+          <picture class="preorder__picture"> 
+            <source media="(min-width: 480px)" srcset="./img/preorder-lg.png"><img class="preorder__img" width="1320" height="752" src="./img/preorder-sm.png" alt="">
+          </picture>
+        </div>
+      </div>
+      <div class="compilations">
+        <div class="compilations__container"> 
+          <div class="compilations__aside">
+            <div class="compilations__aside-wrapper"> 
+              <p class="title-1 compilations__title"> <span class="hide-768">Подборка от стилистов</span><span class="show-block-768">
+                   Подборка <br>от стилистов</span></p>
+              <p class="compilations__description">Найдите свою историю путешествия<br>вместе с нашей новой круизной коллекцией. Найдите свою историю путешествия<br>вместе с нашей новой круизной коллекцией.</p>
+              <p class="title-arrow compilations__title-arrow js-compilations-title-arrow"><img src="./img/svg/icon-logn-right.svg" alt="" loading="lazy">Далее</p>
+            </div>
+          </div>
+          <div class="compilations__swiper-wrapper">
+            <div class="swiper compilations__swiper js-compilations-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide compilations__slide">
+                  <div class="ui-card2">
+                    <div class="ui-card2__wrapper"> 
+                      <picture class="ui-card2__picture"> <img class="ui-card2__img" src="./img/ui-card-1.png" alt="" loading="lazy"></picture>
+                      <div class="ui-card2__name-and-price">
+                        <p class="ui-card2__name">Платье-рубашка с камнями</p>
+                        <p class="ui-card2__price">13 500 ₽</p>
+                      </div>
+                      <div class="ui-card2__sizes-and-colors">
+                        <div class="ui-card2__sizes">
+                          <p class="text ui-card2__size">XS</p>
+                          <p class="text ui-card2__size active">S</p>
+                          <p class="text ui-card2__size">M</p>
+                        </div>
+                        <div class="ui-card2__colors">
+                          <p class="ui-card2__color" style="--bgColor:#fff"></p>
+                          <p class="ui-card2__color" style="--bgColor:#2C2C2C"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide compilations__slide">
+                  <div class="ui-card2">
+                    <div class="ui-card2__wrapper"> 
+                      <picture class="ui-card2__picture"> <img class="ui-card2__img" src="./img/ui-card-1.png" alt="" loading="lazy"></picture>
+                      <div class="ui-card2__name-and-price">
+                        <p class="ui-card2__name">Платье-рубашка с камнями</p>
+                        <p class="ui-card2__price">13 500 ₽</p>
+                      </div>
+                      <div class="ui-card2__sizes-and-colors">
+                        <div class="ui-card2__sizes">
+                          <p class="text ui-card2__size">XS</p>
+                          <p class="text ui-card2__size active">S</p>
+                          <p class="text ui-card2__size">M</p>
+                        </div>
+                        <div class="ui-card2__colors">
+                          <p class="ui-card2__color" style="--bgColor:#fff"></p>
+                          <p class="ui-card2__color" style="--bgColor:#2C2C2C"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide compilations__slide">
+                  <div class="ui-card2">
+                    <div class="ui-card2__wrapper"> 
+                      <picture class="ui-card2__picture"> <img class="ui-card2__img" src="./img/ui-card-1.png" alt="" loading="lazy"></picture>
+                      <div class="ui-card2__name-and-price">
+                        <p class="ui-card2__name">Платье-рубашка с камнями</p>
+                        <p class="ui-card2__price">13 500 ₽</p>
+                      </div>
+                      <div class="ui-card2__sizes-and-colors">
+                        <div class="ui-card2__sizes">
+                          <p class="text ui-card2__size">XS</p>
+                          <p class="text ui-card2__size active">S</p>
+                          <p class="text ui-card2__size">M</p>
+                        </div>
+                        <div class="ui-card2__colors">
+                          <p class="ui-card2__color" style="--bgColor:#fff"></p>
+                          <p class="ui-card2__color" style="--bgColor:#2C2C2C"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide compilations__slide">
+                  <div class="ui-card2">
+                    <div class="ui-card2__wrapper"> 
+                      <picture class="ui-card2__picture"> <img class="ui-card2__img" src="./img/ui-card-1.png" alt="" loading="lazy"></picture>
+                      <div class="ui-card2__name-and-price">
+                        <p class="ui-card2__name">Платье-рубашка с камнями</p>
+                        <p class="ui-card2__price">13 500 ₽</p>
+                      </div>
+                      <div class="ui-card2__sizes-and-colors">
+                        <div class="ui-card2__sizes">
+                          <p class="text ui-card2__size">XS</p>
+                          <p class="text ui-card2__size active">S</p>
+                          <p class="text ui-card2__size">M</p>
+                        </div>
+                        <div class="ui-card2__colors">
+                          <p class="ui-card2__color" style="--bgColor:#fff"></p>
+                          <p class="ui-card2__color" style="--bgColor:#2C2C2C"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide compilations__slide">
+                  <div class="ui-card2">
+                    <div class="ui-card2__wrapper"> 
+                      <picture class="ui-card2__picture"> <img class="ui-card2__img" src="./img/ui-card-1.png" alt="" loading="lazy"></picture>
+                      <div class="ui-card2__name-and-price">
+                        <p class="ui-card2__name">Платье-рубашка с камнями</p>
+                        <p class="ui-card2__price">13 500 ₽</p>
+                      </div>
+                      <div class="ui-card2__sizes-and-colors">
+                        <div class="ui-card2__sizes">
+                          <p class="text ui-card2__size">XS</p>
+                          <p class="text ui-card2__size active">S</p>
+                          <p class="text ui-card2__size">M</p>
+                        </div>
+                        <div class="ui-card2__colors">
+                          <p class="ui-card2__color" style="--bgColor:#fff"></p>
+                          <p class="ui-card2__color" style="--bgColor:#2C2C2C"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="materials">
+        <div class="materials__container"> 
+          <div class="materials__swiper-wrapper">
+            <div class="swiper materials__swiper js-materials-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide materials__slide">
+                  <div class="ui-card3">
+                    <div class="ui-card3__wrapper"> 
+                      <picture class="ui-card3__picture"> <img class="ui-card3__img" src="./img/ui-card-1.png" alt="" loading="lazy"></picture><a class="ui-card3__link" href="#"> <span class="ui-card3__link-text">Кожа</span><img class="ui-card3__link-icon" src="./img/svg/icon-middle-right.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide materials__slide">
+                  <div class="ui-card3">
+                    <div class="ui-card3__wrapper"> 
+                      <picture class="ui-card3__picture"> <img class="ui-card3__img" src="./img/ui-card-2.png" alt="" loading="lazy"></picture><a class="ui-card3__link" href="#"> <span class="ui-card3__link-text">Специальный орагнический котон</span><img class="ui-card3__link-icon" src="./img/svg/icon-middle-right.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide materials__slide">
+                  <div class="ui-card3">
+                    <div class="ui-card3__wrapper"> 
+                      <picture class="ui-card3__picture"> <img class="ui-card3__img" src="./img/ui-card-3.png" alt="" loading="lazy"></picture><a class="ui-card3__link" href="#"> <span class="ui-card3__link-text">Шелк</span><img class="ui-card3__link-icon" src="./img/svg/icon-middle-right.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="materials__aside"> 
+            <p class="title-1 materials__title">Материалы для вас</p><a class="btn-link btn-link_mobile-small btn-link btn-link_outline-black materials__overlay-link" href="#">Смотреть все</a>
+          </div>
+        </div>
+      </div>
+      <div class="show-room">
+        <div class="container show-room__container"> 
+          <div class="swiper show-room__swiper js-show-room-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide show-room__slide">
+                <p class="title-1 show-room__title show-room__title_mobile">
+                   Наш шоу-рум<br>в гроде москва</p>
+                <picture class="show-room__picture"> <img class="show-room__img" src="./img/show-room-image.png" alt="" loading="lazy"></picture>
+                <div class="show-room__aside">
+                  <p class="title-1 show-room__title show-room__title_desktop">Наш шоу-рум<br>в гроде москва</p>
+                  <p class="show-room__subtitle">От идеи до готового изделия</p>
+                  <div class="show-room__texts">
+                    <p class="text show-room__text">История каждого нашего изделия начинается с идеи.</p>
+                    <p class="text show-room__text">А идеи обычно приходят во сне. Идеи идеальных платьев, идеальных бюстье, идеальных костюмов, денима, верхней одежды, трикотажа, юбок и брюк, футболок и рубашек, и этот список мы готовы продолжать.</p>
+                    <p class="text show-room__text">Но если приходит идея кому-то одному, то в ее реализации участвует большая команда профессионалов!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="title-arrow show-room__title-arrow js-show-room-title-arrow"><img src="./img/svg/icon-logn-right.svg" alt="" loading="lazy">Далее</p>
+        </div>
+      </div>
+      <div class="preorder">
+        <div class="container preorder__container"> </div>
+      </div>
+      <footer class="footer">
+        <div class="container footer__container"> 
+          <p class="footer__top-text">Магазин дизайнерской одежды POST MERIDIEM</p>
+          <div class="footer__items">
+            <div class="footer__item-main"><a class="text footer__item-main-logo-link" href="#"> <img class="footer__item-main-logo-img" src="./img/svg/icon-logo.svg" alt="" loading="lazy"></a><a class="text footer__item-main-link" href="tel:+7 (967) 130-55-22">+7 (967) 130-55-22</a><a class="text footer__item-main-link" href="mailto:shop@postmeridiem-brand.com">shop@postmeridiem-brand.com</a>
+              <p class="text footer__item-main-text">Москва, ул. Большая Садовая, д. 5, корпус 2. </p>
+            </div>
+            <div class="footer__item-navs"> 
+              <nav class="footer__item-nav footer__item-nav_desktop"><a class="footer__item-nav-item" href="#">О компании</a><a class="footer__item-nav-item" href="#">Шоу-рум</a><a class="footer__item-nav-item" href="#">Контакты</a><a class="footer__item-nav-item" href="#">Материалы</a></nav>
+              <nav class="footer__item-nav footer__item-nav_desktop"><a class="footer__item-nav-item" href="#">Заказ и доставка</a><a class="footer__item-nav-item" href="#">Обмен и возврат</a><a class="footer__item-nav-item" href="#">Вопросы и ответы</a></nav>
+              <nav class="footer__item-nav footer__item-nav_mobile"><a class="footer__item-nav-item" href="#">о нас</a><a class="footer__item-nav-item" href="#">доставка и возврта</a><a class="footer__item-nav-item" href="#">контакты</a></nav>
+            </div>
+            <form class="footer__item-form">
+              <div class="ui-input2 footer__item-form-input-wrapper">
+                <input class="footer__item-form-input" type="text" placeholder="Подписаться на рассылку"><img class="footer__item-form-input-icon" src="./img/svg/icon-middle-right.svg" alt="">
+              </div>
+              <p class="footer__item-form-text">Будьте в курсе наших акиций и поступлений!</p>
+            </form>
+          </div>
+          <nav class="footer__copyright"> <a class="footer__copyright-item" href="#">Публичная оферта </a><a class="footer__copyright-item" href="#">Политика конфиденциальности</a></nav>
+        </div>
+      </footer>
+    </main>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
