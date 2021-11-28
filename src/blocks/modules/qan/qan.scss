@@ -1,0 +1,246 @@
+.qan {
+  @include media("<=991px") {
+  }
+  &__container {
+    @include media("<=991px") {
+    }
+  }
+
+  &__title {
+    margin-top: 90px;
+    margin-bottom: 68px;
+    text-align: center;
+    @include media("<=991px") {
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__items {
+    @include media("<=991px") {
+    }
+    &_desktop {
+      display: grid;
+      grid-template-columns: minmax(300px, 610px) minmax(500px, 650px);
+      column-gap: 60px;
+      justify-content: space-between;
+      @include media("<=1300px") {
+        column-gap: 20px;
+      }
+      @include media("<=991px") {
+        display: none;
+      }
+    }
+    &_mobile {
+      display: none;
+      @include media("<=991px") {
+        display: block;
+      }
+    }
+  }
+
+  &__questions {
+    max-height: 310px;
+    overflow-y: scroll;
+    padding-right: 70px;
+
+    &::-webkit-scrollbar {
+      width: 3px;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #f6f6f6;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #2c2c2c;
+    }
+    @include media("<=1300px") {
+      padding-right: 20px;
+    }
+  }
+
+  &__question {
+    @include reset-btn();
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px 15px 12px;
+    border-bottom: 1px solid #f6f6f6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    &.active {
+      font-weight: bold;
+      color: #2c2c2c;
+      .qan__question-img {
+        opacity: 1;
+      }
+    }
+    &:hover {
+      background-color: #eeeeee;
+    }
+    @include media("<=991px") {
+    }
+  }
+
+  &__question-text {
+    pointer-events: none;
+    @include media("<=991px") {
+    }
+  }
+
+  &__question-img {
+    transition: all 0.3s ease;
+    pointer-events: none;
+    opacity: 0;
+    @include media("<=991px") {
+    }
+  }
+
+  &__answers {
+    @include media("<=991px") {
+    }
+  }
+
+  &__answer {
+    display: none;
+    &.active {
+      display: block;
+    }
+    @include media("<=991px") {
+    }
+  }
+
+  &__answer-text {
+    color: #5c5c5c;
+    margin-bottom: 81px;
+    @include media("<=991px") {
+    }
+  }
+
+  &__support {
+    display: grid;
+    grid-template-columns: minmax(300px, 377px) 203px;
+    justify-content: space-between;
+    column-gap: 20px;
+    @include media("<=1300px") {
+    }
+  }
+
+  &__support-title-text-link {
+    @include media("<=991px") {
+    }
+  }
+
+  &__support-title {
+    margin-bottom: 5px;
+    font-weight: bold;
+    @include media("<=991px") {
+    }
+  }
+
+  &__support-text {
+    color: #2c2c2c;
+    @include media("<=991px") {
+    }
+  }
+
+  &__support-link {
+    color: #2c2c2c;
+    @include media("<=991px") {
+    }
+  }
+
+  &__support-button {
+    margin-top: auto;
+    background-color: #fff;
+    @include media("<=991px") {
+    }
+  }
+
+  //   mobile
+  &__item {
+    overflow: hidden;
+  }
+
+  &__item-input-title {
+    position: absolute;
+    left: -9999px;
+    &:checked {
+      + label {
+        font-weight: bold;
+        img {
+          transform: rotate(180deg);
+        }
+      }
+      ~ .qan__item-content {
+        max-height: 100%;
+        opacity: 1;
+        overflow: auto;
+        z-index: 1;
+        visibility: visible;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__item-label-title {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 10px 0;
+    line-height: 150%;
+    border-bottom: 1px solid #a0a0a0;
+
+    font-size: 13px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  &__item-question-img {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+
+  &__item-content {
+    transition: all 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    z-index: -1;
+    visibility: hidden;
+
+    a {
+      color: $accent;
+    }
+  }
+
+  &__item-text {
+  }
+
+  &__item-support {
+  }
+
+  &__item-support-title {
+  }
+
+  &__item-support-text {
+  }
+
+  &__item-support-button {
+    margin-top: 30px;
+    background-color: #fafafa;
+  }
+}

@@ -304,6 +304,36 @@ try {
 
 /***/ }),
 
+/***/ "./src/blocks/modules/qan/qan.js":
+/*!***************************************!*\
+  !*** ./src/blocks/modules/qan/qan.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var questionsDesktop = document.querySelectorAll(".js-qan-desktop [data-question]");
+var answersDesktop = document.querySelectorAll(".js-qan-desktop [data-answer]");
+
+var resetClasses = function resetClasses(selector) {
+  selector.forEach(function (el) {
+    return el.classList.remove('active');
+  });
+};
+
+if (questionsDesktop.length > 0) {
+  questionsDesktop.forEach(function (question) {
+    question.addEventListener('click', function (e) {
+      var questionId = question.dataset.question;
+      resetClasses(questionsDesktop);
+      resetClasses(answersDesktop);
+      e.target.classList.add('active');
+      document.querySelector(".js-qan-desktop [data-answer='".concat(questionId, "']")).classList.add('active');
+    });
+  });
+}
+
+/***/ }),
+
 /***/ "./src/blocks/modules/show-room/show-room.js":
 /*!***************************************************!*\
   !*** ./src/blocks/modules/show-room/show-room.js ***!
@@ -410,6 +440,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_catalog_catalog__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_catalog_catalog__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! %modules%/contacts/contacts */ "./src/blocks/modules/contacts/contacts.js");
 /* harmony import */ var _modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _modules_qan_qan__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! %modules%/qan/qan */ "./src/blocks/modules/qan/qan.js");
+/* harmony import */ var _modules_qan_qan__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modules_qan_qan__WEBPACK_IMPORTED_MODULE_11__);
+
 
 
 
