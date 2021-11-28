@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/blocks/modules/catalog/catalog.js":
+/*!***********************************************!*\
+  !*** ./src/blocks/modules/catalog/catalog.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./src/blocks/modules/compilations/compilations.js":
 /*!*********************************************************!*\
   !*** ./src/blocks/modules/compilations/compilations.js ***!
@@ -382,6 +393,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_product_ordering_product_ordering__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_product_ordering_product_ordering__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _modules_user_cart_user_cart__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/user-cart/user-cart */ "./src/blocks/modules/user-cart/user-cart.js");
 /* harmony import */ var _modules_user_cart_user_cart__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_user_cart_user_cart__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _modules_catalog_catalog__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/catalog/catalog */ "./src/blocks/modules/catalog/catalog.js");
+/* harmony import */ var _modules_catalog_catalog__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_catalog_catalog__WEBPACK_IMPORTED_MODULE_9__);
+
 
 
 

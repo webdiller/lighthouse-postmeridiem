@@ -1,0 +1,199 @@
+.catalog {
+  @include media("<=768px") {
+  }
+  &__container {
+    display: flex;
+
+    margin-top: 30px;
+    margin-bottom: 67px;
+    @include media("<=768px") {
+      margin-bottom: 53px;
+    }
+  }
+
+  &__aside {
+    flex: 0 0 315px;
+    margin-right: 20px;
+    @include media("<=991px") {
+      display: none;
+    }
+    @include media("<=768px") {
+    }
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 70px;
+    @include media("<=768px") {
+    }
+  }
+
+  &__aside-items {
+    @include media("<=768px") {
+    }
+  }
+
+  &__aside-item {
+    display: block;
+    font-size: 15px;
+    line-height: 150%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #2c2c2c;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    &.active {
+      font-weight: bold;
+    }
+    @include media("<=768px") {
+    }
+  }
+
+  &__main {
+    padding: 70px 0 0 20px;
+    flex: 1 1 auto;
+    overflow: hidden;
+    @include media("<=1200px") {
+      padding-left: 0;
+    }
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+    }
+  }
+
+  &__main-filters {
+    display: flex;
+    align-items: center;
+    margin-bottom: 46px;
+    @include media("<=1400px") {
+      width: 100%;
+      overflow-x: scroll;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+      }
+
+      // Если хотим скроллбар, то расскоментировать ниже
+      // padding-bottom: 5px;
+      // &::-webkit-scrollbar {
+      //   height: 2px;
+      //   border-radius: 10px;
+      // }
+
+      // &::-webkit-scrollbar-track {
+      //   background-color: #f6f6f6;
+      // }
+
+      // &::-webkit-scrollbar-thumb {
+      //   background-color: #a0a0a0;
+      // }
+    }
+  }
+
+  &__main-filter {
+    @include reset-btn();
+    flex: 1 1 auto;
+    padding: 10px;
+    white-space: nowrap;
+
+    font-size: 15px;
+    line-height: 150%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #2c2c2c;
+    background: #f6f6f6;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+    &.active {
+      background-color: transparent;
+      border-bottom: 1px solid #a0a0a0;
+    }
+    @include media("<=768px") {
+    }
+  }
+
+  &__main-sizes {
+    display: inline-flex;
+    margin-bottom: 37px;
+    font-size: 15px;
+    line-height: 150%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #2c2c2c;
+    @include media("<=768px") {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__main-size-title {
+    margin-right: 13px;
+    font-size: 15px;
+    line-height: 150%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #2c2c2c;
+    @include media("<=768px") {
+    }
+  }
+
+  &__main-size {
+    @include reset-btn();
+    position: relative;
+    font-size: 15px;
+    line-height: 150%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #a0a0a0;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    &.active {
+      color: #5c5c5c;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -7px;
+        height: 1px;
+        width: 100%;
+        background-color: #5c5c5c;
+      }
+    }
+  }
+
+  &__main-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    @include media("<=768px") {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px 10px;
+    }
+    @include media("<=768px") {
+    }
+  }
+
+  &__main-item {
+    @include media("<=768px") {
+    }
+  }
+
+  &__main-show-more-wrapper {
+    display: none;
+    margin-top: 68px;
+    @include media("<=991px") {
+      display: block;
+      text-align: center;
+    }
+  }
+  &__main-show-more-btn {
+    background-color: #fff;
+  }
+}

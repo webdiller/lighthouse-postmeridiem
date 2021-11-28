@@ -307,12 +307,8 @@
     line-height: 150%;
     font-feature-settings: "pnum" on, "lnum" on;
     color: #2c2c2c;
-    @include media("<=991px") {
-    }
     @include media("<=768px") {
       margin-right: 11px;
-    }
-    @include media("<=576px") {
     }
   }
 
@@ -326,14 +322,9 @@
     &:not(:last-child) {
       margin-right: 10px;
     }
-    @include media("<=991px") {
-    }
-    @include media("<=768px") {
-    }
-    @include media("<=576px") {
-    }
     &.active {
       color: #5c5c5c;
+      margin-bottom: 7px;
       &::before {
         content: "";
         position: absolute;
@@ -343,12 +334,6 @@
         height: 1px;
         width: 100%;
         background-color: #5c5c5c;
-      }
-      @include media("<=991px") {
-      }
-      @include media("<=768px") {
-      }
-      @include media("<=576px") {
       }
     }
   }
