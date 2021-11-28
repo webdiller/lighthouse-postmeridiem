@@ -35,6 +35,10 @@ body {
   overflow-x: hidden;
   font-family: "RalewayDev", "MontserratDev", "sans serif";
   color: $accent;
+  @include media("<=768px") {
+    padding: 0;
+    background-color: #fafafa;
+  }
 }
 
 img {
@@ -93,6 +97,7 @@ input {
 
 .title-2 {
   font-family: "MontserratDev";
+  font-weight: bold;
   font-size: 36px;
   line-height: 110%;
   text-transform: uppercase;
@@ -117,6 +122,9 @@ input {
   @include media("<=991px") {
   }
   @include media("<=768px") {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
   }
   @include media("<=480px") {
   }
@@ -213,6 +221,7 @@ input {
     font-size: 13px;
     line-height: 19px;
     width: 100%;
+    background: transparent;
     @include media("<=991px") {
       font-size: 15px;
       font-feature-settings: "pnum" on, "lnum" on;
@@ -409,6 +418,7 @@ input {
   }
 
   &__price {
+    font-family: "MontserratDev";
     margin-top: auto;
     font-weight: 600;
     font-size: 13px;
@@ -486,6 +496,7 @@ input {
   }
 
   &__price {
+    font-family: "MontserratDev";
     font-size: 13px;
     line-height: 150%;
     text-align: right;
@@ -671,6 +682,7 @@ input {
 }
 
 .title-arrow {
+  font-family: "MontserratDev";
   display: inline-flex;
   align-items: center;
   font-weight: bold;
@@ -784,10 +796,154 @@ input {
 }
 
 .ui-input3 {
+  position: relative;
+  height: 50px;
   &__input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #a0a0a0;
+    padding-left: 20px;
+    padding-bottom: 7px;
+    padding-top: 20px;
 
+    font-size: 15px;
+    line-height: 150%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #2c2c2c;
+    transition: all 0.3s ease;
+
+    resize: none;
+
+    &::placeholder {
+      display: none;
+    }
+
+    &:focus {
+      border-color: #2c2c2c;
+      + label {
+        font-size: 9px;
+        transform: unset;
+        top: 6px;
+      }
+    }
+
+    /*
+    * Если инпут не пустой, то добавляем этот класс, чтобы label не перекрывал текст. 
+    * Вызываем в javascript'e
+    */
+    &.has-value {
+      + label {
+        font-size: 9px;
+        transform: unset;
+        top: 6px;
+      }
+    }
   }
   &__label {
-    
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+
+    font-size: 15px;
+    line-height: 150%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #a0a0a0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+}
+
+.ui-radio {
+  input {
+    position: absolute;
+    left: -9999px;
+  }
+  > input[type="radio"] + *::before {
+    position: relative;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    top: -2px;
+    width: 17px;
+    height: 17px;
+    margin-right: 0.3rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: gray;
+  }
+  > input[type="radio"]:checked + * {
+    color: #000;
+  }
+  > input[type="radio"]:checked + *::before {
+    background: radial-gradient(
+      teal 0%,
+      #000 40%,
+      transparent 50%,
+      transparent
+    );
+    border-color: #000;
+  }
+  > input[type="radio"] + * {
+    display: inline-block;
+    margin-bottom: 10px;
+    @include media("<=768px") {
+      margin-bottom: 20px;
+    }
+  }
+  label {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    font-size: 15px;
+  }
+}
+
+.ui-checkbox {
+  overflow: hidden;
+  input {
+    position: absolute;
+    left: -9999px;
+    &:checked {
+      + label img {
+        opacity: 1;
+      }
+    }
+    &:focus {
+      + label img {
+        opacity: .5;
+      }
+    }
+  }
+  label {
+    display: flex;
+    span {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 17px;
+      height: 17px;
+      min-width: 17px;
+      min-height: 17px;
+      border: 1px solid #2c2c2c;
+      margin-right: 18px;
+      img {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+  small {
+    font-size: 12px;
+    line-height: 150%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #4f5051;
   }
 }

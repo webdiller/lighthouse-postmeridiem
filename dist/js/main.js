@@ -276,15 +276,7 @@ try {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-modules.define('product-ordering', ['i-bem-dom'], function (provide, bemDom) {
-  provide(bemDom.declBlock(this.name, {
-    onSetMod: {
-      js: {
-        inited: function inited() {}
-      }
-    }
-  }));
-});
+
 
 /***/ }),
 
@@ -312,6 +304,17 @@ try {
     showRoomSwiper.slideNext();
   });
 } catch (error) {}
+
+/***/ }),
+
+/***/ "./src/blocks/modules/user-cart/user-cart.js":
+/*!***************************************************!*\
+  !*** ./src/blocks/modules/user-cart/user-cart.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 
@@ -377,6 +380,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_product_card_product_card__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_product_card_product_card__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _modules_product_ordering_product_ordering__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/product-ordering/product-ordering */ "./src/blocks/modules/product-ordering/product-ordering.js");
 /* harmony import */ var _modules_product_ordering_product_ordering__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_product_ordering_product_ordering__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _modules_user_cart_user_cart__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/user-cart/user-cart */ "./src/blocks/modules/user-cart/user-cart.js");
+/* harmony import */ var _modules_user_cart_user_cart__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_user_cart_user_cart__WEBPACK_IMPORTED_MODULE_8__);
+
 
 
 
@@ -402,6 +408,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _import_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_import_components__WEBPACK_IMPORTED_MODULE_1__);
 
 
+var uiInputs = document.querySelectorAll(".ui-input3 .ui-input3__input");
+
+if (uiInputs.length > 0) {
+  uiInputs.forEach(function (item) {
+    item.addEventListener("change", function (e) {
+      if (e.target.value.length > 0) {
+        e.target.classList.add("has-value");
+      } else {
+        e.target.classList.remove("has-value");
+      }
+    });
+  });
+}
 
 /***/ })
 

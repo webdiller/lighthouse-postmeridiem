@@ -8,6 +8,7 @@
   @include media("<=576px") {
   }
   &__container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -173,6 +174,7 @@
       }
     }
     &_phone {
+      font-family: "MontserratDev";
       font-feature-settings: "pnum" on, "lnum" on;
       @include media("<=1200px") {
       }
@@ -264,9 +266,12 @@
   }
 
   &__center {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
     transition: all 0.3s ease;
     &.disabled {
-      max-width: 0;
       opacity: 0;
       z-index: -1;
       visibility: hidden;

@@ -1,0 +1,132 @@
+.product-ordering {
+  &__container {
+    margin-bottom: 260px;
+    @include media("<=768px") {
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__logo-with-description {
+    margin-bottom: 50px;
+  }
+
+  &__form {
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    column-gap: 20px;
+    height: 500px;
+    width: 650px;
+    margin: 0 auto;
+    @include media("<=768px") {
+      display: block;
+      width: 100%;
+      height: auto;
+      column-gap: 0;
+    }
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    width: 315px;
+
+    @include media("<=768px") {
+      width: 100%;
+    }
+
+    &_email {
+      @include media("<=768px") {
+        margin-bottom: 30px;
+      }
+    }
+
+    &_delivery {
+      margin-bottom: 110px;
+      div {
+        margin-bottom: 0;
+      }
+      @include media("<=768px") {
+        margin-bottom: 10px;
+      }
+    }
+
+    &_rules {
+      margin-top: auto;
+      margin-bottom: 0;
+      @include media("<=768px") {
+        display: none;
+      }
+    }
+
+    &_city {
+    }
+
+    &_street {
+    }
+
+    &_address {
+      display: flex;
+      div {
+        margin-bottom: 0;
+        &:first-child {
+          margin-right: 35px;
+          @include media("<=768px") {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    &_comment {
+      height: 116px;
+      margin-bottom: 30px;
+    }
+
+    &_payment {
+      div {
+        margin-bottom: 0;
+      }
+    }
+
+    &_btn-wrapper {
+      margin-bottom: 0;
+      margin-top: auto;
+    }
+  }
+  &__total {
+    display: none;
+    padding-top: 15px;
+    margin-bottom: 30px;
+    border-top: 1px solid #cdcdcd;
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+    &-key {
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 150%;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #000000;
+    }
+    &-value {
+      font-family: "MontserratDev";
+      font-size: 13px;
+      line-height: 150%;
+      letter-spacing: 0.15em;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #000000;
+    }
+    @include media("<=768px") {
+      display: block;
+    }
+  }
+}

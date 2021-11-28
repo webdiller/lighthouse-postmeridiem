@@ -157,11 +157,90 @@
       </div>
       <div class="product-ordering">
         <div class="container product-ordering__container">
-          <div class="logo-with-description">
+          <div class="logo-with-description product-ordering__logo-with-description">
             <div class="logo-with-description__wrapper"><a class="logo-with-description__link" href="/index.html"> <img class="logo-with-description__img" src="./img/svg/icon-logo.svg" alt=""></a>
               <p class="logo-with-description__text">Оформление заказа</p>
             </div>
           </div>
+          <form class="product-ordering__form">
+            <div class="product-ordering__items">
+              <div class="ui-input3 product-ordering__item">
+                <input class="ui-input3__input" type="text">
+                <label class="ui-input3__label">Ваше имя</label>
+              </div>
+              <div class="ui-input3 product-ordering__item">
+                <input class="ui-input3__input" type="text">
+                <label class="ui-input3__label">Ваша фамилия</label>
+              </div>
+              <div class="ui-input3 product-ordering__item">
+                <input class="ui-input3__input" type="text">
+                <label class="ui-input3__label">Ваш телефон</label>
+              </div>
+              <div class="ui-input3 product-ordering__item product-ordering__item_email">
+                <input class="ui-input3__input" type="email">
+                <label class="ui-input3__label">Ваш e-mail адрес</label>
+              </div>
+              <div class="product-ordering__item product-ordering__item_delivery">
+                <div class="ui-radio product-ordering__item">
+                  <input checked type="radio" name="selectDelivery" id="deliveryCarrier">
+                  <label for="deliveryCarrier">Доставка курьером <span>3-5 дней </span></label>
+                </div>
+                <div class="ui-radio product-ordering__item">
+                  <input type="radio" name="selectDelivery" id="deliveryPickup">
+                  <label for="deliveryPickup">Самовывоз</label>
+                </div>
+              </div>
+              <div class="ui-checkbox product-ordering__item product-ordering__item_rules">
+                <input type="checkbox" id="rules">
+                <label for="rules"><span><img src="./img/svg/icon-checkbox.svg" alt="" loading="lazy"></span><small>согласен с обработкой моих данных, в порядке предусмотренном публичной офертой</small></label>
+              </div>
+              <div class="ui-input3 product-ordering__item product-ordering__item_city">
+                <input class="ui-input3__input" type="text">
+                <label class="ui-input3__label">Ваш город</label>
+              </div>
+              <div class="ui-input3 product-ordering__item product-ordering__item_street">
+                <input class="ui-input3__input" type="text">
+                <label class="ui-input3__label">Ваша улица</label>
+              </div>
+              <div class="product-ordering__item product-ordering__item_address">
+                <div class="ui-input3 product-ordering__item">
+                  <input class="ui-input3__input" type="text">
+                  <label class="ui-input3__label">Ваша улица</label>
+                </div>
+                <div class="ui-input3 product-ordering__item">
+                  <input class="ui-input3__input" type="text">
+                  <label class="ui-input3__label">Картира</label>
+                </div>
+              </div>
+              <div class="ui-input3 ui-input3_textarea product-ordering__item product-ordering__item_comment">
+                <textarea class="ui-input3__input"></textarea>
+                <label class="ui-input3__label">Комментарий к заказу</label>
+              </div>
+              <div class="product-ordering__item product-ordering__item_payment">
+                <div class="ui-radio product-ordering__item">
+                  <input checked type="radio" name="selectPayment" id="paymentCart">
+                  <label for="paymentCart">Оплата картой</label>
+                </div>
+                <div class="ui-radio product-ordering__item">
+                  <input type="radio" name="selectPayment" id="paymentSelf">
+                  <label for="paymentSelf">Оплата при получении</label>
+                </div>
+              </div>
+              <div class="product-ordering__total">
+                <div class="product-ordering__total-item"> 
+                  <p class="product-ordering__total-key">Доставка</p>
+                  <p class="product-ordering__total-value">0₽</p>
+                </div>
+                <div class="product-ordering__total-item"> 
+                  <p class="product-ordering__total-key">Вместе</p>
+                  <p class="product-ordering__total-value">38 800 ₽</p>
+                </div>
+              </div>
+              <div class="product-ordering__item product-ordering__item_btn-wrapper">
+                <button class="btn-link btn-link_fill-black" type="submit">Оплатить</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
       <footer class="footer">

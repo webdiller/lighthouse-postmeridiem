@@ -1,9 +1,83 @@
 .product-ordering
     .container.product-ordering__container
 
-        .logo-with-description
+        .logo-with-description.product-ordering__logo-with-description
             .logo-with-description__wrapper
-                
+
                 a.logo-with-description__link(href="/index.html") 
-                    img.logo-with-description__img(src="./img/svg/icon-logo.svg", alt="")
+                    img.logo-with-description__img(src="./img/svg/icon-logo.svg" alt="")
                 p.logo-with-description__text Оформление заказа
+
+        form.product-ordering__form
+            .product-ordering__items
+                .ui-input3.product-ordering__item
+                    input.ui-input3__input(type="text")
+                    label.ui-input3__label Ваше имя
+
+                .ui-input3.product-ordering__item
+                    input.ui-input3__input(type="text")
+                    label.ui-input3__label Ваша фамилия
+
+                .ui-input3.product-ordering__item
+                    input.ui-input3__input(type="text")
+                    label.ui-input3__label Ваш телефон
+
+                .ui-input3.product-ordering__item.product-ordering__item_email
+                    input.ui-input3__input(type="email")
+                    label.ui-input3__label Ваш e-mail адрес
+
+                .product-ordering__item.product-ordering__item_delivery
+                    .ui-radio.product-ordering__item
+                        input(checked type="radio" name="selectDelivery" id="deliveryCarrier")
+                        label(for="deliveryCarrier") Доставка курьером 
+                            span 3-5 дней 
+                    .ui-radio.product-ordering__item
+                        input(type="radio" name="selectDelivery" id="deliveryPickup")
+                        label(for="deliveryPickup") Самовывоз
+
+                .ui-checkbox.product-ordering__item.product-ordering__item_rules
+                    input(type="checkbox" id="rules")
+                    label(for="rules")
+                        span
+                            img(src='./img/svg/icon-checkbox.svg' alt="" loading="lazy")
+                        small согласен с обработкой моих данных, в порядке предусмотренном публичной офертой
+
+                .ui-input3.product-ordering__item.product-ordering__item_city
+                    input.ui-input3__input(type="text")
+                    label.ui-input3__label Ваш город
+
+                .ui-input3.product-ordering__item.product-ordering__item_street
+                    input.ui-input3__input(type="text")
+                    label.ui-input3__label Ваша улица
+
+                .product-ordering__item.product-ordering__item_address
+                    .ui-input3.product-ordering__item
+                        input.ui-input3__input(type="text")
+                        label.ui-input3__label Ваша улица
+
+                    .ui-input3.product-ordering__item
+                        input.ui-input3__input(type="text")
+                        label.ui-input3__label Картира
+
+                .ui-input3.ui-input3_textarea.product-ordering__item.product-ordering__item_comment
+                    textarea.ui-input3__input
+                    label.ui-input3__label Комментарий к заказу
+
+                .product-ordering__item.product-ordering__item_payment
+                    .ui-radio.product-ordering__item
+                        input(checked type="radio" name="selectPayment" id="paymentCart")
+                        label(for="paymentCart") Оплата картой
+                    .ui-radio.product-ordering__item
+                        input(type="radio" name="selectPayment" id="paymentSelf")
+                        label(for="paymentSelf") Оплата при получении
+
+                .product-ordering__total
+                    .product-ordering__total-item  
+                        p.product-ordering__total-key Доставка
+                        p.product-ordering__total-value 0₽
+                    .product-ordering__total-item  
+                        p.product-ordering__total-key Вместе
+                        p.product-ordering__total-value 38 800 ₽
+                        
+                .product-ordering__item.product-ordering__item_btn-wrapper
+                    button.btn-link.btn-link_fill-black(type="submit") Оплатить

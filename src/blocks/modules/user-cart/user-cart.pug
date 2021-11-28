@@ -1,0 +1,63 @@
+.user-cart
+    .container.user-cart__container 
+
+
+        .user-cart__items-total
+        
+            p.user-cart__title корзина
+
+            .user-cart__items
+
+                .user-cart__item
+                    picture.user-cart__picture 
+                        img(src='./img/ui-card-1.png' alt="" loading="lazy").user-cart__img
+                    .user-cart__content
+                        .user-cart__name-code 
+                            p.user-cart__name Топ-бюстье с кистями
+                            p.user-cart__code Артикул: 00000733
+                        .user-cart__size-color
+                            p.user-cart__size XS
+                            p.user-cart__color(style="--bgColor:#fff") 
+                        .user-cart__price-delete 
+                            p.user-cart__price 15 800 ₽
+                            button.user-cart__delete удалить
+
+                .user-cart__item
+                    picture.user-cart__picture 
+                        img(src='./img/ui-card-2.png' alt="" loading="lazy").user-cart__img
+                    .user-cart__content
+                        .user-cart__name-code 
+                            p.user-cart__name Топ-бюстье с кистями
+                            p.user-cart__code Артикул: 00000733
+                        .user-cart__size-color
+                            p.user-cart__size XS
+                            p.user-cart__color(style="--bgColor:red") 
+                        .user-cart__price-delete 
+                            p.user-cart__price 15 800 ₽
+                            button.user-cart__delete удалить
+
+                .user-cart__item
+                    picture.user-cart__picture 
+                        img(src='./img/ui-card-3.png' alt="" loading="lazy").user-cart__img
+                    .user-cart__content
+                        .user-cart__name-code 
+                            p.user-cart__name Топ-бюстье с кистями
+                            p.user-cart__code Артикул: 00000733
+                        .user-cart__size-color
+                            p.user-cart__size XS
+                            p.user-cart__color(style="--bgColor:green") 
+                        .user-cart__price-delete 
+                            p.user-cart__price 15 800 ₽
+                            button.user-cart__delete удалить
+                    
+            .user-cart__total
+                .user-cart__total-items
+                    .user-cart__total-item.user-cart__total-item_delivery
+                        p.user-cart__total-key Доставка
+                        p.user-cart__total-value 0₽
+                    .user-cart__total-item
+                        p.user-cart__total-key Вместе
+                        p.user-cart__total-value 38 800 ₽
+
+        .user-cart__submit-order-wrapper
+            button.btn-link.btn-link_fill-black.user-cart__submit-order Оформить заказ

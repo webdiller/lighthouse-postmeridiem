@@ -1,6 +1,7 @@
 .footer {
   margin-top: 67px;
   margin-bottom: 35px;
+  background: #fff;
   @include media("<=991px") {
   }
   @include media("<=768px") {
