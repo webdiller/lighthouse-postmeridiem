@@ -8,3 +8,4 @@ import "%modules%/product-card/product-card";
 import "%modules%/product-ordering/product-ordering";
 import "%modules%/user-cart/user-cart";
 import "%modules%/catalog/catalog";
+import "%modules%/contacts/contacts";

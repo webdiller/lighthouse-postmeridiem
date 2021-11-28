@@ -137,6 +137,17 @@ try {
 
 /***/ }),
 
+/***/ "./src/blocks/modules/contacts/contacts.js":
+/*!*************************************************!*\
+  !*** ./src/blocks/modules/contacts/contacts.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./src/blocks/modules/header/header.js":
 /*!*********************************************!*\
   !*** ./src/blocks/modules/header/header.js ***!
@@ -144,44 +155,46 @@ try {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var headerSearch = document.querySelector(".js-header-search");
-var headerMobileSearch = document.querySelector(".js-header-item-search"); // mobile search
+try {
+  var headerSearch = document.querySelector(".js-header-search");
+  var headerMobileSearch = document.querySelector(".js-header-item-search"); // mobile search
 
-var headerSearchInput = document.querySelector(".js-header-search input");
-var headerMenu = document.querySelector(".js-header-menu");
-var headerNavigation = document.querySelector(".js-header-navigation");
-var headerResults = document.querySelector(".js-header-results");
-var headerCenter = document.querySelector(".js-header-center");
-var headerNavigationItemsTitle = document.querySelectorAll(".js-header-navigation-all-items .header__navigation-item_title");
-headerSearch.addEventListener("click", function (e) {
-  if (!e.target.parentElement.classList.contains("active")) {
-    e.target.parentElement.classList.toggle("active");
-    headerSearchInput.focus();
-    headerResults.classList.toggle("active");
+  var headerSearchInput = document.querySelector(".js-header-search input");
+  var headerMenu = document.querySelector(".js-header-menu");
+  var headerNavigation = document.querySelector(".js-header-navigation");
+  var headerResults = document.querySelector(".js-header-results");
+  var headerCenter = document.querySelector(".js-header-center");
+  var headerNavigationItemsTitle = document.querySelectorAll(".js-header-navigation-all-items .header__navigation-item_title");
+  headerSearch.addEventListener("click", function (e) {
+    if (!e.target.parentElement.classList.contains("active")) {
+      e.target.parentElement.classList.toggle("active");
+      headerSearchInput.focus();
+      headerResults.classList.toggle("active");
 
-    if (window.innerWidth <= 1200) {
-      headerCenter.classList.toggle("disabled");
+      if (window.innerWidth <= 1200) {
+        headerCenter.classList.toggle("disabled");
+      }
+    } else {
+      console.log("search");
     }
-  } else {
-    console.log("search");
-  }
-});
-headerMenu.addEventListener("click", function (e) {
-  e.target.classList.toggle("active");
-  headerNavigation.classList.toggle("active");
-});
-headerNavigationItemsTitle.forEach(function (item) {
-  if (window.innerWidth <= 768) {
-    try {
-      item.addEventListener("click", function (e) {
-        item.classList.toggle("active");
-      });
-    } catch (error) {}
-  }
-});
-headerMobileSearch.addEventListener("click", function (e) {
-  headerResults.classList.toggle("active");
-});
+  });
+  headerMenu.addEventListener("click", function (e) {
+    e.target.classList.toggle("active");
+    headerNavigation.classList.toggle("active");
+  });
+  headerNavigationItemsTitle.forEach(function (item) {
+    if (window.innerWidth <= 768) {
+      try {
+        item.addEventListener("click", function (e) {
+          item.classList.toggle("active");
+        });
+      } catch (error) {}
+    }
+  });
+  headerMobileSearch.addEventListener("click", function (e) {
+    headerResults.classList.toggle("active");
+  });
+} catch (error) {}
 
 /***/ }),
 
@@ -395,6 +408,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_user_cart_user_cart__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_user_cart_user_cart__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _modules_catalog_catalog__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/catalog/catalog */ "./src/blocks/modules/catalog/catalog.js");
 /* harmony import */ var _modules_catalog_catalog__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_catalog_catalog__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! %modules%/contacts/contacts */ "./src/blocks/modules/contacts/contacts.js");
+/* harmony import */ var _modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_10__);
+
 
 
 

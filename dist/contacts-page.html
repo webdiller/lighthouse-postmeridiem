@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-pug-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body>
+    <main class="main">
+      <div class="top-message">
+        <div class="container top-message__container"> 
+          <p class="top-message__text">Бесплатная доставка от 20.000 Р</p>
+        </div>
+      </div>
+      <header class="header">
+        <div class="header__top">
+          <div class="container header__container"> 
+            <div class="header__left">
+              <button class="header__menu js-header-menu"><img class="header__menu-icon-bar" src="./img/svg/icon-bar.svg" alt=""><img class="header__menu-icon-bar-mobile" src="./img/svg/icon-bar-mobile.svg" alt=""><img class="header__menu-icon-close" src="./img/svg/icon-close.svg" alt=""></button>
+              <nav class="header__items header__items_left"> <a class="text header__item" href="#">Каталог</a><a class="text header__item" href="#">Платья</a></nav>
+              <div class="header__search js-header-search">
+                <input class="ui-input header__input" type="text" placeholder="Платье-комбинации"><img class="header__input-icon" src="./img/svg/icon-search.svg" alt="">
+              </div>
+            </div>
+            <div class="header__center js-header-center"><a class="header__logo-link" href="/index.html"> <img class="header__logo-img" src="./img/svg/icon-logo.svg" alt=""></a></div>
+            <div class="header__right"> 
+              <nav class="header__items header__items_right"><a class="text header__item header__item_phone" href="tel:+7 (967) 130-55-22">+7 (967) 130-55-22</a><a class="text header__item" href="#">О нас</a><a class="text ttu header__item header__item_lang" href="#">RU</a></nav>
+              <button class="header__item header__item_search js-header-item-search"><img class="header__item-icon" width="19" height="19" src="./img/svg/icon-search.svg" alt=""></button><a class="header__item header__item_cart" href="#"> <img class="header__item-icon" width="15" height="15" src="./img/svg/icon-cart.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="header__results js-header-results">
+          <div class="container header__results-container">
+            <div class="header__results-search">
+              <input class="ui-input header__results-search-input" type="text" placeholder="Платье-комбинац">
+            </div>
+            <div class="header__results-navs"><a class="header__results-navs-item" href="#">Платья</a><a class="header__results-navs-item" href="#">Рубашки и футболки</a><a class="header__results-navs-item" href="#">Топы и баски</a><a class="header__results-navs-item" href="#">Юбки</a></div>
+            <div class="header__results-items">
+              <div class="ui-card header__results-card">
+                <div class="ui-card__container">
+                  <picture class="ui-card__picture"> <img class="ui-card__img" src="./img/ui-card-1.png" alt="" loading="lazy"></picture>
+                  <div class="ui-card__content">
+                    <p class="text ui-card__name">Платье-миди на прямом корсете</p>
+                    <p class="text ui-card__code">Артикул: 00001868</p>
+                    <div class="ui-card__sizes-and-colors">
+                      <div class="ui-card__sizes">
+                        <p class="text ui-card__size">XS</p>
+                      </div>
+                      <div class="ui-card__colors">
+                        <p class="ui-card__color" style="--bgColor:#03A3BD"></p>
+                      </div>
+                    </div>
+                    <div class="ui-card__price">13 500 ₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-card header__results-card">
+                <div class="ui-card__container">
+                  <picture class="ui-card__picture"> <img class="ui-card__img" src="./img/ui-card-2.png" alt="" loading="lazy"></picture>
+                  <div class="ui-card__content">
+                    <p class="text ui-card__name">Платье-миди на прямом корсете</p>
+                    <p class="text ui-card__code">Артикул: 00001868</p>
+                    <div class="ui-card__sizes-and-colors">
+                      <div class="ui-card__sizes">
+                        <p class="text ui-card__size">XS</p>
+                      </div>
+                      <div class="ui-card__colors">
+                        <p class="ui-card__color" style="--bgColor:#03A3BD"></p>
+                      </div>
+                    </div>
+                    <div class="ui-card__price">13 500 ₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-card header__results-card">
+                <div class="ui-card__container">
+                  <picture class="ui-card__picture"> <img class="ui-card__img" src="./img/ui-card-2.png" alt="" loading="lazy"></picture>
+                  <div class="ui-card__content">
+                    <p class="text ui-card__name">Платье-миди на прямом корсете</p>
+                    <p class="text ui-card__code">Артикул: 00001868</p>
+                    <div class="ui-card__sizes-and-colors">
+                      <div class="ui-card__sizes">
+                        <p class="text ui-card__size">XS</p>
+                      </div>
+                      <div class="ui-card__colors">
+                        <p class="ui-card__color" style="--bgColor:#03A3BD"></p>
+                      </div>
+                    </div>
+                    <div class="ui-card__price">13 500 ₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-card header__results-card">
+                <div class="ui-card__container">
+                  <picture class="ui-card__picture"> <img class="ui-card__img" src="./img/ui-card-3.png" alt="" loading="lazy"></picture>
+                  <div class="ui-card__content">
+                    <p class="text ui-card__name">Платье-миди на прямом корсете</p>
+                    <p class="text ui-card__code">Артикул: 00001868</p>
+                    <div class="ui-card__sizes-and-colors">
+                      <div class="ui-card__sizes">
+                        <p class="text ui-card__size">XS</p>
+                      </div>
+                      <div class="ui-card__colors">
+                        <p class="ui-card__color" style="--bgColor:#03A3BD"></p>
+                      </div>
+                    </div>
+                    <div class="ui-card__price">13 500 ₽</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__navigation js-header-navigation">
+          <div class="container header__navigation-container">
+            <div class="header__navigation-all-items js-header-navigation-all-items">
+              <div class="header__navigation-items">
+                <p class="ttu header__navigation-item header__navigation-item_title">категории<img class="header__navigation-item-icon" src="./img/svg/icon-arrow-down.svg" alt=""></p>
+                <div class="header__navigation-items-menu"><a class="text header__navigation-item header__navigation-item_link" href="#">Верхняя одежда</a><a class="text header__navigation-item header__navigation-item_link" href="#">Костюмы</a><a class="text header__navigation-item header__navigation-item_link" href="#">Платья</a><a class="text header__navigation-item header__navigation-item_link" href="#">Рубашки и футболки</a><a class="text header__navigation-item header__navigation-item_link" href="#">Топы и баски</a><a class="text header__navigation-item header__navigation-item_link" href="#">Юбки</a><a class="text header__navigation-item header__navigation-item_link" href="#">Аксессуары</a><a class="text header__navigation-item header__navigation-item_link" href="#">Брюки и шорты</a><a class="text header__navigation-item header__navigation-item_link" href="#">Смотреть все</a><a class="text header__navigation-item header__navigation-item_link" href="#">New</a><a class="text header__navigation-item header__navigation-item_link" href="#">Sale</a><a class="text header__navigation-item header__navigation-item_link" href="#">Sample sale</a><a class="text header__navigation-item header__navigation-item_link" href="#">Предзаказ</a><a class="text header__navigation-item header__navigation-item_link" href="#">Подарочный сертификат</a></div>
+              </div>
+              <div class="header__navigation-items">
+                <p class="ttu header__navigation-item header__navigation-item_title">коллекции<img class="header__navigation-item-icon" src="./img/svg/icon-arrow-down.svg" alt=""></p>
+                <div class="header__navigation-items-menu"><a class="text header__navigation-item header__navigation-item_link" href="#">Посмотреть все</a><a class="text header__navigation-item header__navigation-item_link" href="#">Коллекция круиз</a><a class="text header__navigation-item header__navigation-item_link" href="#">Вечерний образ</a><a class="text header__navigation-item header__navigation-item_link" href="#">Базовая коллекция</a><a class="text header__navigation-item header__navigation-item_link" href="#">Классические силуэты</a><a class="text header__navigation-item header__navigation-item_link" href="#">Свадебный сезон</a></div>
+              </div>
+              <div class="header__navigation-items">
+                <p class="ttu header__navigation-item header__navigation-item_title">поркупателю<img class="header__navigation-item-icon" src="./img/svg/icon-arrow-down.svg" alt=""></p>
+                <div class="header__navigation-items-menu"><a class="text header__navigation-item header__navigation-item_link" href="#">О нас</a><a class="text header__navigation-item header__navigation-item_link" href="#">Магазины</a><a class="text header__navigation-item header__navigation-item_link" href="#">Контакты</a><a class="text header__navigation-item header__navigation-item_link" href="#">Материалы</a></div>
+              </div>
+              <div class="header__navigation-items header__navigation-items_mobile"><a class="ttu header__navigation-item header__navigation-item_title" href="#">О нас</a><a class="ttu header__navigation-item header__navigation-item_title" href="#">Доставка и возврат</a><a class="ttu header__navigation-item header__navigation-item_title" href="#">Контакты</a></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="breadcrumbs breadcrumbs_contacts">
+        <div class="container breadcrumbs__container"><a class="breadcrumbs__item" href="#"> Главная</a><a class="breadcrumbs__item" href="#"> Контакты</a></div>
+      </div>
+      <div class="contacts">
+        <div class="container contacts__container">
+          <p class="title-2 contacts__title">контакты</p>
+          <div class="contacts__top-items">
+            <div class="contacts__top-item contacts__top-item_left">
+              <p class="contacts__top-item-title">Отдел по работе с клиентами</p><a class="contacts__top-item-link" href="tel:+7 (967) 130-55-22"> +7 (967) 130-55-22</a><a class="contacts__top-item-link" href="mailto:shop@postmeridiem-brand.com">shop@postmeridiem-brand.com</a>
+              <p class="contacts__top-item-text">Пн-Пт с 11.00 до 21.00,<br>Сб-Вс и праздничные дни с 11.00 до 20.00</p>
+              <nav class="contacts__top-item-socials">   <a class="contacts__top-item-social" href="#"><img class="contacts__top-item-icon" src="./img/svg/icon-insta-black.svg" alt=""></a><a class="contacts__top-item-social" href="#"><img class="contacts__top-item-icon" src="./img/svg/icon-whatsapp-black.svg" alt=""></a></nav>
+            </div>
+            <div class="contacts__top-item contacts__top-item_center"></div>
+            <div class="contacts__top-item contacts__top-item_right">
+              <p class="contacts__top-item-title">Шоу-рум</p><a class="contacts__top-item-link" href="tel:+7 (969) 198-11-00"> +7 (969) 198-11-00</a>
+              <p class="contacts__top-item-text">Москва, ул. Большая Садовая, д. 5, корпус 2.<br>Бизнес-центр "Сады Пекина"<br><br>Ежедневно, с 11:00 до 21:00</p>
+            </div>
+          </div>
+          <div class="contacts__bottom"> 
+            <p class="title-3 contacts__bottom-title contacts__bottom-title_mobile">Сотрудничество</p>
+            <picture class="contacts__bottom-picture"><img class="contacts__bottom-img" src="./img/contacts.png" alt="" loading="lazy"></picture>
+            <div class="contacts__bottom-content">
+              <p class="title-3 contacts__bottom-title contacts__bottom-title_desktop">Сотрудничество</p>
+              <div class="contacts__bottom-text-links">
+                <p class="text contacts__bottom-text">
+                   Мы в Postmeridiem являемся экспертами по моде. Даже если обычно фильтры являются
+                  небольшими компонентами большей системы, они играют ключевую роль в
+                  производственных характеристиках предприятия, безопасности сотрудников и охране
+                  окружающей среды. Simatek выбирает всесторонний подход. Мы разрабатываем нашу
+                  продукцию и решения для максимальной эффективности, а также подбираем лучшее
+                  финансовое решение.
+                </p>
+                <div class="contacts__bottom-items"> 
+                  <div class="contacts__bottom-item"> 
+                    <p class="text contacts__bottom-item-text">По вопросам сотрудничества: </p><a class="text contacts__bottom-item-link" href="mailto:partners@postmeridiem-brand.com">partners@postmeridiem-brand.com </a>
+                  </div>
+                  <div class="contacts__bottom-item"> 
+                    <p class="text contacts__bottom-item-text">По вопросам PR, публикаций в СМИ и instagram: </p><a class="text contacts__bottom-item-link" href="mailto:pr@postmeridiem-brand.com">pr@postmeridiem-brand.com </a>
+                  </div>
+                  <div class="contacts__bottom-item"> 
+                    <p class="text contacts__bottom-item-text">По вопросам качества предоставляемых услуг: </p><a class="text contacts__bottom-item-link" href="mailto:feedback@postmeridiem-brand.com">feedback@postmeridiem-brand.com </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container footer__container"> 
+          <p class="footer__top-text">Магазин дизайнерской одежды POST MERIDIEM</p>
+          <div class="footer__items">
+            <div class="footer__item-main"><a class="text footer__item-main-logo-link" href="#"> <img class="footer__item-main-logo-img" src="./img/svg/icon-logo.svg" alt="" loading="lazy"></a><a class="text footer__item-main-link" href="tel:+7 (967) 130-55-22">+7 (967) 130-55-22</a><a class="text footer__item-main-link" href="mailto:shop@postmeridiem-brand.com">shop@postmeridiem-brand.com</a>
+              <p class="text footer__item-main-text">Москва, ул. Большая Садовая, д. 5, корпус 2. </p>
+            </div>
+            <div class="footer__item-navs"> 
+              <nav class="footer__item-nav footer__item-nav_desktop"><a class="footer__item-nav-item" href="#">О компании</a><a class="footer__item-nav-item" href="#">Шоу-рум</a><a class="footer__item-nav-item" href="#">Контакты</a><a class="footer__item-nav-item" href="#">Материалы</a></nav>
+              <nav class="footer__item-nav footer__item-nav_desktop"><a class="footer__item-nav-item" href="#">Заказ и доставка</a><a class="footer__item-nav-item" href="#">Обмен и возврат</a><a class="footer__item-nav-item" href="#">Вопросы и ответы</a></nav>
+              <nav class="footer__item-nav footer__item-nav_mobile"><a class="footer__item-nav-item" href="#">о нас</a><a class="footer__item-nav-item" href="#">доставка и возврта</a><a class="footer__item-nav-item" href="#">контакты</a></nav>
+            </div>
+            <form class="footer__item-form">
+              <div class="ui-input2 footer__item-form-input-wrapper">
+                <input class="footer__item-form-input" type="text" placeholder="Подписаться на рассылку"><img class="footer__item-form-input-icon" src="./img/svg/icon-middle-right.svg" alt="">
+              </div>
+              <p class="footer__item-form-text">Будьте в курсе наших акиций и поступлений!</p>
+            </form>
+          </div>
+          <nav class="footer__copyright"> <a class="footer__copyright-item" href="#">Публичная оферта </a><a class="footer__copyright-item" href="#">Политика конфиденциальности</a></nav>
+        </div>
+      </footer>
+    </main>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
