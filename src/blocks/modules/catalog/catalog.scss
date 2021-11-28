@@ -8,6 +8,8 @@
     margin-bottom: 67px;
     @include media("<=768px") {
       margin-bottom: 53px;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
@@ -56,8 +58,56 @@
       padding-left: 0;
     }
     @include media("<=991px") {
+      padding-top: 25px;
     }
     @include media("<=768px") {
+    }
+  }
+
+  &__main-collection {
+    display: grid;
+    grid-template-columns: minmax(300px, 538px) minmax(300px, 1fr);
+    column-gap: 39px;
+    margin-bottom: 51px;
+    @include media("<=768px") {
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  &__main-collection-picture {
+    @include media("<=768px") {
+    }
+  }
+  &__main-collection-img {
+    display: block;
+    @include media("<=768px") {
+    }
+  }
+  &__main-collection-content {
+    text-align: left;
+    @include media("<=768px") {
+    }
+  }
+  &__main-collection-title {
+    margin-bottom: 54px;
+    @include media("<=768px") {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+  &__main-collection-text {
+    font-size: 13px;
+    line-height: 150%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #5c5c5c;
+    @include media("<=768px") {
+      padding-left: 15px;
+      padding-right: 15px;
+      text-align: center;
+      margin-bottom: 20px;
     }
   }
 
@@ -96,6 +146,9 @@
       //   background-color: #a0a0a0;
       // }
     }
+    @include media("<=768px") {
+      display: none;
+    }
   }
 
   &__main-filter {
@@ -130,7 +183,10 @@
     @include media("<=768px") {
       display: flex;
       justify-content: center;
+      padding-left: 15px;
+      padding-right: 15px;
     }
+    
   }
 
   &__main-size-title {
@@ -177,6 +233,8 @@
       gap: 20px 10px;
     }
     @include media("<=768px") {
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 
@@ -191,6 +249,10 @@
     @include media("<=991px") {
       display: block;
       text-align: center;
+    }
+    @include media("<=768px") {
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
   &__main-show-more-btn {
