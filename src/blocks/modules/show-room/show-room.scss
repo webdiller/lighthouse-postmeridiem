@@ -14,8 +14,7 @@
   &__slide {
     display: grid;
     grid-template-columns: minmax(300px, 538px) minmax(350px, 427px);
-    justify-content: space-between;
-    column-gap: 133px;
+    column-gap: 115px;
     @include media("<=991px") {
       grid-template-columns: minmax(300px, 538px) minmax(250px, 427px);
       column-gap: 50px;
@@ -91,7 +90,7 @@
   &__title-arrow {
     display: none;
     @include media("<=768px") {
-      display: block;
+      display: flex;
       max-width: 280px;
       margin-left: auto;
       margin-right: auto;

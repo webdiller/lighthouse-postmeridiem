@@ -8,14 +8,16 @@ const materialsSlider = new Swiper(".js-materials-swiper", {
       slidesPerView: 2.4,
     },
     768: {
-      spaceBetween: 20,
+      spaceBetween: 10,
       slidesPerView: 3.4,
     },
     991: {
+      spaceBetween: 20,
       slidesPerView: 3,
       centeredSlides: false,
     },
     1200: {
+      spaceBetween: 20,
       draggable: false,
       centeredSlides: false,
       slidesPerView: 3,

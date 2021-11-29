@@ -116,14 +116,16 @@ try {
         slidesPerView: 2.4
       },
       768: {
-        spaceBetween: 20,
+        spaceBetween: 10,
         slidesPerView: 3.3
       },
       991: {
+        spaceBetween: 20,
         slidesPerView: 3,
         centeredSlides: false
       },
       1200: {
+        spaceBetween: 20,
         centeredSlides: false,
         slidesPerView: 2.8,
         loop: false
@@ -141,6 +143,17 @@ try {
 /*!*************************************************!*\
   !*** ./src/blocks/modules/contacts/contacts.js ***!
   \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/blocks/modules/delivery-payment/delivery-payment.js":
+/*!*****************************************************************!*\
+  !*** ./src/blocks/modules/delivery-payment/delivery-payment.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -231,10 +244,11 @@ try {
         slidesPerView: 2.4
       },
       768: {
-        spaceBetween: 20,
+        spaceBetween: 10,
         slidesPerView: 3.4
       },
       991: {
+        spaceBetween: 20,
         slidesPerView: 3,
         centeredSlides: false
       }
@@ -261,14 +275,16 @@ var materialsSlider = new Swiper(".js-materials-swiper", {
       slidesPerView: 2.4
     },
     768: {
-      spaceBetween: 20,
+      spaceBetween: 10,
       slidesPerView: 3.4
     },
     991: {
+      spaceBetween: 20,
       slidesPerView: 3,
       centeredSlides: false
     },
     1200: {
+      spaceBetween: 20,
       draggable: false,
       centeredSlides: false,
       slidesPerView: 3,
@@ -455,6 +471,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_qan_qan__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modules_qan_qan__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _modules_exchange_exchange__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! %modules%/exchange/exchange */ "./src/blocks/modules/exchange/exchange.js");
 /* harmony import */ var _modules_exchange_exchange__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_modules_exchange_exchange__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _modules_delivery_payment_delivery_payment__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! %modules%/delivery-payment/delivery-payment */ "./src/blocks/modules/delivery-payment/delivery-payment.js");
+/* harmony import */ var _modules_delivery_payment_delivery_payment__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_modules_delivery_payment_delivery_payment__WEBPACK_IMPORTED_MODULE_13__);
+
 
 
 

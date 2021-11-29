@@ -99,8 +99,6 @@ input {
   text-transform: uppercase;
   color: #2c2c2c;
   @include media("<=991px") {
-  }
-  @include media("<=768px") {
     font-size: 24px;
     line-height: 110%;
   }
@@ -116,6 +114,21 @@ input {
   @include media("<=768px") {
     font-size: 18px;
     line-height: 130%;
+  }
+}
+
+.title-4 {
+  font-family: "MontserratDev";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #000000;
+  @include media("<=768px") {
+    font-size: 13px;
+    line-height: 150%;
+    text-transform: none;
   }
 }
 
@@ -717,6 +730,21 @@ input {
 .show-block-768 {
   display: none !important;
   @include media("<=768px") {
+    display: block !important;
+  }
+}
+
+
+
+.hide-991 {
+  @include media("<=991px") {
+    display: none !important;
+  }
+}
+
+.show-block-991 {
+  display: none !important;
+  @include media("<=991px") {
     display: block !important;
   }
 }

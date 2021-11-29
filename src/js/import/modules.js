@@ -11,3 +11,4 @@ import "%modules%/catalog/catalog";
 import "%modules%/contacts/contacts";
 import "%modules%/qan/qan";
 import "%modules%/exchange/exchange";
+import "%modules%/delivery-payment/delivery-payment";

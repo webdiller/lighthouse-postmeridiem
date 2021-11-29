@@ -1,0 +1,180 @@
+.qan
+    .container.qan__container 
+
+        p.title-2.qan__title 
+            span.hide-991 Варианты доставки и оплата
+            span.show-block-991 Варианты доставки
+
+        //- Для десктопа
+        .qan__items.qan__items_desktop-alt.js-qan-desktop
+
+            .qan__questions
+                button.qan__question.active(data-question="1")
+                    span.text.qan__question-text Курьерская доставка по Москве с примеркой
+                    span.text.qan__question-price 500 ₽
+
+                button.qan__question(data-question="2")
+                    span.text.qan__question-text Курьерская доставка без примерки
+                    span.text.qan__question-price  от 350 ₽
+
+                button.qan__question(data-question="3") 
+                    span.text.qan__question-text Доставка в регионы до двери
+                    span.text.qan__question-price от 390 ₽
+
+                button.qan__question(data-question="4") 
+                    span.text.qan__question-text Доставка в регионы до пункта выдачи
+                    span.text.qan__question-price от 290 ₽
+
+                button.qan__question(data-question="5") 
+                    span.text.qan__question-text Международная доставка 1-6 рабочих дней
+                    span.text.qan__question-price от 900 ₽
+
+            .qan__answers
+                .qan__answer.active(data-answer="1")
+                    p.title-4.qan__answer-title Условия доставки 
+                    p.text.qan__answer-text 
+                        | Современные технологии достигли такого уровня, что перспективное планирование, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для соответствующих условий активизации.
+                    .qan__answer-keys-values
+                        .qan__answer-keys-values-item
+                            p.text.qan__answer-key.qan__answer-key_date Сроки:
+                            p.text.qan__answer-value 1-2 дня
+                        .qan__answer-keys-values-item
+                            p.text.qan__answer-key.qan__answer-key_payment Оплата:
+                            p.text.qan__answer-value Оплата банковской картой при получении
+
+
+                .qan__answer(data-answer="2")
+                    p.title-4.qan__answer-title Условия доставки 2
+                    p.text.qan__answer-text 
+                        | Современные технологии достигли такого уровня, что перспективное планирование, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для соответствующих условий активизации.
+                    .qan__answer-keys-values
+                        .qan__answer-keys-values-item
+                            p.text.qan__answer-key.qan__answer-key_date Сроки:
+                            p.text.qan__answer-value 1-2 дня
+                        .qan__answer-keys-values-item
+                            p.text.qan__answer-key.qan__answer-key_payment Оплата:
+                            p.text.qan__answer-value Оплата банковской картой при получении
+
+                .qan__answer(data-answer="3")
+                    p.title-4.qan__answer-title Условия доставки 3
+                    p.text.qan__answer-text 
+                        | Современные технологии достигли такого уровня, что перспективное планирование, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для соответствующих условий активизации.
+                    .qan__answer-keys-values
+                        .qan__answer-keys-values-item
+                            p.text.qan__answer-key.qan__answer-key_date Сроки:
+                            p.text.qan__answer-value 1-2 дня
+                        .qan__answer-keys-values-item
+                            p.text.qan__answer-key.qan__answer-key_payment Оплата:
+                            p.text.qan__answer-value Оплата банковской картой при получении
+
+                .qan__answer(data-answer="4")
+                    p.title-4.qan__answer-title Условия доставки 4
+                    p.text.qan__answer-text 
+                        | Современные технологии достигли такого уровня, что перспективное планирование, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для соответствующих условий активизации.
+                    .qan__answer-keys-values
+                        .qan__answer-keys-values-item
+                            p.text.qan__answer-key.qan__answer-key_date Сроки:
+                            p.text.qan__answer-value 1-2 дня
+                        .qan__answer-keys-values-item
+                            p.text.qan__answer-key.qan__answer-key_payment Оплата:
+                            p.text.qan__answer-value Оплата банковской картой при получении
+
+                .qan__answer(data-answer="5")
+                    p.title-4.qan__answer-title Условия доставки 5
+                    p.text.qan__answer-text 
+                        | Современные технологии достигли такого уровня, что перспективное планирование, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для соответствующих условий активизации.
+                    .qan__answer-keys-values
+                        .qan__answer-keys-values-item
+                            p.text.qan__answer-key.qan__answer-key_date Сроки:
+                            p.text.qan__answer-value 1-2 дня
+                        .qan__answer-keys-values-item
+                            p.text.qan__answer-key.qan__answer-key_payment Оплата:
+                            p.text.qan__answer-value Оплата банковской картой при получении
+
+        //- Для мобилки
+        .qan__items.qan__items_mobile.js-qan-mobile
+
+            .qan__item.qan__item_delivery-payment
+                p.text.qan__item-price 500 ₽
+                input.qan__item-input-title(type="checkbox" checked id="q1")
+                label.qan__item-label-title(for="q1") Курьерская доставка по Москве с примеркой
+                    img.qan__item-question-img(src="./img/svg/icon-arrow-down.svg" alt="")
+                .qan__item-content
+                    p.text.qan__item-title Условия доставки 
+                    p.text.qan__item-text 
+                        | Современные технологии достигли такого уровня, что перспективное планирование, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для соответствующих условий активизации.
+                    .qan__item-keys-values
+                        .qan__item-keys-values-item
+                            p.text.qan__item-key.qan__item-key_date Сроки:
+                            p.text.qan__item-value 1-2 дня
+                        .qan__item-keys-values-item
+                            p.text.qan__item-key.qan__item-key_payment Оплата:
+                            p.text.qan__item-value Оплата банковской картой при получении
+
+            .qan__item.qan__item_delivery-payment
+                p.text.qan__item-price от 350 ₽
+                input.qan__item-input-title(type="checkbox" id="q2")
+                label.qan__item-label-title(for="q2") Курьерская доставка по Москве с примеркой
+                    img.qan__item-question-img(src="./img/svg/icon-arrow-down.svg" alt="")
+                .qan__item-content
+                    p.text.qan__item-title Курьерская доставка без примерки
+                    p.text.qan__item-text 
+                        | Современные технологии достигли такого уровня, что перспективное планирование, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для соответствующих условий активизации.
+                    .qan__item-keys-values
+                        .qan__item-keys-values-item
+                            p.text.qan__item-key.qan__item-key_date Сроки:
+                            p.text.qan__item-value 1-2 дня
+                        .qan__item-keys-values-item
+                            p.text.qan__item-key.qan__item-key_payment Оплата:
+                            p.text.qan__item-value Оплата банковской картой при получении
+
+            .qan__item.qan__item_delivery-payment
+                p.text.qan__item-price от 390 ₽
+                input.qan__item-input-title(type="checkbox" id="q3")
+                label.qan__item-label-title(for="q3") Курьерская доставка по Москве с примеркой
+                    img.qan__item-question-img(src="./img/svg/icon-arrow-down.svg" alt="")
+                .qan__item-content
+                    p.text.qan__item-title Доставка в регионы до двери
+                    p.text.qan__item-text 
+                        | Современные технологии достигли такого уровня, что перспективное планирование, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для соответствующих условий активизации.
+                    .qan__item-keys-values
+                        .qan__item-keys-values-item
+                            p.text.qan__item-key.qan__item-key_date Сроки:
+                            p.text.qan__item-value 1-2 дня
+                        .qan__item-keys-values-item
+                            p.text.qan__item-key.qan__item-key_payment Оплата:
+                            p.text.qan__item-value Оплата банковской картой при получении
+
+            .qan__item.qan__item_delivery-payment
+                p.text.qan__item-price от 290 ₽
+                input.qan__item-input-title(type="checkbox" id="q4")
+                label.qan__item-label-title(for="q4") Доставка в регионы до пункта выдачи
+                    img.qan__item-question-img(src="./img/svg/icon-arrow-down.svg" alt="")
+                .qan__item-content
+                    p.text.qan__item-title Доставка в регионы до двери
+                    p.text.qan__item-text 
+                        | Современные технологии достигли такого уровня, что перспективное планирование, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для соответствующих условий активизации.
+                    .qan__item-keys-values
+                        .qan__item-keys-values-item
+                            p.text.qan__item-key.qan__item-key_date Сроки:
+                            p.text.qan__item-value 1-2 дня
+                        .qan__item-keys-values-item
+                            p.text.qan__item-key.qan__item-key_payment Оплата:
+                            p.text.qan__item-value Оплата банковской картой при получении
+
+            .qan__item.qan__item_delivery-payment
+                p.text.qan__item-price от 900 ₽
+                input.qan__item-input-title(type="checkbox" id="q4")
+                label.qan__item-label-title(for="q4") Доставка в регионы до пункта выдачи
+                    img.qan__item-question-img(src="./img/svg/icon-arrow-down.svg" alt="")
+                .qan__item-content
+                    p.text.qan__item-title Международная доставка 1-6 рабочих дней
+                    p.text.qan__item-text 
+                        | Современные технологии достигли такого уровня, что перспективное планирование, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для соответствующих условий активизации.
+                    .qan__item-keys-values
+                        .qan__item-keys-values-item
+                            p.text.qan__item-key.qan__item-key_date Сроки:
+                            p.text.qan__item-value 1-2 дня
+                        .qan__item-keys-values-item
+                            p.text.qan__item-key.qan__item-key_payment Оплата:
+                            p.text.qan__item-value Оплата банковской картой при получении
