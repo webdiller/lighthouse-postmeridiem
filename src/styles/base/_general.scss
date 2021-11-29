@@ -194,7 +194,6 @@ input {
   color: $accent;
   @include media("<=991px") {
     font-size: 13px;
-    line-height: 19px;
   }
 
   &_type-1 {

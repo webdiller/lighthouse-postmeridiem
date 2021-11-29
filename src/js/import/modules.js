@@ -8,6 +8,7 @@ import "%modules%/product-card/product-card";
 import "%modules%/product-ordering/product-ordering";
 import "%modules%/user-cart/user-cart";
 import "%modules%/catalog/catalog";
+import "%modules%/about/about";
 import "%modules%/contacts/contacts";
 import "%modules%/qan/qan";
 import "%modules%/exchange/exchange";

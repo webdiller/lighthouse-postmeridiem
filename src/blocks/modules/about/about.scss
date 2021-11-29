@@ -1,0 +1,168 @@
+.about {
+  &__container {
+    @include media("<=768px") {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.about-first {
+  @include media("<=991px") {
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: minmax(200px, 532px) 421px;
+    column-gap: 125px;
+    @include media("<=991px") {
+      column-gap: 25px;
+    }
+    @include media("<=768px") {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 114px;
+    text-align: left;
+    color: #000000;
+    @include media("<=768px") {
+      order: 1;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    &_mobile {
+      display: none;
+      @include media("<=768px") {
+        display: block;
+      }
+    }
+
+    &_desktop {
+      @include media("<=768px") {
+        display: none;
+      }
+    }
+  }
+
+  &__picture {
+    @include media("<=768px") {
+      order: 3;
+    }
+  }
+
+  &__img {
+    display: block;
+    @include media("<=768px") {
+    }
+  }
+
+  &__content {
+    text-align: left;
+    @include media("<=768px") {
+      order: 2;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text {
+    color: #5c5c5c;
+    @include media("<=991px") {
+    }
+  }
+}
+
+.about-second {
+  &__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(500px, 647px);
+    margin-top: 144px;
+    margin-bottom: 123px;
+    @include media("<=768px") {
+      margin-top: 30px;
+      margin-bottom: 50px;
+      display: block;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__items {
+  }
+
+  &__content {
+    position: relative;
+    z-index: 10;
+    text-align: left;
+    margin-bottom: 38px;
+    padding-left: 112px;
+    @include media("<=768px") {
+      padding: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 21px;
+    @include media("<=768px") {
+      display: none;
+    }
+  }
+
+  &__text {
+    color: #5c5c5c;
+    line-height: 150%;
+    @include media("<=768px") {
+      margin-bottom: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &__text-desktop {
+    @include media("<=768px") {
+      display: none;
+    }
+  }
+
+  &__text-mobile {
+    display: none;
+    @include media("<=768px") {
+      display: block;
+    }
+  }
+
+  &__picture-1 {
+  }
+
+  &__img-1 {
+    display: block;
+    height: 391px;
+    @include media("<=768px") {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+    @include media("<=1200px") {
+      width: 30%;
+    }
+    @include media("<=768px") {
+      display: none;
+    }
+  }
+}

@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/blocks/modules/about/about.js":
+/*!*******************************************!*\
+  !*** ./src/blocks/modules/about/about.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./src/blocks/modules/catalog/catalog.js":
 /*!***********************************************!*\
   !*** ./src/blocks/modules/catalog/catalog.js ***!
@@ -518,18 +529,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_user_cart_user_cart__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_user_cart_user_cart__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _modules_catalog_catalog__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/catalog/catalog */ "./src/blocks/modules/catalog/catalog.js");
 /* harmony import */ var _modules_catalog_catalog__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_catalog_catalog__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! %modules%/contacts/contacts */ "./src/blocks/modules/contacts/contacts.js");
-/* harmony import */ var _modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _modules_qan_qan__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! %modules%/qan/qan */ "./src/blocks/modules/qan/qan.js");
-/* harmony import */ var _modules_qan_qan__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modules_qan_qan__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _modules_exchange_exchange__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! %modules%/exchange/exchange */ "./src/blocks/modules/exchange/exchange.js");
-/* harmony import */ var _modules_exchange_exchange__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_modules_exchange_exchange__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _modules_delivery_payment_delivery_payment__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! %modules%/delivery-payment/delivery-payment */ "./src/blocks/modules/delivery-payment/delivery-payment.js");
-/* harmony import */ var _modules_delivery_payment_delivery_payment__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_modules_delivery_payment_delivery_payment__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _modules_modal_product_added_modal_product_added__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! %modules%/modal-product-added/modal-product-added */ "./src/blocks/modules/modal-product-added/modal-product-added.js");
-/* harmony import */ var _modules_modal_product_added_modal_product_added__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_modules_modal_product_added_modal_product_added__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _modules_modal_get_discount_modal_get_discount__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! %modules%/modal-get-discount/modal-get-discount */ "./src/blocks/modules/modal-get-discount/modal-get-discount.js");
-/* harmony import */ var _modules_modal_get_discount_modal_get_discount__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_modules_modal_get_discount_modal_get_discount__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _modules_about_about__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! %modules%/about/about */ "./src/blocks/modules/about/about.js");
+/* harmony import */ var _modules_about_about__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_about_about__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! %modules%/contacts/contacts */ "./src/blocks/modules/contacts/contacts.js");
+/* harmony import */ var _modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _modules_qan_qan__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! %modules%/qan/qan */ "./src/blocks/modules/qan/qan.js");
+/* harmony import */ var _modules_qan_qan__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_modules_qan_qan__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _modules_exchange_exchange__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! %modules%/exchange/exchange */ "./src/blocks/modules/exchange/exchange.js");
+/* harmony import */ var _modules_exchange_exchange__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_modules_exchange_exchange__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _modules_delivery_payment_delivery_payment__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! %modules%/delivery-payment/delivery-payment */ "./src/blocks/modules/delivery-payment/delivery-payment.js");
+/* harmony import */ var _modules_delivery_payment_delivery_payment__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_modules_delivery_payment_delivery_payment__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _modules_modal_product_added_modal_product_added__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! %modules%/modal-product-added/modal-product-added */ "./src/blocks/modules/modal-product-added/modal-product-added.js");
+/* harmony import */ var _modules_modal_product_added_modal_product_added__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_modules_modal_product_added_modal_product_added__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _modules_modal_get_discount_modal_get_discount__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! %modules%/modal-get-discount/modal-get-discount */ "./src/blocks/modules/modal-get-discount/modal-get-discount.js");
+/* harmony import */ var _modules_modal_get_discount_modal_get_discount__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_modules_modal_get_discount_modal_get_discount__WEBPACK_IMPORTED_MODULE_16__);
+
 
 
 
