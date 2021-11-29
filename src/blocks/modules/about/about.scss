@@ -166,3 +166,80 @@
     }
   }
 }
+
+.about-fourth {
+  &__container {
+    display: grid;
+    grid-template-columns: minmax(500px, 650px) minmax(350px, 538px);
+    column-gap: 50px;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    @include media("<=991px") {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: #000000;
+    @include media("<=991px") {
+      margin-bottom: 30px;
+      order: 1;
+      text-align: center;
+    }
+    &_mobile {
+      display: none;
+      @include media("<=991px") {
+        display: block;
+      }
+    }
+
+    &_desktop {
+      @include media("<=991px") {
+        display: none;
+      }
+    }
+  }
+
+  &__content {
+    align-self: center;
+    text-align: left;
+    padding-left: 112px;
+
+    @include media("<=991px") {
+      padding-left: 0;
+      order: 3;
+      @include media("<=768px") {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+
+  &__texts {
+  }
+
+  &__text {
+    color: #5c5c5c;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__picture {
+    @include media("<=991px") {
+      order: 2;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    @include media("<=991px") {
+      margin-bottom: 30px;
+    }
+  }
+}
