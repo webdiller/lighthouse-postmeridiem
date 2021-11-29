@@ -295,6 +295,28 @@ var materialsSlider = new Swiper(".js-materials-swiper", {
 
 /***/ }),
 
+/***/ "./src/blocks/modules/modal-get-discount/modal-get-discount.js":
+/*!*********************************************************************!*\
+  !*** ./src/blocks/modules/modal-get-discount/modal-get-discount.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+try {
+  var modalGetDiscount = document.querySelector(".js-modal-get-discount");
+  var modalGetDiscountCloseButton = document.querySelector(".js-modal-get-discount-close-btn");
+  modalGetDiscountCloseButton.addEventListener("click", function (e) {
+    modalGetDiscount.classList.remove("active");
+  });
+  modalGetDiscount.addEventListener("click", function (e) {
+    if (e.target === modalGetDiscount) {
+      modalGetDiscount.classList.remove("active");
+    }
+  });
+} catch (error) {}
+
+/***/ }),
+
 /***/ "./src/blocks/modules/modal-product-added/modal-product-added.js":
 /*!***********************************************************************!*\
   !*** ./src/blocks/modules/modal-product-added/modal-product-added.js ***!
@@ -302,7 +324,27 @@ var materialsSlider = new Swiper(".js-materials-swiper", {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+try {
+  var addProductToUserCartButtons = document.querySelectorAll("[data-type='addProductToUserCart']");
+  var modalProductAdded = document.querySelector(".js-modal-product-added");
+  var modalProductAddedCloseButton = document.querySelector(".js-modal-product-added-close-btn");
 
+  if (addProductToUserCartButtons.length > 0) {
+    addProductToUserCartButtons.forEach(function (item) {
+      item.addEventListener("click", function (e) {
+        modalProductAdded.classList.add("active");
+      });
+    });
+  }
+
+  modalProductAdded.addEventListener("click", function (e) {
+    if (e.target === modalProductAdded) {
+      modalProductAdded.classList.remove("active");
+    } else if (e.target === modalProductAddedCloseButton) {
+      modalProductAdded.classList.remove("active");
+    }
+  });
+} catch (error) {}
 
 /***/ }),
 
@@ -486,6 +528,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_delivery_payment_delivery_payment__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_modules_delivery_payment_delivery_payment__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var _modules_modal_product_added_modal_product_added__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! %modules%/modal-product-added/modal-product-added */ "./src/blocks/modules/modal-product-added/modal-product-added.js");
 /* harmony import */ var _modules_modal_product_added_modal_product_added__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_modules_modal_product_added_modal_product_added__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _modules_modal_get_discount_modal_get_discount__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! %modules%/modal-get-discount/modal-get-discount */ "./src/blocks/modules/modal-get-discount/modal-get-discount.js");
+/* harmony import */ var _modules_modal_get_discount_modal_get_discount__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_modules_modal_get_discount_modal_get_discount__WEBPACK_IMPORTED_MODULE_15__);
+
 
 
 
@@ -531,28 +576,6 @@ if (uiInputs.length > 0) {
     });
   });
 }
-
-try {
-  var addProductToUserCartButtons = document.querySelectorAll("[data-type='addProductToUserCart']");
-  var modalProductAdded = document.querySelector(".js-modal-product-added");
-  var modalProductAddedCloseButton = document.querySelector(".js-modal-product-added-close-btn");
-
-  if (addProductToUserCartButtons.length > 0) {
-    addProductToUserCartButtons.forEach(function (item) {
-      item.addEventListener("click", function (e) {
-        modalProductAdded.classList.add("active");
-      });
-    });
-  }
-
-  modalProductAdded.addEventListener("click", function (e) {
-    if (e.target === modalProductAdded) {
-      modalProductAdded.classList.remove("active");
-    } else if (e.target === modalProductAddedCloseButton) {
-      modalProductAdded.classList.remove("active");
-    }
-  });
-} catch (error) {}
 
 /***/ })
 
