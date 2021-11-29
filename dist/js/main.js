@@ -295,6 +295,17 @@ var materialsSlider = new Swiper(".js-materials-swiper", {
 
 /***/ }),
 
+/***/ "./src/blocks/modules/modal-product-added/modal-product-added.js":
+/*!***********************************************************************!*\
+  !*** ./src/blocks/modules/modal-product-added/modal-product-added.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./src/blocks/modules/product-card/product-card.js":
 /*!*********************************************************!*\
   !*** ./src/blocks/modules/product-card/product-card.js ***!
@@ -473,6 +484,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_exchange_exchange__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_modules_exchange_exchange__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var _modules_delivery_payment_delivery_payment__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! %modules%/delivery-payment/delivery-payment */ "./src/blocks/modules/delivery-payment/delivery-payment.js");
 /* harmony import */ var _modules_delivery_payment_delivery_payment__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_modules_delivery_payment_delivery_payment__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _modules_modal_product_added_modal_product_added__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! %modules%/modal-product-added/modal-product-added */ "./src/blocks/modules/modal-product-added/modal-product-added.js");
+/* harmony import */ var _modules_modal_product_added_modal_product_added__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_modules_modal_product_added_modal_product_added__WEBPACK_IMPORTED_MODULE_14__);
+
 
 
 
@@ -517,6 +531,28 @@ if (uiInputs.length > 0) {
     });
   });
 }
+
+try {
+  var addProductToUserCartButtons = document.querySelectorAll("[data-type='addProductToUserCart']");
+  var modalProductAdded = document.querySelector(".js-modal-product-added");
+  var modalProductAddedCloseButton = document.querySelector(".js-modal-product-added-close-btn");
+
+  if (addProductToUserCartButtons.length > 0) {
+    addProductToUserCartButtons.forEach(function (item) {
+      item.addEventListener("click", function (e) {
+        modalProductAdded.classList.add("active");
+      });
+    });
+  }
+
+  modalProductAdded.addEventListener("click", function (e) {
+    if (e.target === modalProductAdded) {
+      modalProductAdded.classList.remove("active");
+    } else if (e.target === modalProductAddedCloseButton) {
+      modalProductAdded.classList.remove("active");
+    }
+  });
+} catch (error) {}
 
 /***/ })
 

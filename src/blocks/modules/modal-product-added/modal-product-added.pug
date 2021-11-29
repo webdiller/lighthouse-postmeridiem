@@ -1,0 +1,28 @@
+.modal-product-added.js-modal-product-added    
+    .modal-product-added__container
+        button.modal-product-added__close-btn.js-modal-product-added-close-btn
+            img.modal-product-added__close-img(src="./img/svg/icon-close.svg", alt="")
+        p.title-2.modal-product-added__title Спасибо!
+        p.text.modal-product-added__subtitle Товар успешно добавлен в корзину.
+        
+        .ui-card.ui-card_small.modal-product-added__card
+                .ui-card__container
+                    picture.ui-card__picture 
+                        img(src='./img/ui-card-1.png' alt="" loading="lazy").ui-card__img
+                    .ui-card__content
+                        p.text.ui-card__name Платье-миди на прямом корсете
+                        p.text.ui-card__code Артикул: 00001868
+                        .ui-card__sizes-and-colors
+                            .ui-card__sizes
+                                p.text.ui-card__size XS
+                            .ui-card__colors
+                                p.ui-card__color(style="--bgColor:#03A3BD")
+                        .ui-card__prices-and-delete 
+                            p.ui-card__price 14 000 ₽
+                            p.ui-card__delete удалить
+
+        button.btn-link.btn-link_fill-black.modal-product-added__btn Оформить заказ
+
+        a.text.modal-product-added__bottom-text(href="/catalog-page.html") Продолжить покупки
+        
+        img.modal-product-added__bg-image(src="./img/modal-product-added.png", alt="")

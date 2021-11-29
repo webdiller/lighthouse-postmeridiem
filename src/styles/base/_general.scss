@@ -18,6 +18,7 @@ h6 {
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  min-width: 320px;
 }
 
 a,
@@ -276,60 +277,19 @@ input {
 .ui-card {
   &__container {
     display: flex;
-    @include media("<=1200px") {
-    }
-    @include media("<=991px") {
-      display: block;
-    }
-    @include media("<=768px") {
-    }
-    @include media("<=480px") {
-    }
-  }
-
-  &__picture {
-    @include media("<=1200px") {
-    }
-    @include media("<=991px") {
-    }
-    @include media("<=768px") {
-    }
-    @include media("<=480px") {
-    }
   }
 
   &__img {
     max-height: 133px;
     width: auto;
     display: block;
-    @include media("<=1200px") {
-    }
-    @include media("<=991px") {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      max-height: unset;
-      margin-bottom: 10px;
-    }
-    @include media("<=768px") {
-    }
-    @include media("<=480px") {
-    }
   }
 
   &__content {
     display: flex;
     flex-direction: column;
+    text-align: left;
     margin-left: 97px;
-    @include media("<=1200px") {
-    }
-    @include media("<=991px") {
-      margin-left: 0;
-    }
-    @include media("<=768px") {
-    }
-    @include media("<=480px") {
-    }
   }
 
   &__name {
@@ -337,17 +297,6 @@ input {
     font-weight: bold;
     font-size: 13px;
     line-height: 150%;
-    @include media("<=1200px") {
-    }
-    @include media("<=991px") {
-    }
-    @include media("<=768px") {
-      order: 1;
-      font-weight: 400;
-      text-align: center;
-    }
-    @include media("<=480px") {
-    }
   }
 
   &__code {
@@ -356,14 +305,8 @@ input {
     line-height: 150%;
     font-feature-settings: "pnum" on, "lnum" on;
     color: #a0a0a0;
-    @include media("<=1200px") {
-    }
-    @include media("<=991px") {
-    }
     @include media("<=768px") {
       display: none;
-    }
-    @include media("<=480px") {
     }
   }
 
@@ -371,31 +314,12 @@ input {
     display: flex;
     align-items: center;
     margin-bottom: 25px;
-    @include media("<=1200px") {
-    }
-    @include media("<=991px") {
-    }
-    @include media("<=768px") {
-      margin-bottom: 0;
-      justify-content: space-between;
-      order: 3;
-    }
-    @include media("<=480px") {
-    }
   }
 
   &__sizes {
     display: flex;
     align-items: center;
     margin-right: 20px;
-    @include media("<=1200px") {
-    }
-    @include media("<=991px") {
-    }
-    @include media("<=768px") {
-    }
-    @include media("<=480px") {
-    }
   }
 
   &__size {
@@ -403,27 +327,11 @@ input {
     line-height: 150%;
     font-feature-settings: "pnum" on, "lnum" on;
     color: #5c5c5c;
-    @include media("<=1200px") {
-    }
-    @include media("<=991px") {
-    }
-    @include media("<=768px") {
-    }
-    @include media("<=480px") {
-    }
   }
 
   &__colors {
     display: flex;
     align-items: center;
-    @include media("<=1200px") {
-    }
-    @include media("<=991px") {
-    }
-    @include media("<=768px") {
-    }
-    @include media("<=480px") {
-    }
   }
 
   &__color {
@@ -433,13 +341,22 @@ input {
     border-radius: 50%;
     border: 1px solid $greyLight;
     background-color: var(--bgColor);
-    @include media("<=1200px") {
-    }
-    @include media("<=991px") {
-    }
+  }
+
+  &__prices-and-delete {
+    display: inline-flex;
+    align-items: center;
+    margin-top: auto;
+  }
+
+  &__delete {
+    margin-left: 64px;
+    font-size: 12px;
+    line-height: 150%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #a0a0a0;
     @include media("<=768px") {
-    }
-    @include media("<=480px") {
+      margin-left: auto;
     }
   }
 
@@ -452,16 +369,103 @@ input {
     letter-spacing: 0.15em;
     font-feature-settings: "pnum" on, "lnum" on;
     color: #000000;
-    @include media("<=1200px") {
+  }
+
+  &_search {
+    .ui-card__container {
+      @include media("<=991px") {
+        display: block;
+      }
     }
-    @include media("<=991px") {
+
+    .ui-card__img {
+      @include media("<=991px") {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        max-height: unset;
+        margin-bottom: 10px;
+      }
+      @include media("<=576px") {
+        margin-bottom: 5px;
+      }
     }
-    @include media("<=768px") {
-      text-align: center;
-      order: 2;
-      margin-bottom: 10px;
+
+    .ui-card__content {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin-left: 97px;
+      @include media("<=991px") {
+        flex-direction: column;
+        margin-left: 0;
+      }
     }
-    @include media("<=480px") {
+
+    .ui-card__name {
+      @include media("<=768px") {
+        order: 1;
+        font-weight: 400;
+        text-align: center;
+      }
+      @include media("<=576px") {
+        font-size: 9px;
+        line-height: 150%;
+      }
+    }
+
+    .ui-card__price {
+      @include media("<=768px") {
+        order: 2;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: normal;
+      }
+
+      @include media("<=576px") {
+        font-size: 10px;
+        line-height: 150%;
+      }
+    }
+
+    .ui-card__sizes-and-colors {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      @include media("<=768px") {
+        margin-bottom: 0;
+        justify-content: space-between;
+        order: 3;
+      }
+    }
+
+    .ui-card__color {
+      @include media("<=576px") {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+
+  &_small {
+    .ui-card__img {
+      min-width: 106px;
+    }
+    .ui-card__content {
+      @include media("<=768px") {
+        margin-left: 19px;
+      }
+    }
+    .ui-card__size {
+      font-size: 15px;
+    }
+    .ui-card__price {
+      font-weight: normal;
+    }
+    .ui-card__name {
+      @include media("<=768px") {
+        margin-bottom: 25px;
+      }
     }
   }
 }
@@ -734,8 +738,6 @@ input {
   }
 }
 
-
-
 .hide-991 {
   @include media("<=991px") {
     display: none !important;
@@ -751,7 +753,7 @@ input {
 
 .review-site {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
