@@ -10,3 +10,4 @@ import "%modules%/user-cart/user-cart";
 import "%modules%/catalog/catalog";
 import "%modules%/contacts/contacts";
 import "%modules%/qan/qan";
+import "%modules%/exchange/exchange";

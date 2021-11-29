@@ -148,6 +148,17 @@ try {
 
 /***/ }),
 
+/***/ "./src/blocks/modules/exchange/exchange.js":
+/*!*************************************************!*\
+  !*** ./src/blocks/modules/exchange/exchange.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./src/blocks/modules/header/header.js":
 /*!*********************************************!*\
   !*** ./src/blocks/modules/header/header.js ***!
@@ -442,6 +453,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var _modules_qan_qan__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! %modules%/qan/qan */ "./src/blocks/modules/qan/qan.js");
 /* harmony import */ var _modules_qan_qan__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modules_qan_qan__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _modules_exchange_exchange__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! %modules%/exchange/exchange */ "./src/blocks/modules/exchange/exchange.js");
+/* harmony import */ var _modules_exchange_exchange__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_modules_exchange_exchange__WEBPACK_IMPORTED_MODULE_12__);
+
 
 
 
