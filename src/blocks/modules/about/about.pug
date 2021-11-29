@@ -60,3 +60,42 @@
                 picture.about-fourth__picture
                     source(media='(min-width: 576px)', srcset='./img/about-fourth-desktop.png')
                     img(width="538" height="595" src='./img/about-fourth-mobile.png' alt="").about-fourth__img
+
+        //- Пятый экран (слайдер с отзывами)
+        .about-reviews
+            .about-reviews__container
+                p.title-2.about-reviews__title Бренд глазами наших покупателей
+
+                .about-reviews__swiper-wrapper
+                    .swiper.js-about-reviews-swiper
+                        .swiper-wrapper
+
+                            .swiper-slide.about-reviews__slide
+                                p.text.about-reviews__slide-name Екатерина  
+                                p.text.about-reviews__slide-description 
+                                    | Очень люблю магазин на Флаконе. Отличный выбор, всегда есть что примерить. У меня рост 187 см и я знаю о чём говорю. Подобрала себе брючный костюм, брюки и платье. Ношу и радуюсь! Прекрасные консультанты: внимательные, но не навязчивые. Высокий уровень сервиса при очень вменяемых ценах. Обязательно прийду к девочкам на Флакон ещё раз!
+                                .about-reviews__slide-socials
+                                    a.about-reviews__slide-social-link(href="#") 
+                                        img.about-reviews__slide-social-icon(src="./img/svg/icon-insta-white.svg", alt="")
+
+                            .swiper-slide.about-reviews__slide
+                                p.text.about-reviews__slide-name Екатерина 
+                                p.text.about-reviews__slide-description 
+                                    | Хочу поблагодарить компанию Ruxara за качество продукции, а ее сотрудников - за компетентность, трудолюбие, достойный сервис и доброжелательность.
+                                    | В очередной раз приезжала в трц Мозаику за летним костюмом. Заранее заказали его на складе, вызвали такси, доставили быстро.
+                                    | Шопинг с Ruxara - одно удовольствие!)
+                                .about-reviews__slide-socials
+                                    a.about-reviews__slide-social-link(href="#") 
+                                        img.about-reviews__slide-social-icon(src="./img/svg/icon-insta-white.svg", alt="")
+
+                            .swiper-slide.about-reviews__slide
+                                p.text.about-reviews__slide-name Екатерина  
+                                p.text.about-reviews__slide-description 
+                                    | Я уже постоянный покупатель Вашего магазина на флаконе, хочу сказать огромное спасибо девушкам, которые работают в этом бутике. Каждый визит в радость и с обновками!) Отдельное спасибо Меке за то, что помогла с крайней покупкой, не забыла и довела до фабрики индивидуальную просьбу и сообщила о готовности заказа! Благодарю Вас!!
+                                .about-reviews__slide-socials
+                                    a.about-reviews__slide-social-link(href="#") 
+                                        img.about-reviews__slide-social-icon(src="./img/svg/icon-insta-white.svg", alt="")
+
+                .title-arrow.about-reviews__title-arrow.js-about-reviews-title-arrow
+                    img(src='./img/svg/icon-logn-right.svg' alt="" loading="lazy")
+                    | Далее
