@@ -1,17 +1,17 @@
 .about
-    .container.about__container
+    .about__container
 
         //- Первый экран
         .about-first
-            .about-first__container
+            .container.about-first__container
 
                 p.title-1.about-first__title.about-first__title_mobile О нас
 
                 picture.about-first__picture 
                     img(src='./img/about-first.png' alt="" loading="lazy").about-first__img
-                
+
                 .about-first__content
-                    p.title-2.about-first__title.about-first__title_desktop 
+                    p.title-3.about-first__title.about-first__title_desktop 
                         | Post 
                         br 
                         | Meridiem
@@ -25,7 +25,7 @@
 
         //- Второй экран
         .about-second
-            .about-second__container
+            .container.about-second__container
 
                 .about-second__items
                     .about-second__content
@@ -39,9 +39,37 @@
 
                     img(width="324" height="391" src='./img/about-second-bg.png' alt="").about-second__bg
 
+        //- Третий экран (слайдер с моделями)
+        .about-models
+            .container.about-models__container
+                .about-models__content
+                    p.title-3.about-models__title
+                        | О наших моделях
+                    p.text.about-models__text 
+                        | Для моделей одежды Post Meridiem мы выбираем приятные текстуры тканей, утонченные женственные силуэты и благородные оттенки. Нам важно, чтобы каждая вещь из коллекций Post Meridiem дарила девушкам чувство изысканности и уверенности в своей красоте.
+                    .title-arrow.about-models__title-arrow.js-about-models-title-arrow
+                        img(src='./img/svg/icon-logn-right.svg' alt="" loading="lazy")
+                        | Далее
+                .about-models__swiper-wrapper
+                    .swiper.js-about-models-swiper
+                        .swiper-wrapper
+                            a(href="#").swiper-slide.about-models__slide
+                                img(width="315" height="427" src='./img/about-models-1.png' alt="").about-models__img
+                            a(href="#").swiper-slide.about-models__slide
+                                img(width="315" height="427" src='./img/about-models-2.png' alt="").about-models__img
+                            a(href="#").swiper-slide.about-models__slide
+                                img(width="315" height="427" src='./img/about-models-3.png' alt="").about-models__img
+                            a(href="#").swiper-slide.about-models__slide
+                                img(width="315" height="427" src='./img/about-models-1.png' alt="").about-models__img
+                            a(href="#").swiper-slide.about-models__slide
+                                img(width="315" height="427" src='./img/about-models-2.png' alt="").about-models__img
+                            a(href="#").swiper-slide.about-models__slide
+                                img(width="315" height="427" src='./img/about-models-3.png' alt="").about-models__img
+
+
         //- Четвертый экран
         .about-fourth
-            .about-fourth__container
+            .container.about-fourth__container
 
                 p.title-3.about-fourth__title.about-fourth__title_mobile 
                     | От идеи до готового 
@@ -56,15 +84,18 @@
                             | А идеи обычно приходят во сне. Идеи идеальных платьев, идеальных бюстье, идеальных костюмов, денима, верхней одежды, трикотажа, юбок и брюк, футболок и рубашек, и этот список мы готовы продолжать.
                         p.text.about-fourth__text
                             | Но если приходит идея кому-то одному, то в ее реализации участвует большая команда профессионалов!
-                
+
                 picture.about-fourth__picture
                     source(media='(min-width: 576px)', srcset='./img/about-fourth-desktop.png')
                     img(width="538" height="595" src='./img/about-fourth-mobile.png' alt="").about-fourth__img
 
         //- Пятый экран (слайдер с отзывами)
         .about-reviews
-            .about-reviews__container
-                p.title-2.about-reviews__title Бренд глазами наших покупателей
+            .container.about-reviews__container
+                p.title-3.about-reviews__title 
+                    | Бренд глазами 
+                    br 
+                    | наших покупателей
 
                 .about-reviews__swiper-wrapper
                     .swiper.js-about-reviews-swiper
@@ -91,7 +122,10 @@
                             .swiper-slide.about-reviews__slide
                                 p.text.about-reviews__slide-name Екатерина  
                                 p.text.about-reviews__slide-description 
-                                    | Я уже постоянный покупатель Вашего магазина на флаконе, хочу сказать огромное спасибо девушкам, которые работают в этом бутике. Каждый визит в радость и с обновками!) Отдельное спасибо Меке за то, что помогла с крайней покупкой, не забыла и довела до фабрики индивидуальную просьбу и сообщила о готовности заказа! Благодарю Вас!!
+                                    | Я уже постоянный покупатель Вашего магазина на флаконе, хочу сказать огромное спасибо девушкам, 
+                                    | которые работают в этом бутике. Каждый визит в радость и с обновками!) 
+                                    | Отдельное спасибо Меке за то, что помогла с крайней покупкой, не забыла и довела до фабрики индивидуальную 
+                                    | просьбу и сообщила о готовности заказа! Благодарю Вас!
                                 .about-reviews__slide-socials
                                     a.about-reviews__slide-social-link(href="#") 
                                         img.about-reviews__slide-social-icon(src="./img/svg/icon-insta-white.svg", alt="")

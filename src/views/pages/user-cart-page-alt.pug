@@ -1,0 +1,22 @@
+extends ../layouts/default
+include ../helpers/mixins
+
+block variables
+    - const title = "gulp-pug-starter"
+
+block content
+    main.main
+        include ../../blocks/modules/top-message/top-message 
+        include ../../blocks/modules/header/header
+        .breadcrumbs.breadcrumbs_success
+            .container.breadcrumbs__container
+                a.breadcrumbs__item(href="#")  Главная
+                a.breadcrumbs__item(href="#")  Каталог
+                a.breadcrumbs__item(href="#")  Платье миди "веер" с разрезами и летящей юбкой
+                a.breadcrumbs__item(href="#")  Корзина и оформление заказа
+        include ../../blocks/modules/user-cart-alt/user-cart-alt
+        include ../../blocks/modules/footer/footer
+
+block scripts
+    script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")
+    script(src="js/main.js")

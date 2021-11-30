@@ -156,13 +156,13 @@
         <div class="container breadcrumbs__container"><a class="breadcrumbs__item" href="#">Главная</a><a class="breadcrumbs__item" href="#">О нас</a></div>
       </div>
       <div class="about">
-        <div class="container about__container">
+        <div class="about__container">
           <div class="about-first">
-            <div class="about-first__container">
+            <div class="container about-first__container">
               <p class="title-1 about-first__title about-first__title_mobile">О нас</p>
               <picture class="about-first__picture"> <img class="about-first__img" src="./img/about-first.png" alt="" loading="lazy"></picture>
               <div class="about-first__content">
-                <p class="title-2 about-first__title about-first__title_desktop">
+                <p class="title-3 about-first__title about-first__title_desktop">
                    Post <br>Meridiem</p>
                 <p class="text about-first__text">
                    Post Meridiem – российский бренд женской одежды. <br><br>А мы, Яна Плисткина и Яна Цыганкова, являемся его основателями и идейными вдохновителями.</p>
@@ -171,7 +171,7 @@
             </div>
           </div>
           <div class="about-second">
-            <div class="about-second__container">
+            <div class="container about-second__container">
               <div class="about-second__items">
                 <div class="about-second__content">
                   <p class="title-4 about-second__title">От идеи до готового изделия</p>
@@ -185,8 +185,23 @@
               </div>
             </div>
           </div>
+          <div class="about-models">
+            <div class="container about-models__container">
+              <div class="about-models__content">
+                <p class="title-3 about-models__title">О наших моделях</p>
+                <p class="text about-models__text">
+                   Для моделей одежды Post Meridiem мы выбираем приятные текстуры тканей, утонченные женственные силуэты и благородные оттенки. Нам важно, чтобы каждая вещь из коллекций Post Meridiem дарила девушкам чувство изысканности и уверенности в своей красоте.</p>
+                <div class="title-arrow about-models__title-arrow js-about-models-title-arrow"><img src="./img/svg/icon-logn-right.svg" alt="" loading="lazy">Далее</div>
+              </div>
+              <div class="about-models__swiper-wrapper">
+                <div class="swiper js-about-models-swiper">
+                  <div class="swiper-wrapper"><a class="swiper-slide about-models__slide" href="#"><img class="about-models__img" width="315" height="427" src="./img/about-models-1.png" alt=""></a><a class="swiper-slide about-models__slide" href="#"><img class="about-models__img" width="315" height="427" src="./img/about-models-2.png" alt=""></a><a class="swiper-slide about-models__slide" href="#"><img class="about-models__img" width="315" height="427" src="./img/about-models-3.png" alt=""></a><a class="swiper-slide about-models__slide" href="#"><img class="about-models__img" width="315" height="427" src="./img/about-models-1.png" alt=""></a><a class="swiper-slide about-models__slide" href="#"><img class="about-models__img" width="315" height="427" src="./img/about-models-2.png" alt=""></a><a class="swiper-slide about-models__slide" href="#"><img class="about-models__img" width="315" height="427" src="./img/about-models-3.png" alt=""></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="about-fourth">
-            <div class="about-fourth__container">
+            <div class="container about-fourth__container">
               <p class="title-3 about-fourth__title about-fourth__title_mobile">
                  От идеи до готового <br>изделия</p>
               <div class="about-fourth__content">
@@ -205,8 +220,9 @@
             </div>
           </div>
           <div class="about-reviews">
-            <div class="about-reviews__container">
-              <p class="title-2 about-reviews__title">Бренд глазами наших покупателей</p>
+            <div class="container about-reviews__container">
+              <p class="title-3 about-reviews__title">
+                 Бренд глазами <br>наших покупателей</p>
               <div class="about-reviews__swiper-wrapper">
                 <div class="swiper js-about-reviews-swiper">
                   <div class="swiper-wrapper">
@@ -228,7 +244,11 @@
                     <div class="swiper-slide about-reviews__slide">
                       <p class="text about-reviews__slide-name">Екатерина  </p>
                       <p class="text about-reviews__slide-description">
-                         Я уже постоянный покупатель Вашего магазина на флаконе, хочу сказать огромное спасибо девушкам, которые работают в этом бутике. Каждый визит в радость и с обновками!) Отдельное спасибо Меке за то, что помогла с крайней покупкой, не забыла и довела до фабрики индивидуальную просьбу и сообщила о готовности заказа! Благодарю Вас!!</p>
+                         Я уже постоянный покупатель Вашего магазина на флаконе, хочу сказать огромное спасибо девушкам, 
+                        которые работают в этом бутике. Каждый визит в радость и с обновками!) 
+                        Отдельное спасибо Меке за то, что помогла с крайней покупкой, не забыла и довела до фабрики индивидуальную 
+                        просьбу и сообщила о готовности заказа! Благодарю Вас!
+                      </p>
                       <div class="about-reviews__slide-socials"><a class="about-reviews__slide-social-link" href="#"> <img class="about-reviews__slide-social-icon" src="./img/svg/icon-insta-white.svg" alt=""></a></div>
                     </div>
                   </div>
@@ -261,7 +281,7 @@
           <nav class="footer__copyright"> <a class="footer__copyright-item" href="#">Публичная оферта </a><a class="footer__copyright-item" href="#">Политика конфиденциальности</a></nav>
         </div>
       </footer>
-      <div class="modal-get-discount active js-modal-get-discount">
+      <div class="modal-get-discount js-modal-get-discount">
         <div class="modal-get-discount__container">
           <button class="modal-get-discount__close-btn js-modal-get-discount-close-btn"><img class="modal-get-discount__close-img" src="./img/svg/icon-close.svg" alt=""></button><img class="modal-get-discount__girl-img" src="./img/modal-get-discount-girl.png" alt=""><img class="modal-get-discount__text-img" src="./img/modal-get-discount-bg.png" alt="">
           <p class="modal-get-discount__discount">Получите -5%</p>

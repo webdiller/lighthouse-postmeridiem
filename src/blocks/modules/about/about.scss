@@ -178,6 +178,10 @@
       display: flex;
       flex-direction: column;
     }
+    @include media("<=768px") {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   &__title {
@@ -246,6 +250,10 @@
 
 .about-reviews {
   &__container {
+    @include media("<=768px") {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   &__title {
@@ -332,5 +340,134 @@
   .swiper-wrapper {
   }
   .swipre-slide {
+  }
+}
+
+.about-models {
+  position: relative;
+  &__container {
+    display: flex;
+    margin-top: 123px;
+    margin-bottom: 312px;
+    @include media("<=1200px") {
+      display: block;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    @include media("<=1200px") {
+      display: block;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @include media("<=768px") {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__content {
+    position: relative;
+    flex: 0 0 395px;
+    margin-right: 50px;
+    z-index: 100;
+    @include media("<=1200px") {
+      margin-right: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @include media("<=768px") {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    @include media("<=1200px") {
+      margin-bottom: 20px;
+    }
+    @include media("<=768px") {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    margin-bottom: 63px;
+    @include media("<=1200px") {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title-arrow {
+    @include media("<=1200px") {
+      display: none;
+    }
+  }
+
+  &__swiper-wrapper {
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 610px;
+    width: 935px;
+    @include media("<=1400px") {
+      width: 600px;
+    }
+    @include media("<=1200px") {
+      position: static;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__slide {
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    @include media("<=1200px") {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .swiper {
+    overflow: visible;
+  }
+  .js-about-models-swiper {
+  }
+  .swiper-wrapper {
+    transition: all 0.3s ease !important;
+  }
+  .swiper-slide {
+    width: 315px;
+    height: 426px;
+    overflow: hidden;
+    transition: all 0.3s ease !important;
+    @include media("<=1200px") {
+      position: relative;
+      width: 100%;
+      height: 343px;
+    }
+    &-active {
+      width: 426px;
+      height: 610px;
+      overflow: hidden !important;
+      @include media("<=1200px") {
+        width: 100%;
+        height: 343px;
+      }
+    }
+    &.hide {
+      opacity: 0;
+      visibility: hidden;
+      z-index: -1;
+    }
+    &.to-lift {
+      margin-top: -30px;
+    }
   }
 }

@@ -93,6 +93,65 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+// Наши модели
+try {
+  var aboutModelsArrowRight = document.querySelector(".js-about-models-title-arrow");
+  var aboutModelsSwiper = new Swiper(".js-about-models-swiper", {
+    loop: true,
+    slidesPerView: 1.4,
+    centeredSlides: true,
+    spaceBetween: 10,
+    breakpoints: {
+      1200: {
+        centeredSlides: false,
+        loop: false,
+        draggable: false,
+        allowTouchMove: false,
+        slidesPerView: "auto",
+        spaceBetween: 20
+      }
+    },
+    on: {
+      slideChange: function slideChange(e) {
+        try {
+          if (window.innerWidth >= 1201) {
+            var countSlides = aboutModelsSwiper.slides.length;
+            var activeSlide = aboutModelsSwiper.realIndex;
+            var allSlides = document.querySelectorAll(".swiper-slide.about-models__slide");
+            allSlides.forEach(function (el) {
+              var labelIndex = parseInt(el.getAttribute("aria-label").split("/")[0]);
+
+              if (labelIndex - 1 < activeSlide) {
+                el.classList.add("hide");
+              } else {
+                el.classList.remove("hide");
+              }
+            });
+          }
+        } catch (error) {}
+
+        try {
+          if (window.innerWidth <= 1200) {
+            setTimeout(function () {
+              document.querySelectorAll(".swiper-slide.about-models__slide").forEach(function (el) {
+                return el.classList.remove("to-lift");
+              });
+              document.querySelector(".swiper-slide.about-models__slide.swiper-slide-prev").classList.add("to-lift");
+              document.querySelector(".swiper-slide.about-models__slide.swiper-slide-next").classList.add("to-lift");
+            }, 100);
+          }
+        } catch (error) {
+          console.log(error);
+        }
+      }
+    }
+  });
+  aboutModelsArrowRight.addEventListener("click", function (e) {
+    aboutModelsSwiper.slideNext();
+  });
+} catch (error) {} // Отзывы
+
+
 try {
   var aboutReviewsArrowRight = document.querySelector(".js-about-reviews-title-arrow");
   var aboutReviewsSwiper = new Swiper(".js-about-reviews-swiper", {

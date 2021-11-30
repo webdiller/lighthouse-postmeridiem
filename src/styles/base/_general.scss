@@ -721,6 +721,10 @@ input {
   cursor: pointer;
   img {
     margin-right: 10px;
+    pointer-events: none;
+  }
+  &.disabled {
+    pointer-events: none;
   }
 }
 
@@ -892,6 +896,13 @@ input {
     color: #a0a0a0;
     transition: all 0.3s ease;
     pointer-events: none;
+  }
+  
+  &_textarea {
+    .ui-input3__label {
+      top: 14px;
+      transform: unset;
+    }
   }
 }
 
