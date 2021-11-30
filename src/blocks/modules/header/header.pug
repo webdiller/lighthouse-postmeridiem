@@ -1,6 +1,7 @@
 header.header
+
     .header__top
-        .container.header__container 
+        .container.header__container.js-header-container 
             .header__left
                 button.header__menu.js-header-menu
                     img.header__menu-icon-bar(src="./img/svg/icon-bar.svg", alt="")
@@ -24,7 +25,8 @@ header.header
                     img.header__item-icon(width="19" height="19" src="./img/svg/icon-search.svg", alt="")
                 a.header__item.header__item_cart(href="#") 
                     img.header__item-icon(width="15" height="15" src="./img/svg/icon-cart.svg", alt="")
-    .header__results.js-header-results
+
+    .header__results.js-header-results.active
         .container.header__results-container
             .header__results-search
                 input.ui-input.header__results-search-input(type="text" placeholder="Платье-комбинац")
@@ -89,48 +91,49 @@ header.header
                             .ui-card__price 13 500 ₽
 
     .header__navigation.js-header-navigation
-        .container.header__navigation-container
-            .header__navigation-all-items.js-header-navigation-all-items
-                div.header__navigation-items
-                    p.ttu.header__navigation-item.header__navigation-item_title категории
-                        img.header__navigation-item-icon(src="./img/svg/icon-arrow-down.svg", alt="")
-                    .header__navigation-items-menu
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Верхняя одежда
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Костюмы
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Платья
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Рубашки и футболки
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Топы и баски
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Юбки
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Аксессуары
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Брюки и шорты
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Смотреть все
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") New
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Sale
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Sample sale
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Предзаказ
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Подарочный сертификат
+        .header__navigation-main-container
+            .container.header__navigation-container.js-header-navigation-container
+                .header__navigation-all-items.js-header-navigation-all-items
+                    div.header__navigation-items
+                        p.ttu.header__navigation-item.header__navigation-item_title категории
+                            img.header__navigation-item-icon(src="./img/svg/icon-arrow-down.svg", alt="")
+                        .header__navigation-items-menu
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Верхняя одежда
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Костюмы
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Платья
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Рубашки и футболки
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Топы и баски
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Юбки
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Аксессуары
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Брюки и шорты
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Смотреть все
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") New
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Sale
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Sample sale
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Предзаказ
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Подарочный сертификат
 
-                div.header__navigation-items
-                    p.ttu.header__navigation-item.header__navigation-item_title коллекции
-                        img.header__navigation-item-icon(src="./img/svg/icon-arrow-down.svg", alt="")
-                    .header__navigation-items-menu
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Посмотреть все
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Коллекция круиз
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Вечерний образ
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Базовая коллекция
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Классические силуэты
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Свадебный сезон
+                    div.header__navigation-items
+                        p.ttu.header__navigation-item.header__navigation-item_title коллекции
+                            img.header__navigation-item-icon(src="./img/svg/icon-arrow-down.svg", alt="")
+                        .header__navigation-items-menu
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Посмотреть все
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Коллекция круиз
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Вечерний образ
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Базовая коллекция
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Классические силуэты
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Свадебный сезон
 
-                div.header__navigation-items
-                    p.ttu.header__navigation-item.header__navigation-item_title поркупателю
-                        img.header__navigation-item-icon(src="./img/svg/icon-arrow-down.svg", alt="")
-                    .header__navigation-items-menu
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") О нас
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Магазины
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Контакты
-                        a.text.header__navigation-item.header__navigation-item_link(href="#") Материалы
+                    div.header__navigation-items.header__navigation-items_last
+                        p.ttu.header__navigation-item.header__navigation-item_title поркупателю
+                            img.header__navigation-item-icon(src="./img/svg/icon-arrow-down.svg", alt="")
+                        .header__navigation-items-menu
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") О нас
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Магазины
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Контакты
+                            a.text.header__navigation-item.header__navigation-item_link(href="#") Материалы
 
-                div.header__navigation-items.header__navigation-items_mobile
-                    a(href="#").ttu.header__navigation-item.header__navigation-item_title О нас
-                    a(href="#").ttu.header__navigation-item.header__navigation-item_title Доставка и возврат
-                    a(href="#").ttu.header__navigation-item.header__navigation-item_title Контакты
+                    div.header__navigation-items.header__navigation-items_mobile
+                        a(href="#").ttu.header__navigation-item.header__navigation-item_title О нас
+                        a(href="#").ttu.header__navigation-item.header__navigation-item_title Доставка и возврат
+                        a(href="#").ttu.header__navigation-item.header__navigation-item_title Контакты

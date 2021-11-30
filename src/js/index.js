@@ -13,3 +13,9 @@ if (uiInputs.length > 0) {
     });
   });
 }
+
+if (window.location.pathname.includes("catalog")) {
+  setTimeout(() => {
+    document.querySelector(".js-modal-get-discount").classList.add("active");
+  }, 2000);
+}

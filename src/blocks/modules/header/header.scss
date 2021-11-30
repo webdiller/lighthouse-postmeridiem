@@ -332,7 +332,7 @@
     left: 0;
     right: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: rgba(255,255,255,.5);
 
     opacity: 0;
     visibility: hidden;
@@ -357,28 +357,27 @@
     }
   }
 
-  &__navigation-container {
-    @include media("<=1200px") {
-    }
+  &__navigation-main-container {
+    width: 50vw;
+    background-color: #fff;
+    height: 100%;
     @include media("<=991px") {
+      width: 100%;
+      height: auto;
+    }@include media("<=768px") {
+      background-color: #fafafa;
     }
-    @include media("<=768px") {
-    }
-    @include media("<=576px") {
-    }
+  }
+
+  &__navigation-container {
+    display: flex;
   }
 
   &__navigation-all-items {
     display: flex;
     justify-content: space-between;
     padding: 30px 30px 80px 0;
-    width: 50%;
-    @include media("<=1200px") {
-    }
     @include media("<=991px") {
-      width: 75%;
-    }
-    @include media("<=768px") {
       width: 100%;
       display: block;
       padding: 55px 0 0 0;
@@ -388,24 +387,17 @@
   }
 
   &__navigation-items {
-    &:not(:last-child) {
-      margin-right: 45px;
-      @include media("<=768px") {
+    margin-right: 45px;
+      @include media("<=991px") {
         margin-right: 0;
       }
-    }
-    @include media("<=1200px") {
-    }
-    @include media("<=991px") {
-    }
-    @include media("<=768px") {
-    }
-    @include media("<=576px") {
+    &_last {
+      margin-right: 0;
     }
     &_mobile {
       display: none;
       margin-bottom: 20px;
-      @include media("<=768px") {
+      @include media("<=991px") {
         display: block;
       }
     }
@@ -415,14 +407,6 @@
     margin-bottom: 10px;
     &:last-child {
       margin-bottom: 0;
-    }
-    @include media("<=1200px") {
-    }
-    @include media("<=991px") {
-    }
-    @include media("<=768px") {
-    }
-    @include media("<=576px") {
     }
     &_title {
       margin-bottom: 20px;
@@ -443,50 +427,30 @@
           margin-bottom: 20px;
         }
       }
-      @include media("<=1200px") {
-      }
       @include media("<=991px") {
-      }
-      @include media("<=768px") {
         cursor: pointer;
         display: flex;
         justify-content: space-between;
         align-items: center;
-      }
-      @include media("<=576px") {
       }
     }
 
     &_link {
       display: block;
       color: $greyLight;
-      @include media("<=1200px") {
-      }
-      @include media("<=991px") {
-      }
-      @include media("<=768px") {
-      }
-      @include media("<=576px") {
-      }
     }
   }
 
   &__navigation-item-icon {
     display: none;
     transition: all 0.3s ease;
-    @include media("<=1200px") {
-    }
     @include media("<=991px") {
-    }
-    @include media("<=768px") {
       display: inline-block;
-    }
-    @include media("<=576px") {
     }
   }
 
   &__navigation-items-menu {
-    @include media("<=768px") {
+    @include media("<=991px") {
       transition: all 0.3s ease;
       max-height: 0;
       opacity: 0;

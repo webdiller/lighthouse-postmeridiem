@@ -20,11 +20,10 @@
     z-index: 10;
 
     text-align: center;
-    @include media("<=991px") {
-    }
-    @include media("<=768px") {
-    }
     @include media("<=576px") {
+      transform: unset;
+      left: 15px;
+      right: 15px;
     }
   }
 

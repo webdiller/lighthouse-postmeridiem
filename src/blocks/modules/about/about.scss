@@ -385,8 +385,6 @@
     margin-bottom: 50px;
     @include media("<=1200px") {
       margin-bottom: 20px;
-    }
-    @include media("<=768px") {
       text-align: center;
     }
   }

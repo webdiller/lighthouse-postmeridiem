@@ -19,6 +19,9 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   min-width: 320px;
+  &.disable-scroll {
+    overflow-y: hidden;
+  }
 }
 
 a,
@@ -225,6 +228,7 @@ input {
   font-size: 13px;
   line-height: 19px;
   height: 40px;
+  background-color: transparent;
   &::placeholder {
     font-size: 13px;
     line-height: 19px;

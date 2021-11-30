@@ -35,7 +35,7 @@
       </div>
       <header class="header">
         <div class="header__top">
-          <div class="container header__container"> 
+          <div class="container header__container js-header-container"> 
             <div class="header__left">
               <button class="header__menu js-header-menu"><img class="header__menu-icon-bar" src="./img/svg/icon-bar.svg" alt=""><img class="header__menu-icon-bar-mobile" src="./img/svg/icon-bar-mobile.svg" alt=""><img class="header__menu-icon-close" src="./img/svg/icon-close.svg" alt=""></button>
               <nav class="header__items header__items_left"> <a class="text header__item" href="#">Каталог</a><a class="text header__item" href="#">Платья</a></nav>
@@ -50,7 +50,7 @@
             </div>
           </div>
         </div>
-        <div class="header__results js-header-results">
+        <div class="header__results js-header-results active">
           <div class="container header__results-container">
             <div class="header__results-search">
               <input class="ui-input header__results-search-input" type="text" placeholder="Платье-комбинац">
@@ -133,21 +133,23 @@
           </div>
         </div>
         <div class="header__navigation js-header-navigation">
-          <div class="container header__navigation-container">
-            <div class="header__navigation-all-items js-header-navigation-all-items">
-              <div class="header__navigation-items">
-                <p class="ttu header__navigation-item header__navigation-item_title">категории<img class="header__navigation-item-icon" src="./img/svg/icon-arrow-down.svg" alt=""></p>
-                <div class="header__navigation-items-menu"><a class="text header__navigation-item header__navigation-item_link" href="#">Верхняя одежда</a><a class="text header__navigation-item header__navigation-item_link" href="#">Костюмы</a><a class="text header__navigation-item header__navigation-item_link" href="#">Платья</a><a class="text header__navigation-item header__navigation-item_link" href="#">Рубашки и футболки</a><a class="text header__navigation-item header__navigation-item_link" href="#">Топы и баски</a><a class="text header__navigation-item header__navigation-item_link" href="#">Юбки</a><a class="text header__navigation-item header__navigation-item_link" href="#">Аксессуары</a><a class="text header__navigation-item header__navigation-item_link" href="#">Брюки и шорты</a><a class="text header__navigation-item header__navigation-item_link" href="#">Смотреть все</a><a class="text header__navigation-item header__navigation-item_link" href="#">New</a><a class="text header__navigation-item header__navigation-item_link" href="#">Sale</a><a class="text header__navigation-item header__navigation-item_link" href="#">Sample sale</a><a class="text header__navigation-item header__navigation-item_link" href="#">Предзаказ</a><a class="text header__navigation-item header__navigation-item_link" href="#">Подарочный сертификат</a></div>
+          <div class="header__navigation-main-container">
+            <div class="container header__navigation-container js-header-navigation-container">
+              <div class="header__navigation-all-items js-header-navigation-all-items">
+                <div class="header__navigation-items">
+                  <p class="ttu header__navigation-item header__navigation-item_title">категории<img class="header__navigation-item-icon" src="./img/svg/icon-arrow-down.svg" alt=""></p>
+                  <div class="header__navigation-items-menu"><a class="text header__navigation-item header__navigation-item_link" href="#">Верхняя одежда</a><a class="text header__navigation-item header__navigation-item_link" href="#">Костюмы</a><a class="text header__navigation-item header__navigation-item_link" href="#">Платья</a><a class="text header__navigation-item header__navigation-item_link" href="#">Рубашки и футболки</a><a class="text header__navigation-item header__navigation-item_link" href="#">Топы и баски</a><a class="text header__navigation-item header__navigation-item_link" href="#">Юбки</a><a class="text header__navigation-item header__navigation-item_link" href="#">Аксессуары</a><a class="text header__navigation-item header__navigation-item_link" href="#">Брюки и шорты</a><a class="text header__navigation-item header__navigation-item_link" href="#">Смотреть все</a><a class="text header__navigation-item header__navigation-item_link" href="#">New</a><a class="text header__navigation-item header__navigation-item_link" href="#">Sale</a><a class="text header__navigation-item header__navigation-item_link" href="#">Sample sale</a><a class="text header__navigation-item header__navigation-item_link" href="#">Предзаказ</a><a class="text header__navigation-item header__navigation-item_link" href="#">Подарочный сертификат</a></div>
+                </div>
+                <div class="header__navigation-items">
+                  <p class="ttu header__navigation-item header__navigation-item_title">коллекции<img class="header__navigation-item-icon" src="./img/svg/icon-arrow-down.svg" alt=""></p>
+                  <div class="header__navigation-items-menu"><a class="text header__navigation-item header__navigation-item_link" href="#">Посмотреть все</a><a class="text header__navigation-item header__navigation-item_link" href="#">Коллекция круиз</a><a class="text header__navigation-item header__navigation-item_link" href="#">Вечерний образ</a><a class="text header__navigation-item header__navigation-item_link" href="#">Базовая коллекция</a><a class="text header__navigation-item header__navigation-item_link" href="#">Классические силуэты</a><a class="text header__navigation-item header__navigation-item_link" href="#">Свадебный сезон</a></div>
+                </div>
+                <div class="header__navigation-items header__navigation-items_last">
+                  <p class="ttu header__navigation-item header__navigation-item_title">поркупателю<img class="header__navigation-item-icon" src="./img/svg/icon-arrow-down.svg" alt=""></p>
+                  <div class="header__navigation-items-menu"><a class="text header__navigation-item header__navigation-item_link" href="#">О нас</a><a class="text header__navigation-item header__navigation-item_link" href="#">Магазины</a><a class="text header__navigation-item header__navigation-item_link" href="#">Контакты</a><a class="text header__navigation-item header__navigation-item_link" href="#">Материалы</a></div>
+                </div>
+                <div class="header__navigation-items header__navigation-items_mobile"><a class="ttu header__navigation-item header__navigation-item_title" href="#">О нас</a><a class="ttu header__navigation-item header__navigation-item_title" href="#">Доставка и возврат</a><a class="ttu header__navigation-item header__navigation-item_title" href="#">Контакты</a></div>
               </div>
-              <div class="header__navigation-items">
-                <p class="ttu header__navigation-item header__navigation-item_title">коллекции<img class="header__navigation-item-icon" src="./img/svg/icon-arrow-down.svg" alt=""></p>
-                <div class="header__navigation-items-menu"><a class="text header__navigation-item header__navigation-item_link" href="#">Посмотреть все</a><a class="text header__navigation-item header__navigation-item_link" href="#">Коллекция круиз</a><a class="text header__navigation-item header__navigation-item_link" href="#">Вечерний образ</a><a class="text header__navigation-item header__navigation-item_link" href="#">Базовая коллекция</a><a class="text header__navigation-item header__navigation-item_link" href="#">Классические силуэты</a><a class="text header__navigation-item header__navigation-item_link" href="#">Свадебный сезон</a></div>
-              </div>
-              <div class="header__navigation-items">
-                <p class="ttu header__navigation-item header__navigation-item_title">поркупателю<img class="header__navigation-item-icon" src="./img/svg/icon-arrow-down.svg" alt=""></p>
-                <div class="header__navigation-items-menu"><a class="text header__navigation-item header__navigation-item_link" href="#">О нас</a><a class="text header__navigation-item header__navigation-item_link" href="#">Магазины</a><a class="text header__navigation-item header__navigation-item_link" href="#">Контакты</a><a class="text header__navigation-item header__navigation-item_link" href="#">Материалы</a></div>
-              </div>
-              <div class="header__navigation-items header__navigation-items_mobile"><a class="ttu header__navigation-item header__navigation-item_title" href="#">О нас</a><a class="ttu header__navigation-item header__navigation-item_title" href="#">Доставка и возврат</a><a class="ttu header__navigation-item header__navigation-item_title" href="#">Контакты</a></div>
             </div>
           </div>
         </div>
