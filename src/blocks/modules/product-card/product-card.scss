@@ -137,6 +137,19 @@
     }
   }
 
+  .swiper-pagination-bullet {
+    height: 3px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    flex: 1;
+    margin: 0 !important;
+    transition: all .3s ease;
+    &-active {
+      background-color: #000;
+    }
+  }
+
   &__slide-picture {
     @include media("<=991px") {
     }
@@ -148,12 +161,20 @@
 
   &__slide-img {
     display: block;
-    @include media("<=991px") {
-    }
+    width: 100%;
+    max-width: 538px;
     @include media("<=768px") {
-      width: 100%;
+      max-width: unset;
     }
-    @include media("<=576px") {
+  }
+
+  &__pagination {
+    display: none;
+    position: static;
+    justify-content: center;
+    align-items: center;
+    @include media("<=768px") {
+      display: flex;
     }
   }
 

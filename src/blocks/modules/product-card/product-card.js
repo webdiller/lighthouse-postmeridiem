@@ -8,6 +8,11 @@ try {
       slidesPerView: 1,
       spaceBetween: 0,
       draggable: false,
+      pagination: {
+        el: '.js-product-card-swiper + .swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+      },
     });
   }
 } catch (error) {}

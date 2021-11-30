@@ -33,6 +33,7 @@
   &__item {
     margin-bottom: 20px;
     width: 315px;
+    transition: all .3s ease;
 
     @include media("<=768px") {
       width: 100%;
@@ -95,6 +96,10 @@
     &_btn-wrapper {
       margin-bottom: 0;
       margin-top: auto;
+    }
+    
+    &.disabled {
+      display: none;
     }
 
   }

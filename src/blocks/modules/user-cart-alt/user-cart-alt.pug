@@ -13,7 +13,7 @@
                                 img.logo-with-description__img(src="./img/svg/icon-logo.svg" alt="")
                             p.logo-with-description__text Оформление заказа
 
-                    form.product-ordering__form
+                    form.product-ordering__form.js-product-ordering-form
                         .product-ordering__items
                             .ui-input3.product-ordering__item
                                 input.ui-input3__input(type="text")
@@ -24,7 +24,7 @@
                                 label.ui-input3__label Ваша фамилия
 
                             .ui-input3.product-ordering__item
-                                input.ui-input3__input(type="text")
+                                input.ui-input3__input.js-imask-phone(type="text")
                                 label.ui-input3__label Ваш телефон
 
                             .ui-input3.product-ordering__item.product-ordering__item_email
@@ -40,15 +40,15 @@
                                     input(type="radio" name="selectDelivery" id="deliveryPickup")
                                     label(for="deliveryPickup") Самовывоз
 
-                            .ui-input3.product-ordering__item.product-ordering__item_city
+                            .ui-input3.product-ordering__item.product-ordering__item_city.js-product-ordering-city
                                 input.ui-input3__input(type="text")
                                 label.ui-input3__label Ваш город
 
-                            .ui-input3.product-ordering__item.product-ordering__item_street
+                            .ui-input3.product-ordering__item.product-ordering__item_street.js-product-ordering-street
                                 input.ui-input3__input(type="text")
                                 label.ui-input3__label Ваша улица
 
-                            .product-ordering__item.product-ordering__item_address
+                            .product-ordering__item.product-ordering__item_address.js-product-ordering-address
                                 .ui-input3.product-ordering__item
                                     input.ui-input3__input(type="text")
                                     label.ui-input3__label Ваша улица

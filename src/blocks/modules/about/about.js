@@ -1,12 +1,10 @@
 // Наши модели
 try {
-  const aboutModelsArrowRight = document.querySelector(
-    ".js-about-models-title-arrow"
-  );
+  const aboutModelsArrowRight = document.querySelector( ".js-about-models-title-arrow");
 
   const aboutModelsSwiper = new Swiper(".js-about-models-swiper", {
     loop: true,
-    slidesPerView: 1.4,
+    slidesPerView: 1.3,
     centeredSlides: true,
     spaceBetween: 10,
     breakpoints: {
@@ -25,17 +23,18 @@ try {
           if (window.innerWidth >= 1201) {
             let countSlides = aboutModelsSwiper.slides.length;
             let activeSlide = aboutModelsSwiper.realIndex;
-            const allSlides = document.querySelectorAll(
-              ".swiper-slide.about-models__slide"
-            );
+            const allSlides = document.querySelectorAll(".swiper-slide.about-models__slide");
             allSlides.forEach((el) => {
-              const labelIndex = parseInt(
-                el.getAttribute("aria-label").split("/")[0]
-              );
+              const labelIndex = parseInt( el.getAttribute("aria-label").split("/")[0]);
               if (labelIndex - 1 < activeSlide) {
                 el.classList.add("hide");
               } else {
                 el.classList.remove("hide");
+              }
+
+              if (activeSlide + 2 == countSlides) {
+                aboutModelsSwiper.slideTo(0);
+                allSlides.forEach(slide=>slide.classList.remove('hide'))
               }
             });
           }
@@ -72,15 +71,16 @@ try {
 
 // Отзывы
 try {
-  const aboutReviewsArrowRight = document.querySelector(
-    ".js-about-reviews-title-arrow"
-  );
+  const aboutReviewsArrowRight = document.querySelector(".js-about-reviews-title-arrow");
   const aboutReviewsSwiper = new Swiper(".js-about-reviews-swiper", {
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 0,
     centeredSlides: true,
     breakpoints: {
+      480: {
+        slidesPerView: 1.5,
+      },
       768: {
         slidesPerView: 2,
       },

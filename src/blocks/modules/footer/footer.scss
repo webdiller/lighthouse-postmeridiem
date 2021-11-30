@@ -143,7 +143,7 @@
       }
     }
     @include media("<=991px") {
-      color: #5C5C5C;
+      color: #5c5c5c;
     }
     @include media("<=768px") {
     }
@@ -254,6 +254,11 @@
   }
 
   &__item-form-input {
+    &::placeholder {
+      font-size: 15px;
+      line-height: 150%;
+      color: #a0a0a0;
+    }
     @include media("<=991px") {
     }
     @include media("<=768px") {

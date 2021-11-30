@@ -98,7 +98,7 @@ try {
   var aboutModelsArrowRight = document.querySelector(".js-about-models-title-arrow");
   var aboutModelsSwiper = new Swiper(".js-about-models-swiper", {
     loop: true,
-    slidesPerView: 1.4,
+    slidesPerView: 1.3,
     centeredSlides: true,
     spaceBetween: 10,
     breakpoints: {
@@ -125,6 +125,13 @@ try {
                 el.classList.add("hide");
               } else {
                 el.classList.remove("hide");
+              }
+
+              if (activeSlide + 2 == countSlides) {
+                aboutModelsSwiper.slideTo(0);
+                allSlides.forEach(function (slide) {
+                  return slide.classList.remove('hide');
+                });
               }
             });
           }
@@ -157,9 +164,12 @@ try {
   var aboutReviewsSwiper = new Swiper(".js-about-reviews-swiper", {
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 0,
     centeredSlides: true,
     breakpoints: {
+      480: {
+        slidesPerView: 1.5
+      },
       768: {
         slidesPerView: 2
       },
@@ -489,7 +499,12 @@ try {
       loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
-      draggable: false
+      draggable: false,
+      pagination: {
+        el: '.js-product-card-swiper + .swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      }
     }), _readOnlyError("productCardSwiper");
   }
 } catch (error) {}
@@ -503,7 +518,35 @@ try {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+// Маска телефона
+try {
+  var element = document.querySelector(".js-imask-phone");
+  var maskOptions = {
+    mask: "+{7}(000)000-00-00"
+  };
+  var mask = IMask(element, maskOptions);
+} catch (error) {} // Проверка на самовывоз.
 
+
+var forms = document.querySelectorAll(".js-product-ordering-form");
+
+try {
+  if (forms.length > 0) {
+    forms.forEach(function (form) {
+      form.addEventListener("change", function (e) {
+        if (deliveryPickup.checked) {
+          form.querySelector(".js-product-ordering-city").classList.add("disabled");
+          form.querySelector(".js-product-ordering-street").classList.add("disabled");
+          form.querySelector(".js-product-ordering-address").classList.add("disabled");
+        } else if (!deliveryPickup.checked) {
+          form.querySelector(".js-product-ordering-city").classList.remove("disabled");
+          form.querySelector(".js-product-ordering-street").classList.remove("disabled");
+          form.querySelector(".js-product-ordering-address").classList.remove("disabled");
+        }
+      });
+    });
+  }
+} catch (error) {}
 
 /***/ }),
 

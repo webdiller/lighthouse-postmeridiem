@@ -159,68 +159,148 @@
           </div>
         </div>
       </header>
-      <div class="breadcrumbs breadcrumbs_success">
-        <div class="container breadcrumbs__container"><a class="breadcrumbs__item" href="#"> Главная</a><a class="breadcrumbs__item" href="#"> Каталог</a><a class="breadcrumbs__item" href="#"> Платье миди "веер" с разрезами и летящей юбкой</a></div>
-      </div>
-      <div class="product-card">
-        <div class="container product-card__container"> 
-          <div class="product-card__anchors"><a class="product-card__anchor" href="#item1"> 
-              <picture class="product-card__anchor-picture"> <img class="product-card__anchor-img" src="./img/ui-card-1.png" alt="" loading="lazy"></picture></a><a class="product-card__anchor" href="#item2"> 
-              <picture class="product-card__anchor-picture"> <img class="product-card__anchor-img" src="./img/ui-card-2.png" alt="" loading="lazy"></picture></a><a class="product-card__anchor" href="#item3"> 
-              <picture class="product-card__anchor-picture"> <img class="product-card__anchor-img" src="./img/ui-card-3.png" alt="" loading="lazy"></picture></a></div>
-          <div class="product-card__swiper-wrapper"> 
-            <div class="swiper js-product-card-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide product-card__slide" id="item1">
-                  <picture class="product-card__slide-picture"> <img class="product-card__slide-img" src="./img/ui-card-1.png" alt="" loading="lazy"></picture>
-                </div>
-                <div class="swiper-slide product-card__slide" id="item2">
-                  <picture class="product-card__slide-picture"> <img class="product-card__slide-img" src="./img/ui-card-2.png" alt="" loading="lazy"></picture>
-                </div>
-                <div class="swiper-slide product-card__slide" id="item3">
-                  <picture class="product-card__slide-picture"> <img class="product-card__slide-img" src="./img/ui-card-3.png" alt="" loading="lazy"></picture>
-                </div>
-              </div>
+      <div class="catalog catalog_alt">
+        <div class="container catalog__container">
+          <div class="catalog__aside"> 
+            <div class="breadcrumbs breadcrumbs_catalog catalog__breadcrumbs">
+              <div class="breadcrumbs__container"><a class="breadcrumbs__item" href="#">Главная</a><a class="breadcrumbs__item" href="#">Каталог</a></div>
             </div>
-            <div class="swiper-pagination product-card__pagination"></div>
+            <nav class="catalog__aside-items"><a class="catalog__aside-item"></a><a class="catalog__aside-item">Верхняя одежда</a><a class="catalog__aside-item">Костюмы</a><a class="catalog__aside-item">Платья</a><a class="catalog__aside-item active">Рубашки и футболки</a><a class="catalog__aside-item">Топы и баски</a><a class="catalog__aside-item">Юбки</a><a class="catalog__aside-item">Аксессуары</a><a class="catalog__aside-item">Брюки и шорты</a><a class="catalog__aside-item">Смотреть все</a><a class="catalog__aside-item">Предзаказ</a><a class="catalog__aside-item">New</a><a class="catalog__aside-item">Sample sale</a><a class="catalog__aside-item">Подарочный сертификат</a><a class="catalog__aside-item">Sale</a></nav>
           </div>
-          <div class="product-card__content"> 
-            <div class="product-card__content-wrapper">
-              <div class="product-card__name-price-code"> 
-                <p class="product-card__name">Платье миди "веер" с разрезами и летящей юбкой</p>
-                <p class="product-card__price">13 120 ₽</p>
-                <p class="product-card__code">Артикул: 00001865</p>
-              </div>
-              <div class="product-card__sizes-button">
-                <div class="product-card__sizes-items">
-                  <p class="product-card__sizes-title">Размер:</p>
-                  <button class="product-card__size active">XS</button>
-                  <button class="product-card__size">S</button>
-                  <button class="product-card__size">M</button>
-                  <button class="product-card__size">L</button>
-                  <button class="product-card__size">XL</button>
-                </div>
-                <div class="product-card__sizes-btn-wrapper">
-                  <button class="product-card__sizes-btn">Гид по размерам</button>
-                </div>
-              </div>
-              <div class="product-card__tabs">
-                <input class="product-card__tabs-input" checked type="radio" name="content" id="description">
-                <label class="product-card__tabs-label" for="description">Описание </label>
-                <input class="product-card__tabs-input" type="radio" name="content" id="details">
-                <label class="product-card__tabs-label" for="details">Детали </label>
-                <input class="product-card__tabs-input" type="radio" name="content" id="delivery">
-                <label class="product-card__tabs-label" for="delivery">Доставка</label>
-                <div class="product-card__items">
-                  <div class="product-card__item product-card__item_description">
-                     Платье миди "веер" с разрезами и летящей юбкой.<br><br>Следует отметить, что укрепление и развитие внутренней структуры прекрасно подходит для реализации новых принципов формирования материально-технической и кадровой базы.</div>
-                  <div class="product-card__item product-card__item_details">Платье миди "веер" с разрезами и летящей юбкой. 2<br><br>Следует отметить, что укрепление и развитие внутренней структуры прекрасно подходит для реализации новых принципов формирования материально-технической и кадровой базы.</div>
-                  <div class="product-card__item product-card__item_delivery">Платье миди "веер" с разрезами и летящей юбкой. 3<br><br>Следует отметить, что укрепление и развитие внутренней структуры прекрасно подходит для реализации новых принципов формирования материально-технической и кадровой базы.</div>
-                </div>
-              </div>
-              <div class="product-card__buy-btn-wrapper">
-                <button class="btn-link btn-link_fill-black product-card__buy-btn" data-type="addProductToUserCart">В корзину</button>
-              </div>
+          <div class="catalog__main">
+            <div class="catalog__main-filters">
+              <input class="catalog__main-filter-input" name="filter" type="radio" id="type1" checked>
+              <label class="catalog__main-filter-label" for="type1">Платья мини</label>
+              <input class="catalog__main-filter-input" name="filter" type="radio" id="type2">
+              <label class="catalog__main-filter-label" for="type2">Платья-корсеты</label>
+              <input class="catalog__main-filter-input" name="filter" type="radio" id="type3">
+              <label class="catalog__main-filter-label" for="type3">Платья на вечеринку</label>
+              <input class="catalog__main-filter-input" name="filter" type="radio" id="type4">
+              <label class="catalog__main-filter-label" for="type4">Свадебеные платья</label>
+              <input class="catalog__main-filter-input" name="filter" type="radio" id="type5">
+              <label class="catalog__main-filter-label" for="type5">Вечерние платья</label>
+              <input class="catalog__main-filter-input" name="filter" type="radio" id="type6">
+              <label class="catalog__main-filter-label" for="type6">Платья деним</label>
+            </div>
+            <div class="catalog__main-sizes">
+              <p class="catalog__main-size-title">Размер:</p>
+              <button class="catalog__main-size active">XS</button>
+              <button class="catalog__main-size">S</button>
+              <button class="catalog__main-size">M</button>
+              <button class="catalog__main-size">L</button>
+              <button class="catalog__main-size">XL</button>
+            </div>
+            <div class="catalog__main-items"><a class="ui-card2 ui-card2_catalog catalog__main-item" href="/product-card-page.html">
+                <div class="ui-card2__wrapper"> 
+                  <picture class="ui-card2__picture"> <img class="ui-card2__img" src="./img/ui-card-1.png" alt="" loading="lazy"></picture>
+                  <div class="ui-card2__name-and-price">
+                    <p class="ui-card2__name">Платье-рубашка с камнями</p>
+                    <p class="ui-card2__price">13 500 ₽</p>
+                  </div>
+                  <div class="ui-card2__sizes-and-colors">
+                    <div class="ui-card2__sizes">
+                      <p class="text ui-card2__size active">XS</p>
+                      <p class="text ui-card2__size">S</p>
+                      <p class="text ui-card2__size">M</p>
+                    </div>
+                    <div class="ui-card2__colors">
+                      <p class="ui-card2__color" style="--bgColor:#fff"></p>
+                      <p class="ui-card2__color" style="--bgColor:#2C2C2C"></p>
+                    </div>
+                  </div>
+                </div></a><a class="ui-card2 ui-card2_catalog catalog__main-item" href="/product-card-page.html">
+                <div class="ui-card2__wrapper"> 
+                  <picture class="ui-card2__picture"> <img class="ui-card2__img" src="./img/ui-card-2.png" alt="" loading="lazy"></picture>
+                  <div class="ui-card2__name-and-price">
+                    <p class="ui-card2__name">Платье-рубашка с камнями</p>
+                    <p class="ui-card2__price">13 500 ₽</p>
+                  </div>
+                  <div class="ui-card2__sizes-and-colors">
+                    <div class="ui-card2__sizes">
+                      <p class="text ui-card2__size active">XS</p>
+                      <p class="text ui-card2__size">S</p>
+                      <p class="text ui-card2__size">M</p>
+                    </div>
+                    <div class="ui-card2__colors">
+                      <p class="ui-card2__color" style="--bgColor:#fff"></p>
+                      <p class="ui-card2__color" style="--bgColor:#2C2C2C"></p>
+                    </div>
+                  </div>
+                </div></a><a class="ui-card2 ui-card2_catalog catalog__main-item" href="/product-card-page.html">
+                <div class="ui-card2__wrapper"> 
+                  <picture class="ui-card2__picture"> <img class="ui-card2__img" src="./img/ui-card-3.png" alt="" loading="lazy"></picture>
+                  <div class="ui-card2__name-and-price">
+                    <p class="ui-card2__name">Платье-рубашка с камнями</p>
+                    <p class="ui-card2__price">13 500 ₽</p>
+                  </div>
+                  <div class="ui-card2__sizes-and-colors">
+                    <div class="ui-card2__sizes">
+                      <p class="text ui-card2__size active">XS</p>
+                      <p class="text ui-card2__size">S</p>
+                      <p class="text ui-card2__size">M</p>
+                    </div>
+                    <div class="ui-card2__colors">
+                      <p class="ui-card2__color" style="--bgColor:#fff"></p>
+                      <p class="ui-card2__color" style="--bgColor:#2C2C2C"></p>
+                    </div>
+                  </div>
+                </div></a><a class="ui-card2 ui-card2_catalog catalog__main-item" href="/product-card-page.html">
+                <div class="ui-card2__wrapper"> 
+                  <picture class="ui-card2__picture"> <img class="ui-card2__img" src="./img/ui-card-1.png" alt="" loading="lazy"></picture>
+                  <div class="ui-card2__name-and-price">
+                    <p class="ui-card2__name">Платье-рубашка с камнями</p>
+                    <p class="ui-card2__price">13 500 ₽</p>
+                  </div>
+                  <div class="ui-card2__sizes-and-colors">
+                    <div class="ui-card2__sizes">
+                      <p class="text ui-card2__size active">XS</p>
+                      <p class="text ui-card2__size">S</p>
+                      <p class="text ui-card2__size">M</p>
+                    </div>
+                    <div class="ui-card2__colors">
+                      <p class="ui-card2__color" style="--bgColor:#fff"></p>
+                      <p class="ui-card2__color" style="--bgColor:#2C2C2C"></p>
+                    </div>
+                  </div>
+                </div></a><a class="ui-card2 ui-card2_catalog catalog__main-item" href="/product-card-page.html">
+                <div class="ui-card2__wrapper"> 
+                  <picture class="ui-card2__picture"> <img class="ui-card2__img" src="./img/ui-card-2.png" alt="" loading="lazy"></picture>
+                  <div class="ui-card2__name-and-price">
+                    <p class="ui-card2__name">Платье-рубашка с камнями</p>
+                    <p class="ui-card2__price">13 500 ₽</p>
+                  </div>
+                  <div class="ui-card2__sizes-and-colors">
+                    <div class="ui-card2__sizes">
+                      <p class="text ui-card2__size active">XS</p>
+                      <p class="text ui-card2__size">S</p>
+                      <p class="text ui-card2__size">M</p>
+                    </div>
+                    <div class="ui-card2__colors">
+                      <p class="ui-card2__color" style="--bgColor:#fff"></p>
+                      <p class="ui-card2__color" style="--bgColor:#2C2C2C"></p>
+                    </div>
+                  </div>
+                </div></a><a class="ui-card2 ui-card2_catalog catalog__main-item" href="/product-card-page.html">
+                <div class="ui-card2__wrapper"> 
+                  <picture class="ui-card2__picture"> <img class="ui-card2__img" src="./img/ui-card-3.png" alt="" loading="lazy"></picture>
+                  <div class="ui-card2__name-and-price">
+                    <p class="ui-card2__name">Платье-рубашка с камнями</p>
+                    <p class="ui-card2__price">13 500 ₽</p>
+                  </div>
+                  <div class="ui-card2__sizes-and-colors">
+                    <div class="ui-card2__sizes">
+                      <p class="text ui-card2__size active">XS</p>
+                      <p class="text ui-card2__size">S</p>
+                      <p class="text ui-card2__size">M</p>
+                    </div>
+                    <div class="ui-card2__colors">
+                      <p class="ui-card2__color" style="--bgColor:#fff"></p>
+                      <p class="ui-card2__color" style="--bgColor:#2C2C2C"></p>
+                    </div>
+                  </div>
+                </div></a></div>
+            <div class="catalog__main-show-more-wrapper">
+              <button class="btn-link btn-link_outline-black catalog__main-show-more-btn">Загрузить еще</button>
             </div>
           </div>
         </div>
@@ -262,35 +342,6 @@
               <button class="btn-link btn-link_fill-black modal-get-discount__btn">Подписаться на рассылку</button>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="modal-product-added js-modal-product-added">   
-        <div class="modal-product-added__container">
-          <button class="modal-product-added__close-btn js-modal-product-added-close-btn"><img class="modal-product-added__close-img" src="./img/svg/icon-close.svg" alt=""></button>
-          <p class="title-2 modal-product-added__title">Спасибо!</p>
-          <p class="text modal-product-added__subtitle">Товар успешно добавлен в корзину.</p>
-          <div class="ui-card ui-card_small modal-product-added__card">
-            <div class="ui-card__container">
-              <picture class="ui-card__picture"> <img class="ui-card__img" src="./img/ui-card-1.png" alt="" loading="lazy"></picture>
-              <div class="ui-card__content">
-                <p class="text ui-card__name">Платье-миди на прямом корсете</p>
-                <p class="text ui-card__code">Артикул: 00001868</p>
-                <div class="ui-card__sizes-and-colors">
-                  <div class="ui-card__sizes">
-                    <p class="text ui-card__size">XS</p>
-                  </div>
-                  <div class="ui-card__colors">
-                    <p class="ui-card__color" style="--bgColor:#03A3BD"></p>
-                  </div>
-                </div>
-                <div class="ui-card__prices-and-delete"> 
-                  <p class="ui-card__price">14 000 ₽</p>
-                  <p class="ui-card__delete">удалить</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="btn-link btn-link_fill-black modal-product-added__btn">Оформить заказ</button><a class="text modal-product-added__bottom-text" href="/catalog-page.html">Продолжить покупки</a><img class="modal-product-added__bg-image" src="./img/modal-product-added.png" alt="">
         </div>
       </div>
     </main>

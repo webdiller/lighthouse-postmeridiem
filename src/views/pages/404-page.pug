@@ -1,0 +1,25 @@
+extends ../layouts/default
+include ../helpers/mixins
+
+block variables
+    - const title = "gulp-pug-starter"
+
+block content
+    main.main
+        include ../../blocks/modules/top-message/top-message 
+        include ../../blocks/modules/header/header
+        .breadcrumbs.breadcrumbs_success
+            .container.breadcrumbs__container
+                a.breadcrumbs__item(href="#")  Главная
+                a.breadcrumbs__item(href="#")  Страница не найдена
+        .success-block
+            .container.success-block__container 
+                p.title-2.success-block__title 404
+                p.text.success-block__text 
+                    | Страница не найдена
+                a.btn-link.btn-link_fill-black.success-block__link(href="#") На главную
+        include ../../blocks/modules/footer/footer
+
+block scripts
+    script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")
+    script(src="js/main.js")
