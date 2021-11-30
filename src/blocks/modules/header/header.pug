@@ -27,68 +27,70 @@ header.header
                     img.header__item-icon(width="15" height="15" src="./img/svg/icon-cart.svg", alt="")
 
     .header__results.js-header-results.active
-        .container.header__results-container
-            .header__results-search
-                input.ui-input.header__results-search-input(type="text" placeholder="Платье-комбинац")
-            .header__results-navs
-                a.header__results-navs-item(href="#") Платья
-                a.header__results-navs-item(href="#") Рубашки и футболки
-                a.header__results-navs-item(href="#") Топы и баски
-                a.header__results-navs-item(href="#") Юбки
+        .header__results-main-container
+            .container.header__results-container.js-header-results-container
+                .header__results-search
+                    input.ui-input.header__results-search-input(type="text" placeholder="Платье-комбинац")
+                .header__results-navs
+                    a.header__results-navs-item(href="#") Платья
+                    a.header__results-navs-item(href="#") Рубашки и футболки
+                    a.header__results-navs-item(href="#") Топы и баски
+                    a.header__results-navs-item(href="#") Юбки
 
-            .header__results-items
-                .ui-card.ui-card_search.header__results-card
-                    .ui-card__container
-                        picture.ui-card__picture 
-                            img(src='./img/ui-card-1.png' alt="" loading="lazy").ui-card__img
-                        .ui-card__content
-                            p.text.ui-card__name Платье-миди на прямом корсете
-                            p.text.ui-card__code Артикул: 00001868
-                            .ui-card__sizes-and-colors
-                                .ui-card__sizes
-                                    p.text.ui-card__size XS
-                                .ui-card__colors
-                                    p.ui-card__color(style="--bgColor:#03A3BD")
-                            .ui-card__price 13 500 ₽
-                .ui-card.ui-card_search.header__results-card
-                    .ui-card__container
-                        picture.ui-card__picture 
-                            img(src='./img/ui-card-2.png' alt="" loading="lazy").ui-card__img
-                        .ui-card__content
-                            p.text.ui-card__name Платье-миди на прямом корсете
-                            p.text.ui-card__code Артикул: 00001868
-                            .ui-card__sizes-and-colors
-                                .ui-card__sizes
-                                    p.text.ui-card__size XS
-                                .ui-card__colors
-                                    p.ui-card__color(style="--bgColor:#03A3BD")
-                            .ui-card__price 13 500 ₽
-                .ui-card.ui-card_search.header__results-card
-                    .ui-card__container
-                        picture.ui-card__picture 
-                            img(src='./img/ui-card-2.png' alt="" loading="lazy").ui-card__img
-                        .ui-card__content
-                            p.text.ui-card__name Платье-миди на прямом корсете
-                            p.text.ui-card__code Артикул: 00001868
-                            .ui-card__sizes-and-colors
-                                .ui-card__sizes
-                                    p.text.ui-card__size XS
-                                .ui-card__colors
-                                    p.ui-card__color(style="--bgColor:#03A3BD")
-                            .ui-card__price 13 500 ₽
-                .ui-card.ui-card_search.header__results-card
-                    .ui-card__container
-                        picture.ui-card__picture 
-                            img(src='./img/ui-card-3.png' alt="" loading="lazy").ui-card__img
-                        .ui-card__content
-                            p.text.ui-card__name Платье-миди на прямом корсете
-                            p.text.ui-card__code Артикул: 00001868
-                            .ui-card__sizes-and-colors
-                                .ui-card__sizes
-                                    p.text.ui-card__size XS
-                                .ui-card__colors
-                                    p.ui-card__color(style="--bgColor:#03A3BD")
-                            .ui-card__price 13 500 ₽
+                .header__results-items
+                    .header__results-items-wrapper
+                        .ui-card.ui-card_search.header__results-card
+                            .ui-card__container
+                                picture.ui-card__picture 
+                                    img(src='./img/ui-card-1.png' alt="" loading="lazy").ui-card__img
+                                .ui-card__content
+                                    p.text.ui-card__name Платье-миди на прямом корсете
+                                    p.text.ui-card__code Артикул: 00001868
+                                    .ui-card__sizes-and-colors
+                                        .ui-card__sizes
+                                            p.text.ui-card__size XS
+                                        .ui-card__colors
+                                            p.ui-card__color(style="--bgColor:#03A3BD")
+                                    .ui-card__price 13 500 ₽
+                        .ui-card.ui-card_search.header__results-card
+                            .ui-card__container
+                                picture.ui-card__picture 
+                                    img(src='./img/ui-card-2.png' alt="" loading="lazy").ui-card__img
+                                .ui-card__content
+                                    p.text.ui-card__name Платье-миди на прямом корсете
+                                    p.text.ui-card__code Артикул: 00001868
+                                    .ui-card__sizes-and-colors
+                                        .ui-card__sizes
+                                            p.text.ui-card__size XS
+                                        .ui-card__colors
+                                            p.ui-card__color(style="--bgColor:#03A3BD")
+                                    .ui-card__price 13 500 ₽
+                        .ui-card.ui-card_search.header__results-card
+                            .ui-card__container
+                                picture.ui-card__picture 
+                                    img(src='./img/ui-card-2.png' alt="" loading="lazy").ui-card__img
+                                .ui-card__content
+                                    p.text.ui-card__name Платье-миди на прямом корсете
+                                    p.text.ui-card__code Артикул: 00001868
+                                    .ui-card__sizes-and-colors
+                                        .ui-card__sizes
+                                            p.text.ui-card__size XS
+                                        .ui-card__colors
+                                            p.ui-card__color(style="--bgColor:#03A3BD")
+                                    .ui-card__price 13 500 ₽
+                        .ui-card.ui-card_search.header__results-card
+                            .ui-card__container
+                                picture.ui-card__picture 
+                                    img(src='./img/ui-card-3.png' alt="" loading="lazy").ui-card__img
+                                .ui-card__content
+                                    p.text.ui-card__name Платье-миди на прямом корсете
+                                    p.text.ui-card__code Артикул: 00001868
+                                    .ui-card__sizes-and-colors
+                                        .ui-card__sizes
+                                            p.text.ui-card__size XS
+                                        .ui-card__colors
+                                            p.ui-card__color(style="--bgColor:#03A3BD")
+                                    .ui-card__price 13 500 ₽
 
     .header__navigation.js-header-navigation
         .header__navigation-main-container

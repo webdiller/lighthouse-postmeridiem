@@ -278,6 +278,7 @@ var headerSearchInput = document.querySelector(".js-header-search input");
 var headerMenu = document.querySelector(".js-header-menu");
 var headerNavigation = document.querySelector(".js-header-navigation");
 var headerNavigationContainer = document.querySelector(".js-header-navigation-container");
+var headerResultsNavigationContainer = document.querySelector(".js-header-results-container");
 var headerResults = document.querySelector(".js-header-results");
 var headerCenter = document.querySelector(".js-header-center");
 var headerNavigationItemsTitle = document.querySelectorAll(".js-header-navigation-all-items .header__navigation-item_title");
@@ -312,7 +313,8 @@ try {
   headerMobileSearch.addEventListener("click", function (e) {
     headerResults.classList.toggle("active");
   });
-} catch (error) {}
+} catch (error) {} // Меню адаптивность
+
 
 try {
   if (window.innerWidth >= 1360) {
@@ -323,6 +325,20 @@ try {
     if (window.innerWidth >= 1360) {
       var offsetContainer = headerContainer.offsetLeft;
       headerNavigationContainer.style.marginLeft = "".concat(offsetContainer, "px");
+    }
+  });
+} catch (error) {} // Поиск адаптивность
+
+
+try {
+  if (window.innerWidth >= 1360) {
+    headerResultsNavigationContainer.style.marginLeft = "".concat(headerContainer.offsetLeft, "px");
+  }
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth >= 1360) {
+      var offsetContainer = headerContainer.offsetLeft;
+      headerResultsNavigationContainer.style.marginLeft = "".concat(offsetContainer, "px");
     }
   });
 } catch (error) {}

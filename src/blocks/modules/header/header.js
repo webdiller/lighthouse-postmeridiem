@@ -6,16 +6,13 @@ const headerSearchInput = document.querySelector(".js-header-search input");
 
 const headerMenu = document.querySelector(".js-header-menu");
 const headerNavigation = document.querySelector(".js-header-navigation");
-const headerNavigationContainer = document.querySelector(
-  ".js-header-navigation-container"
-);
+const headerNavigationContainer = document.querySelector(".js-header-navigation-container");
+const headerResultsNavigationContainer = document.querySelector(".js-header-results-container");
 
 const headerResults = document.querySelector(".js-header-results");
 
 const headerCenter = document.querySelector(".js-header-center");
-const headerNavigationItemsTitle = document.querySelectorAll(
-  ".js-header-navigation-all-items .header__navigation-item_title"
-);
+const headerNavigationItemsTitle = document.querySelectorAll(".js-header-navigation-all-items .header__navigation-item_title");
 
 try {
   headerSearch.addEventListener("click", function (e) {
@@ -51,6 +48,7 @@ try {
   });
 } catch (error) {}
 
+// Меню адаптивность
 try {
   if (window.innerWidth >= 1360) {
     headerNavigationContainer.style.marginLeft = `${headerContainer.offsetLeft}px`;
@@ -59,6 +57,19 @@ try {
     if (window.innerWidth >= 1360) {
       let offsetContainer = headerContainer.offsetLeft;
       headerNavigationContainer.style.marginLeft = `${offsetContainer}px`;
+    }
+  });
+} catch (error) {}
+
+// Поиск адаптивность
+try {
+  if (window.innerWidth >= 1360) {
+    headerResultsNavigationContainer.style.marginLeft = `${headerContainer.offsetLeft}px`;
+  }
+  window.addEventListener("resize", function () {
+    if (window.innerWidth >= 1360) {
+      let offsetContainer = headerContainer.offsetLeft;
+      headerResultsNavigationContainer.style.marginLeft = `${offsetContainer}px`;
     }
   });
 } catch (error) {}
