@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-pug-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/main.min.css">
+    <script src="https://unpkg.com/imask"></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="top-message">
+        <div class="container top-message__container"> 
+          <p class="top-message__text">Бесплатная доставка от 20.000 Р</p>
+        </div>
+      </div>
+      <header class="header">
+        <div class="header__top">
+          <div class="container header__container js-header-container"> 
+            <div class="header__left">
+              <button class="header__menu js-header-menu"><img class="header__menu-icon-bar" src="./img/svg/icon-bar.svg" alt=""><img class="header__menu-icon-bar-mobile" src="./img/svg/icon-bar-mobile.svg" alt=""><img class="header__menu-icon-close" src="./img/svg/icon-close.svg" alt=""></button>
+              <nav class="header__items header__items_left"> <a class="text header__item" href="#">Каталог</a><a class="text header__item" href="#">Платья</a></nav>
+              <div class="header__search js-header-search">
+                <input class="ui-input header__input" type="text" placeholder="Платье-комбинации"><img class="header__input-icon" src="./img/svg/icon-search.svg" alt="">
+              </div>
+            </div>
+            <div class="header__center js-header-center"><a class="header__logo-link" href="/index.html"> <img class="header__logo-img" src="./img/svg/icon-logo.svg" alt=""></a></div>
+            <div class="header__right"> 
+              <nav class="header__items header__items_right"><a class="text header__item header__item_phone" href="tel:+7 (967) 130-55-22">+7 (967) 130-55-22</a><a class="text header__item" href="#">О нас</a><a class="text ttu header__item header__item_lang" href="#">RU</a></nav>
+              <button class="header__item header__item_search js-header-item-search"><img class="header__item-icon" width="19" height="19" src="./img/svg/icon-search.svg" alt=""></button><a class="header__item header__item_cart" href="#"> <img class="header__item-icon" width="15" height="15" src="./img/svg/icon-cart.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="header__results js-header-results">
+          <div class="header__results-main-container">
+            <div class="container header__results-container js-header-results-container">
+              <div class="header__results-search">
+                <input class="ui-input header__results-search-input" type="text" placeholder="Платье-комбинац">
+              </div>
+              <div class="header__results-navs"><a class="header__results-navs-item" href="#">Платья</a><a class="header__results-navs-item" href="#">Рубашки и футболки</a><a class="header__results-navs-item" href="#">Топы и баски</a><a class="header__results-navs-item" href="#">Юбки</a></div>
+              <div class="header__results-items">
+                <div class="header__results-items-wrapper">
+                  <div class="ui-card ui-card_search header__results-card">
+                    <div class="ui-card__container">
+                      <picture class="ui-card__picture"> <img class="ui-card__img" src="./img/ui-card-1.png" alt="" loading="lazy"></picture>
+                      <div class="ui-card__content">
+                        <p class="text ui-card__name">Платье-миди на прямом корсете</p>
+                        <p class="text ui-card__code">Артикул: 00001868</p>
+                        <div class="ui-card__sizes-and-colors">
+                          <div class="ui-card__sizes">
+                            <p class="text ui-card__size">XS</p>
+                          </div>
+                          <div class="ui-card__colors">
+                            <p class="ui-card__color" style="--bgColor:#03A3BD"></p>
+                          </div>
+                        </div>
+                        <div class="ui-card__price">13 500 ₽</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui-card ui-card_search header__results-card">
+                    <div class="ui-card__container">
+                      <picture class="ui-card__picture"> <img class="ui-card__img" src="./img/ui-card-2.png" alt="" loading="lazy"></picture>
+                      <div class="ui-card__content">
+                        <p class="text ui-card__name">Платье-миди на прямом корсете</p>
+                        <p class="text ui-card__code">Артикул: 00001868</p>
+                        <div class="ui-card__sizes-and-colors">
+                          <div class="ui-card__sizes">
+                            <p class="text ui-card__size">XS</p>
+                          </div>
+                          <div class="ui-card__colors">
+                            <p class="ui-card__color" style="--bgColor:#03A3BD"></p>
+                          </div>
+                        </div>
+                        <div class="ui-card__price">13 500 ₽</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui-card ui-card_search header__results-card">
+                    <div class="ui-card__container">
+                      <picture class="ui-card__picture"> <img class="ui-card__img" src="./img/ui-card-2.png" alt="" loading="lazy"></picture>
+                      <div class="ui-card__content">
+                        <p class="text ui-card__name">Платье-миди на прямом корсете</p>
+                        <p class="text ui-card__code">Артикул: 00001868</p>
+                        <div class="ui-card__sizes-and-colors">
+                          <div class="ui-card__sizes">
+                            <p class="text ui-card__size">XS</p>
+                          </div>
+                          <div class="ui-card__colors">
+                            <p class="ui-card__color" style="--bgColor:#03A3BD"></p>
+                          </div>
+                        </div>
+                        <div class="ui-card__price">13 500 ₽</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui-card ui-card_search header__results-card">
+                    <div class="ui-card__container">
+                      <picture class="ui-card__picture"> <img class="ui-card__img" src="./img/ui-card-3.png" alt="" loading="lazy"></picture>
+                      <div class="ui-card__content">
+                        <p class="text ui-card__name">Платье-миди на прямом корсете</p>
+                        <p class="text ui-card__code">Артикул: 00001868</p>
+                        <div class="ui-card__sizes-and-colors">
+                          <div class="ui-card__sizes">
+                            <p class="text ui-card__size">XS</p>
+                          </div>
+                          <div class="ui-card__colors">
+                            <p class="ui-card__color" style="--bgColor:#03A3BD"></p>
+                          </div>
+                        </div>
+                        <div class="ui-card__price">13 500 ₽</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__navigation js-header-navigation">
+          <div class="header__navigation-main-container">
+            <div class="container header__navigation-container js-header-navigation-container">
+              <div class="header__navigation-all-items js-header-navigation-all-items">
+                <div class="header__navigation-items">
+                  <p class="ttu header__navigation-item header__navigation-item_title">категории<img class="header__navigation-item-icon" src="./img/svg/icon-arrow-down.svg" alt=""></p>
+                  <div class="header__navigation-items-menu"><a class="text header__navigation-item header__navigation-item_link" href="#">Верхняя одежда</a><a class="text header__navigation-item header__navigation-item_link" href="#">Костюмы</a><a class="text header__navigation-item header__navigation-item_link" href="#">Платья</a><a class="text header__navigation-item header__navigation-item_link" href="#">Рубашки и футболки</a><a class="text header__navigation-item header__navigation-item_link" href="#">Топы и баски</a><a class="text header__navigation-item header__navigation-item_link" href="#">Юбки</a><a class="text header__navigation-item header__navigation-item_link" href="#">Аксессуары</a><a class="text header__navigation-item header__navigation-item_link" href="#">Брюки и шорты</a><a class="text header__navigation-item header__navigation-item_link" href="#">Смотреть все</a><a class="text header__navigation-item header__navigation-item_link" href="#">New</a><a class="text header__navigation-item header__navigation-item_link" href="#">Sale</a><a class="text header__navigation-item header__navigation-item_link" href="#">Sample sale</a><a class="text header__navigation-item header__navigation-item_link" href="#">Предзаказ</a><a class="text header__navigation-item header__navigation-item_link" href="#">Подарочный сертификат</a></div>
+                </div>
+                <div class="header__navigation-items">
+                  <p class="ttu header__navigation-item header__navigation-item_title">коллекции<img class="header__navigation-item-icon" src="./img/svg/icon-arrow-down.svg" alt=""></p>
+                  <div class="header__navigation-items-menu"><a class="text header__navigation-item header__navigation-item_link" href="#">Посмотреть все</a><a class="text header__navigation-item header__navigation-item_link" href="#">Коллекция круиз</a><a class="text header__navigation-item header__navigation-item_link" href="#">Вечерний образ</a><a class="text header__navigation-item header__navigation-item_link" href="#">Базовая коллекция</a><a class="text header__navigation-item header__navigation-item_link" href="#">Классические силуэты</a><a class="text header__navigation-item header__navigation-item_link" href="#">Свадебный сезон</a></div>
+                </div>
+                <div class="header__navigation-items header__navigation-items_last">
+                  <p class="ttu header__navigation-item header__navigation-item_title">поркупателю<img class="header__navigation-item-icon" src="./img/svg/icon-arrow-down.svg" alt=""></p>
+                  <div class="header__navigation-items-menu"><a class="text header__navigation-item header__navigation-item_link" href="#">О нас</a><a class="text header__navigation-item header__navigation-item_link" href="#">Магазины</a><a class="text header__navigation-item header__navigation-item_link" href="#">Контакты</a><a class="text header__navigation-item header__navigation-item_link" href="#">Материалы</a></div>
+                </div>
+                <div class="header__navigation-items header__navigation-items_mobile"><a class="ttu header__navigation-item header__navigation-item_title" href="#">О нас</a><a class="ttu header__navigation-item header__navigation-item_title" href="#">Доставка и возврат</a><a class="ttu header__navigation-item header__navigation-item_title" href="#">Контакты</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="breadcrumbs breadcrumbs_privacy">
+        <div class="container breadcrumbs__container"><a class="breadcrumbs__item" href="#">Главная</a><a class="breadcrumbs__item" href="#">Публичная офета в post meridiem</a></div>
+      </div>
+      <div class="public-offer">
+        <div class="container public-offer__container">
+          <p class="title-5 public-offer__title">ПУБЛИЧНАЯ ОФЕРТА В POST MERIDIEM</p>
+          <div class="public-offer__rule-items">
+            <div class="public-offer__rule-item">
+               
+              <bold>Посетитель Сайта </bold> — лицо, пришедшее на сайт https://postmeridiem-brand.com/ без цели размещения Заказа.
+            </div>
+            <div class="public-offer__rule-item">
+               
+              <bold>Пользователь </bold> — физическое лицо, посетитель Сайта, принимающий условия настоящего Соглашения и желающий разместить Заказы на сайте https://postmeridiem-brand.com/
+            </div>
+            <div class="public-offer__rule-item">
+               
+              <bold>Покупатель </bold> — лицо, акцептировавшее публичную оферту на условиях настоящей оферты, размещающее заказы и приобретающее товары на сайте https://postmeridiem-brand.com/ для нужд, не связанных с осуществлением предпринимательской деятельности.
+            </div>
+            <div class="public-offer__rule-item">
+               
+              <bold>Интернет-магазин </bold> — официальный интернет-магазин ИП Цыганкова Яна Владимировна, расположенный по интернет адресу: https://postmeridiem-brand.com/, где представлены Товары, предлагаемые Продавцами для приобретения, а также условия оплаты и доставки Товаров Покупателям.
+            </div>
+            <div class="public-offer__rule-item">
+               
+              <bold>Акцепт </bold> — Акцептом настоящей Публичной оферты считается оформление Покупателем заказа на Товар в соответствии с условиями Публичной оферты.
+            </div>
+          </div>
+          <div class="public-offer__accordions">
+            <div class="public-offer__accordion-item">
+              <input class="public-offer__accordion-input" checked type="checkbox" id="accordion_1">
+              <label class="title-4 public-offer__accordion-label" for="accordion_1">1. Общие положения<img class="public-offer__accordion-icon" src="./img/svg/icon-arrow-down.svg" alt=""></label>
+              <div class="public-offer__accordion-content">
+                <p class="text public-offer__accordion-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Возвращайся всеми снова семь пор взобравшись коварных одна свою букв.</p>
+                <p class="text public-offer__accordion-text">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Рыбного курсивных маленький языком сбить сих эта толку путь, гор что правилами букв составитель, несколько над дал одна, lorem всемогущая?</p>
+                <p class="text public-offer__accordion-text">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Образ использовало если не предложения подпоясал свое lorem путь по всей свой города над он, все вдали продолжил лучше подзаголовок! Рукописи его составитель пояс одна пунктуация рукопись семь! Осталось, взобравшись агентство необходимыми всеми наш залетают парадигматическая приставка. Всеми раз последний переулка!</p>
+                <p class="text public-offer__accordion-text">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Что эта, рыбными вдали грустный послушавшись безорфографичный, маленький путь от всех напоивший образ имеет текста снова за использовало. Однажды необходимыми, ipsum подпоясал свою города но, собрал скатился она решила имени его безорфографичный большой гор залетают, текста рукописи страну своих языкового семь злых ты щеке повстречался? Путь которое безорфографичный языком скатился свою.</p>
+              </div>
+            </div>
+            <div class="public-offer__accordion-item">
+              <input class="public-offer__accordion-input" type="checkbox" id="accordion_2">
+              <label class="title-4 public-offer__accordion-label" for="accordion_2">2. Предмет<img class="public-offer__accordion-icon" src="./img/svg/icon-arrow-down.svg" alt=""></label>
+              <div class="public-offer__accordion-content">
+                <p class="text public-offer__accordion-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Возвращайся всеми снова семь пор взобравшись коварных одна свою букв.</p>
+                <p class="text public-offer__accordion-text">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Рыбного курсивных маленький языком сбить сих эта толку путь, гор что правилами букв составитель, несколько над дал одна, lorem всемогущая?</p>
+                <p class="text public-offer__accordion-text">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Образ использовало если не предложения подпоясал свое lorem путь по всей свой города над он, все вдали продолжил лучше подзаголовок! Рукописи его составитель пояс одна пунктуация рукопись семь! Осталось, взобравшись агентство необходимыми всеми наш залетают парадигматическая приставка. Всеми раз последний переулка!</p>
+                <p class="text public-offer__accordion-text">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Что эта, рыбными вдали грустный послушавшись безорфографичный, маленький путь от всех напоивший образ имеет текста снова за использовало. Однажды необходимыми, ipsum подпоясал свою города но, собрал скатился она решила имени его безорфографичный большой гор залетают, текста рукописи страну своих языкового семь злых ты щеке повстречался? Путь которое безорфографичный языком скатился свою.</p>
+              </div>
+            </div>
+            <div class="public-offer__accordion-item">
+              <input class="public-offer__accordion-input" type="checkbox" id="accordion_3">
+              <label class="title-4 public-offer__accordion-label" for="accordion_3">3. Товар и порядок совершения покупки<img class="public-offer__accordion-icon" src="./img/svg/icon-arrow-down.svg" alt=""></label>
+              <div class="public-offer__accordion-content">
+                <p class="text public-offer__accordion-text">3.1. Регистрация на Сайте не является обязательной для оформления Заказа.</p>
+                <p class="text public-offer__accordion-text">3.2. Продавец не несет ответственности за точность и правильность информации, предоставляемой Пользователем при заказе товара.</p>
+                <p class="text public-offer__accordion-text">3.3. Общение Пользователя/Покупателя с менеджерами и иными представителями Продавца должно строиться на принципах общепринятой морали и коммуникационного этикета. Строго запрещено использование нецензурных слов, брани, оскорбительных выражений, а также угроз и шантажа, в независимости от того, в каком виде и кому они были адресованы.</p>
+                <p class="text public-offer__accordion-text">3.4. В случае отсутствия заказанных Покупателем Товаров на складе Продавца, последний вправе исключить указанный Товар из Заказа / аннулировать Заказ Покупателя, уведомив об этом Покупателя путем направления соответствующего электронного сообщения по адресу, указанному Покупателем при регистрации. Сопровождающие Товар фотографии являются простыми иллюстрациями к нему и могут отличаться от фактического внешнего вида Товара. Сопровождающие Товар описания/характеристики не претендуют на исчерпывающую информативность и могут содержать опечатки. Для уточнения информации по Товару Покупатель должен обратиться к Продавцу через систему обратной связи, указанную в разделе «Контакты», либо по ссылке «Задайте вопрос».</p>
+                <p class="text public-offer__accordion-text">3.5. В случае аннуляции полностью предоплаченного Заказа стоимость аннулированного Товара возвращается Продавцом Покупателю способом, которым Товар был оплачен.</p>
+              </div>
+            </div>
+            <div class="public-offer__accordion-item">
+              <input class="public-offer__accordion-input" type="checkbox" id="accordion_4">
+              <label class="title-4 public-offer__accordion-label" for="accordion_4">4. Доставка заказа<img class="public-offer__accordion-icon" src="./img/svg/icon-arrow-down.svg" alt=""></label>
+              <div class="public-offer__accordion-content">
+                <p class="text public-offer__accordion-text">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты.</p>
+              </div>
+            </div>
+            <div class="public-offer__accordion-item">
+              <input class="public-offer__accordion-input" type="checkbox" id="accordion_5">
+              <label class="title-4 public-offer__accordion-label" for="accordion_5">5. Оплата товара<img class="public-offer__accordion-icon" src="./img/svg/icon-arrow-down.svg" alt=""></label>
+              <div class="public-offer__accordion-content">
+                <p class="text public-offer__accordion-text">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты.</p>
+              </div>
+            </div>
+            <div class="public-offer__accordion-item">
+              <input class="public-offer__accordion-input" type="checkbox" id="accordion_6">
+              <label class="title-4 public-offer__accordion-label" for="accordion_6">6. Возврат и обмен товара и денежных средств<img class="public-offer__accordion-icon" src="./img/svg/icon-arrow-down.svg" alt=""></label>
+              <div class="public-offer__accordion-content">
+                <p class="text public-offer__accordion-text">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты.</p>
+              </div>
+            </div>
+            <div class="public-offer__accordion-item">
+              <input class="public-offer__accordion-input" type="checkbox" id="accordion_7">
+              <label class="title-4 public-offer__accordion-label" for="accordion_7">7. Ответственность<img class="public-offer__accordion-icon" src="./img/svg/icon-arrow-down.svg" alt=""></label>
+              <div class="public-offer__accordion-content">
+                <p class="text public-offer__accordion-text">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты.</p>
+              </div>
+            </div>
+            <div class="public-offer__accordion-item">
+              <input class="public-offer__accordion-input" type="checkbox" id="accordion_8">
+              <label class="title-4 public-offer__accordion-label" for="accordion_8">8. Защита персональных данных<img class="public-offer__accordion-icon" src="./img/svg/icon-arrow-down.svg" alt=""></label>
+              <div class="public-offer__accordion-content">
+                <p class="text public-offer__accordion-text">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты.</p>
+              </div>
+            </div>
+            <div class="public-offer__accordion-item">
+              <input class="public-offer__accordion-input" type="checkbox" id="accordion_9">
+              <label class="title-4 public-offer__accordion-label" for="accordion_9">9. Срок действия Публичной оферты<img class="public-offer__accordion-icon" src="./img/svg/icon-arrow-down.svg" alt=""></label>
+              <div class="public-offer__accordion-content">
+                <p class="text public-offer__accordion-text">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты.</p>
+              </div>
+            </div>
+            <div class="public-offer__accordion-item">
+              <input class="public-offer__accordion-input" type="checkbox" id="accordion_10">
+              <label class="title-4 public-offer__accordion-label" for="accordion_10">10. Дополнительные условия<img class="public-offer__accordion-icon" src="./img/svg/icon-arrow-down.svg" alt=""></label>
+              <div class="public-offer__accordion-content">
+                <p class="text public-offer__accordion-text">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container footer__container"> 
+          <p class="footer__top-text">Магазин дизайнерской одежды POST MERIDIEM</p>
+          <div class="footer__items">
+            <div class="footer__item-main"><a class="text footer__item-main-logo-link" href="#"> <img class="footer__item-main-logo-img" src="./img/svg/icon-logo.svg" alt="" loading="lazy"></a><a class="text footer__item-main-link" href="tel:+7 (967) 130-55-22">+7 (967) 130-55-22</a><a class="text footer__item-main-link" href="mailto:shop@postmeridiem-brand.com">shop@postmeridiem-brand.com</a>
+              <p class="text footer__item-main-text">Москва, ул. Большая Садовая, д. 5, корпус 2. </p>
+            </div>
+            <div class="footer__item-navs"> 
+              <nav class="footer__item-nav footer__item-nav_desktop"><a class="footer__item-nav-item" href="#">О компании</a><a class="footer__item-nav-item" href="#">Шоу-рум</a><a class="footer__item-nav-item" href="#">Контакты</a><a class="footer__item-nav-item" href="#">Материалы</a></nav>
+              <nav class="footer__item-nav footer__item-nav_desktop"><a class="footer__item-nav-item" href="#">Заказ и доставка</a><a class="footer__item-nav-item" href="#">Обмен и возврат</a><a class="footer__item-nav-item" href="#">Вопросы и ответы</a></nav>
+              <nav class="footer__item-nav footer__item-nav_mobile"><a class="footer__item-nav-item" href="#">о нас</a><a class="footer__item-nav-item" href="#">доставка и возврта</a><a class="footer__item-nav-item" href="#">контакты</a></nav>
+            </div>
+            <form class="footer__item-form">
+              <div class="ui-input2 footer__item-form-input-wrapper">
+                <input class="footer__item-form-input" type="email" placeholder="Подписаться на рассылку"><img class="footer__item-form-input-icon" src="./img/svg/icon-middle-right.svg" alt="">
+              </div>
+              <p class="footer__item-form-text">Будьте в курсе наших акиций и поступлений!</p>
+            </form>
+          </div>
+          <nav class="footer__copyright"> <a class="footer__copyright-item" href="#">Публичная оферта </a><a class="footer__copyright-item" href="#">Политика конфиденциальности</a></nav>
+        </div>
+      </footer>
+      <div class="modal-get-discount js-modal-get-discount">
+        <div class="modal-get-discount__container">
+          <button class="modal-get-discount__close-btn js-modal-get-discount-close-btn"><img class="modal-get-discount__close-img" src="./img/svg/icon-close.svg" alt=""></button><img class="modal-get-discount__girl-img" src="./img/modal-get-discount-girl.png" alt=""><img class="modal-get-discount__text-img" src="./img/modal-get-discount-bg.png" alt="">
+          <p class="modal-get-discount__discount">Получите -5%</p>
+          <div class="modal-get-discount__content">
+            <p class="modal-get-discount__title"> на следующую покупку</p>
+            <p class="text modal-get-discount__text">Подпишитесь на нашу рассылку и получите промокод на покупку в течении 30 дней, после подписки.</p>
+            <div class="modal-get-discount__form">
+              <div class="ui-input3 modal-get-discount__input">
+                <input class="ui-input3__input" type="text">
+                <label class="ui-input3__label">Ваш e-mail адрес</label>
+              </div>
+              <button class="btn-link btn-link_fill-black modal-get-discount__btn">Подписаться на рассылку</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
