@@ -160,6 +160,11 @@
         border-bottom: 1px solid #a0a0a0;
       }
     }
+    
+    &:focus + label {
+      background-color: transparent;
+      border-bottom: 1px solid #a0a0a0;
+    }
   }
 
   &__main-filter-label {
@@ -173,12 +178,14 @@
     font-feature-settings: "pnum" on, "lnum" on;
     color: #2c2c2c;
     background: #f6f6f6;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     border-bottom: 1px solid transparent;
     cursor: pointer;
+    transition: all 0.3s ease;
     &:not(:last-child) {
       margin-right: 20px;
     }
+
   }
 
   &__main-sizes {

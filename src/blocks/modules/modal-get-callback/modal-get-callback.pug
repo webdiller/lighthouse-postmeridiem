@@ -1,0 +1,30 @@
+//- Наследуем классы от 'modal-get-discount'
+.modal-get-discount.modal-get-discount_get-callback.js-modal-get-callback
+    .modal-get-discount__container
+
+        button.modal-get-discount__close-btn.js-modal-get-callback-close-btn
+            img.modal-get-discount__close-img(src="./img/svg/icon-close.svg", alt="")
+
+        img.modal-get-discount__girl-img(src="./img/modal-get-callback-girl.png", alt="")
+        img.modal-get-discount__text-img(src="./img/modal-get-discount-bg.png", alt="")
+
+        p.modal-get-discount__discount Закажите обратный звонок
+        
+        .modal-get-discount__content
+
+            p.text.modal-get-discount__text 
+                | И наш менеджер свяжется с вами в
+                br 
+                | течении вух часов
+
+            .modal-get-discount__form
+
+                .ui-input3.modal-get-discount__input
+                        input.ui-input3__input(type="text")
+                        label.ui-input3__label Ваше имя
+
+                .ui-input3.modal-get-discount__input
+                    input.ui-input3__input.js-imask-phone(type="text")
+                    label.ui-input3__label Ваш номер телефона
+
+                button.btn-link.btn-link_fill-black.modal-get-discount__btn Заказать звонок

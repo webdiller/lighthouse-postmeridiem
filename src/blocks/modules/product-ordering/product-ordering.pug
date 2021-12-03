@@ -11,20 +11,28 @@
         form.product-ordering__form.js-product-ordering-form
             .product-ordering__items
                 .ui-input3.product-ordering__item
-                    input.ui-input3__input(type="text")
+                    input.ui-input3__input(type="text" minlength="2" maxlength="30")
                     label.ui-input3__label Ваше имя
+                    img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                    small.ui-input3__small Проверьте правильность введенных данных
 
                 .ui-input3.product-ordering__item
-                    input.ui-input3__input(type="text")
+                    input.ui-input3__input(type="text" minlength="2" maxlength="30")
                     label.ui-input3__label Ваша фамилия
+                    img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                    small.ui-input3__small Проверьте правильность введенных данных
 
                 .ui-input3.product-ordering__item
-                    input.ui-input3__input.js-imask-phone(type="text")
+                    input.ui-input3__input.js-imask-phone(type="text" minlength="2" maxlength="30")
                     label.ui-input3__label Ваш телефон
+                    img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                    small.ui-input3__small Проверьте правильность введенных данных
 
                 .ui-input3.product-ordering__item.product-ordering__item_email
-                    input.ui-input3__input(type="email")
+                    input.ui-input3__input(type="email" minlength="2" maxlength="30")
                     label.ui-input3__label Ваш e-mail адрес
+                    img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                    small.ui-input3__small Проверьте правильность введенных данных
 
                 .product-ordering__item.product-ordering__item_delivery
                     .ui-radio.product-ordering__item
@@ -43,25 +51,31 @@
                         small согласен с обработкой моих данных, в порядке предусмотренном публичной офертой
 
                 .ui-input3.product-ordering__item.product-ordering__item_city.js-product-ordering-city
-                    input.ui-input3__input(type="text")
+                    input.ui-input3__input(type="text" minlength="2" maxlength="30")
                     label.ui-input3__label Ваш город
+                    img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                    small.ui-input3__small Проверьте правильность введенных данных
 
                 .ui-input3.product-ordering__item.product-ordering__item_street.js-product-ordering-street
-                    input.ui-input3__input(type="text")
+                    input.ui-input3__input(type="text" minlength="2" maxlength="30")
                     label.ui-input3__label Ваша улица
+                    img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                    small.ui-input3__small Проверьте правильность введенных данных
 
                 .product-ordering__item.product-ordering__item_address.js-product-ordering-address
                     .ui-input3.product-ordering__item
-                        input.ui-input3__input(type="text")
-                        label.ui-input3__label Ваша улица
+                        input.ui-input3__input(type="text" minlength="2" maxlength="30")
+                        label.ui-input3__label Квартира
 
                     .ui-input3.product-ordering__item
-                        input.ui-input3__input(type="text")
-                        label.ui-input3__label Картира
+                        input.ui-input3__input(type="text" minlength="2" maxlength="30")
+                        label.ui-input3__label Дом
 
                 .ui-input3.ui-input3_textarea.product-ordering__item.product-ordering__item_comment
-                    textarea.ui-input3__input
+                    textarea.ui-input3__input(minlength="2" maxlength="30")
                     label.ui-input3__label Комментарий к заказу
+                    img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                    small.ui-input3__small Проверьте правильность введенных данных
 
                 .product-ordering__item.product-ordering__item_payment
                     .ui-radio.product-ordering__item

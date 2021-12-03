@@ -15,25 +15,13 @@ try {
     forms.forEach((form) => {
       form.addEventListener("change", function (e) {
         if (deliveryPickup.checked) {
-          form
-            .querySelector(".js-product-ordering-city")
-            .classList.add("disabled");
-          form
-            .querySelector(".js-product-ordering-street")
-            .classList.add("disabled");
-          form
-            .querySelector(".js-product-ordering-address")
-            .classList.add("disabled");
+          form.querySelector(".js-product-ordering-city").classList.add("disabled");
+          form.querySelector(".js-product-ordering-street").classList.add("disabled");
+          form.querySelector(".js-product-ordering-address").classList.add("disabled");
         } else if (!deliveryPickup.checked) {
-          form
-            .querySelector(".js-product-ordering-city")
-            .classList.remove("disabled");
-          form
-            .querySelector(".js-product-ordering-street")
-            .classList.remove("disabled");
-          form
-            .querySelector(".js-product-ordering-address")
-            .classList.remove("disabled");
+          form.querySelector(".js-product-ordering-city").classList.remove("disabled");
+          form.querySelector(".js-product-ordering-street").classList.remove("disabled");
+          form.querySelector(".js-product-ordering-address").classList.remove("disabled");
         }
       });
     });

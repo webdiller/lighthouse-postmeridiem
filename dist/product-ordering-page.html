@@ -172,20 +172,20 @@
           <form class="product-ordering__form js-product-ordering-form">
             <div class="product-ordering__items">
               <div class="ui-input3 product-ordering__item">
-                <input class="ui-input3__input" type="text">
-                <label class="ui-input3__label">Ваше имя</label>
+                <input class="ui-input3__input" type="text" minlength="2" maxlength="30">
+                <label class="ui-input3__label">Ваше имя</label><img class="ui-input3__icon" src="./img/svg/icon-alert.svg" alt=""><small class="ui-input3__small">Проверьте правильность введенных данных</small>
               </div>
               <div class="ui-input3 product-ordering__item">
-                <input class="ui-input3__input" type="text">
-                <label class="ui-input3__label">Ваша фамилия</label>
+                <input class="ui-input3__input" type="text" minlength="2" maxlength="30">
+                <label class="ui-input3__label">Ваша фамилия</label><img class="ui-input3__icon" src="./img/svg/icon-alert.svg" alt=""><small class="ui-input3__small">Проверьте правильность введенных данных</small>
               </div>
               <div class="ui-input3 product-ordering__item">
-                <input class="ui-input3__input js-imask-phone" type="text">
-                <label class="ui-input3__label">Ваш телефон</label>
+                <input class="ui-input3__input js-imask-phone" type="text" minlength="2" maxlength="30">
+                <label class="ui-input3__label">Ваш телефон</label><img class="ui-input3__icon" src="./img/svg/icon-alert.svg" alt=""><small class="ui-input3__small">Проверьте правильность введенных данных</small>
               </div>
               <div class="ui-input3 product-ordering__item product-ordering__item_email">
-                <input class="ui-input3__input" type="email">
-                <label class="ui-input3__label">Ваш e-mail адрес</label>
+                <input class="ui-input3__input" type="email" minlength="2" maxlength="30">
+                <label class="ui-input3__label">Ваш e-mail адрес</label><img class="ui-input3__icon" src="./img/svg/icon-alert.svg" alt=""><small class="ui-input3__small">Проверьте правильность введенных данных</small>
               </div>
               <div class="product-ordering__item product-ordering__item_delivery">
                 <div class="ui-radio product-ordering__item">
@@ -202,26 +202,26 @@
                 <label for="rules"><span><img src="./img/svg/icon-checkbox.svg" alt="" loading="lazy"></span><small>согласен с обработкой моих данных, в порядке предусмотренном публичной офертой</small></label>
               </div>
               <div class="ui-input3 product-ordering__item product-ordering__item_city js-product-ordering-city">
-                <input class="ui-input3__input" type="text">
-                <label class="ui-input3__label">Ваш город</label>
+                <input class="ui-input3__input" type="text" minlength="2" maxlength="30">
+                <label class="ui-input3__label">Ваш город</label><img class="ui-input3__icon" src="./img/svg/icon-alert.svg" alt=""><small class="ui-input3__small">Проверьте правильность введенных данных</small>
               </div>
               <div class="ui-input3 product-ordering__item product-ordering__item_street js-product-ordering-street">
-                <input class="ui-input3__input" type="text">
-                <label class="ui-input3__label">Ваша улица</label>
+                <input class="ui-input3__input" type="text" minlength="2" maxlength="30">
+                <label class="ui-input3__label">Ваша улица</label><img class="ui-input3__icon" src="./img/svg/icon-alert.svg" alt=""><small class="ui-input3__small">Проверьте правильность введенных данных</small>
               </div>
               <div class="product-ordering__item product-ordering__item_address js-product-ordering-address">
                 <div class="ui-input3 product-ordering__item">
-                  <input class="ui-input3__input" type="text">
-                  <label class="ui-input3__label">Ваша улица</label>
+                  <input class="ui-input3__input" type="text" minlength="2" maxlength="30">
+                  <label class="ui-input3__label">Квартира</label>
                 </div>
                 <div class="ui-input3 product-ordering__item">
-                  <input class="ui-input3__input" type="text">
-                  <label class="ui-input3__label">Картира</label>
+                  <input class="ui-input3__input" type="text" minlength="2" maxlength="30">
+                  <label class="ui-input3__label">Дом</label>
                 </div>
               </div>
               <div class="ui-input3 ui-input3_textarea product-ordering__item product-ordering__item_comment">
-                <textarea class="ui-input3__input"></textarea>
-                <label class="ui-input3__label">Комментарий к заказу</label>
+                <textarea class="ui-input3__input" minlength="2" maxlength="30"></textarea>
+                <label class="ui-input3__label">Комментарий к заказу</label><img class="ui-input3__icon" src="./img/svg/icon-alert.svg" alt=""><small class="ui-input3__small">Проверьте правильность введенных данных</small>
               </div>
               <div class="product-ordering__item product-ordering__item_payment">
                 <div class="ui-radio product-ordering__item">
@@ -264,7 +264,7 @@
             </div>
             <form class="footer__item-form">
               <div class="ui-input2 footer__item-form-input-wrapper">
-                <input class="footer__item-form-input" type="email" placeholder="Подписаться на рассылку"><img class="footer__item-form-input-icon" src="./img/svg/icon-middle-right.svg" alt="">
+                <input class="ui-input2__input" type="email" placeholder="Подписаться на рассылку" value=" "><img class="ui-input2__icon-arrow" src="./img/svg/icon-middle-right.svg" alt=""><img class="ui-input2__icon-alert" src="./img/svg/icon-alert.svg" alt=""><img class="ui-input2__icon-checkbox" src="./img/svg/icon-checkbox.svg" alt=""><small class="ui-input2__small">Проверьте правильность введенных данных</small>
               </div>
               <p class="footer__item-form-text">Будьте в курсе наших акиций и поступлений!</p>
             </form>
@@ -285,6 +285,27 @@
                 <label class="ui-input3__label">Ваш e-mail адрес</label>
               </div>
               <button class="btn-link btn-link_fill-black modal-get-discount__btn">Подписаться на рассылку</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-get-discount modal-get-discount_get-callback js-modal-get-callback">
+        <div class="modal-get-discount__container">
+          <button class="modal-get-discount__close-btn js-modal-get-callback-close-btn"><img class="modal-get-discount__close-img" src="./img/svg/icon-close.svg" alt=""></button><img class="modal-get-discount__girl-img" src="./img/modal-get-callback-girl.png" alt=""><img class="modal-get-discount__text-img" src="./img/modal-get-discount-bg.png" alt="">
+          <p class="modal-get-discount__discount">Закажите обратный звонок</p>
+          <div class="modal-get-discount__content">
+            <p class="text modal-get-discount__text">
+               И наш менеджер свяжется с вами в<br>течении вух часов</p>
+            <div class="modal-get-discount__form">
+              <div class="ui-input3 modal-get-discount__input">
+                <input class="ui-input3__input" type="text">
+                <label class="ui-input3__label">Ваше имя</label>
+              </div>
+              <div class="ui-input3 modal-get-discount__input">
+                <input class="ui-input3__input js-imask-phone" type="text">
+                <label class="ui-input3__label">Ваш номер телефона</label>
+              </div>
+              <button class="btn-link btn-link_fill-black modal-get-discount__btn">Заказать звонок</button>
             </div>
           </div>
         </div>

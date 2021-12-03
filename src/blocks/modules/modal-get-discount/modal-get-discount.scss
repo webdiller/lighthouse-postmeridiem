@@ -159,4 +159,23 @@
   &__btn {
     width: 100%;
   }
+
+  // Модалка обратного звонка
+  &_get-callback {
+    .modal-get-discount__girl-img {
+      left: 30px;
+      @include media("<=991px") {
+        left: -40px;
+      }
+      @include media("<=768px") {
+        left: 30px;
+      }
+    }
+    .modal-get-discount__discount {
+      padding-right: 170px;
+      @include media("<=768px") {
+        padding-right: 0;
+      }
+    }
+  }
 }

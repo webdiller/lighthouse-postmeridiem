@@ -164,10 +164,13 @@ input {
   white-space: nowrap;
   padding: 0 95px;
   min-height: 55px;
+  outline: none;
 
   font-size: 15px;
   letter-spacing: 0.15em;
   font-feature-settings: "pnum" on, "lnum" on;
+  transition: all 0.3s ease;
+  background-color: transparent;
 
   @include media("<=768px") {
     padding-left: 25px;
@@ -176,13 +179,46 @@ input {
   }
 
   &_outline-black {
-    color: #000000;
-    border: 1px solid #000000;
+    color: #2c2c2c;
+    border: 1px solid #2c2c2c;
+    &:hover,
+    &:focus {
+      background-color: #2c2c2c;
+      color: #fff;
+    }
+    &[disabled] {
+      border-color: #a0a0a0;
+      color: #a0a0a0;
+      &:hover,
+      &:focus {
+        border-color: #a0a0a0;
+        color: #a0a0a0;
+        background-color: transparent;
+        cursor: auto;
+      }
+    }
   }
 
   &_outline-white {
     color: #ffffff;
     border: 1px solid #ffffff;
+    &:hover,
+    &:focus {
+      background-color: #fff;
+      color: #2c2c2c;
+      border-color: #fff;
+    }
+    &[disabled] {
+      border-color: #959595;
+      color: #959595;
+      &:hover,
+      &:focus {
+        border-color: #959595;
+        color: #959595;
+        background-color: transparent;
+        cursor: auto;
+      }
+    }
   }
 
   &_mobile-small {
@@ -204,6 +240,23 @@ input {
     min-height: 53px;
     padding-left: 89px;
     padding-right: 89px;
+    border-width: 1px;
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: #2c2c2c;
+    }
+    &[disabled] {
+      background-color: #a0a0a0;
+      border: 0;
+      &:hover,
+      &:focus {
+        background-color: #a0a0a0;
+        color: #fff;
+        border: 0;
+        cursor: auto;
+      }
+    }
   }
 
   &_border-0 {
@@ -260,10 +313,12 @@ input {
 
 .ui-input2 {
   position: relative;
+  min-width: 315px;
   height: 35px;
   padding-bottom: 10px;
   border-bottom: 1px solid #2c2c2c;
   @include media("<=991px") {
+    min-width: 170px;
   }
   input {
     border: 0;
@@ -278,22 +333,88 @@ input {
       color: #a0a0a0;
     }
     &::placeholder {
-      font-size: 13px;
-      line-height: 19px;
-      @include media("<=991px") {
-        font-size: 15px;
-        font-feature-settings: "pnum" on, "lnum" on;
-        color: #a0a0a0;
+      font-size: 15px;
+      line-height: 150%;
+      color: #a0a0a0;
+      font-feature-settings: "pnum" on, "lnum" on;
+    }
+    &:not(:focus):invalid,
+    &:focus:invalid {
+      ~ .ui-input2__icon-arrow {
+        opacity: 0;
+      }
+      ~ .ui-input2__icon-alert {
+        opacity: 1;
+      }
+      ~ .ui-input2__small {
+        opacity: 1;
+      }
+    }
+    &:focus:valid {
+      ~ .ui-input2__icon-arrow {
+        opacity: 0;
+      }
+      ~ .ui-input2__icon-alert {
+        opacity: 0;
+      }
+      ~ .ui-input2__icon-checkbox {
+        opacity: 1;
+      }
+      ~ .ui-input2__small {
+        opacity: 0;
+      }
+    }
+    &:focus:valid:placeholder-shown {
+      ~ .ui-input2__icon-arrow {
+        opacity: 1;
+      }
+      ~ .ui-input2__icon-checkbox {
+        opacity: 0;
+      }
+      ~ .ui-input2__icon-alert {
+        opacity: 0;
+      }
+      ~ .ui-input2__small {
+        opacity: 0;
       }
     }
   }
-  img {
+  &__icon-arrow {
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(calc(-50% - 5px));
     @include media("<=991px") {
     }
+  }
+  &__icon-alert {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    opacity: 0;
+  }
+  &__icon-checkbox {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    opacity: 0;
+  }
+  &__small {
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    color: #e4002e;
+    font-size: 10px;
+    line-height: 150%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
   }
 }
 
@@ -653,11 +774,35 @@ input {
   }
   &__wrapper {
     position: relative;
+    display: block;
     @include media("<=991px") {
     }
     @include media("<=768px") {
     }
     @include media("<=480px") {
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.7);
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+    &:hover,
+    &:focus {
+      &::before {
+        opacity: 1;
+      }
+      .ui-card3__bottom {
+        background-color: transparent;
+      }
+      .ui-card3__bottom-text {
+        text-shadow: 1px 0 0 currentColor;
+      }
     }
   }
   &__picture {
@@ -679,7 +824,7 @@ input {
     }
   }
 
-  &__link {
+  &__bottom {
     position: absolute;
     height: 89px;
     padding: 35px 20px 10px 20px;
@@ -694,6 +839,12 @@ input {
     bottom: 0;
     left: 0;
     width: 100%;
+    transition: all 0.3s ease;
+    z-index: 10;
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
     @include media("<=991px") {
     }
     @include media("<=768px") {
@@ -706,12 +857,13 @@ input {
     }
   }
 
-  &__link-text {
+  &__bottom-text {
     display: inline-block;
     max-width: 175px;
     text-decoration: none;
     font-size: 13px;
     line-height: 150%;
+    transition: all 0.3s ease;
     @include media("<=991px") {
     }
     @include media("<=768px") {
@@ -720,7 +872,7 @@ input {
     }
   }
 
-  &__link-icon {
+  &__bottom-icon {
     align-self: flex-start;
     margin-top: 5px;
     @include media("<=991px") {
@@ -899,6 +1051,16 @@ input {
       }
     }
 
+    &:not(:focus):invalid,
+    &:focus:invalid {
+      ~ .ui-input3__icon {
+        opacity: 1;
+      }
+      ~ .ui-input3__small {
+        opacity: 1;
+      }
+    }
+
     /*
     * Если инпут не пустой, то добавляем этот класс, чтобы label не перекрывал текст. 
     * Вызываем в javascript'e
@@ -924,11 +1086,36 @@ input {
     transition: all 0.3s ease;
     pointer-events: none;
   }
-  
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    opacity: 0;
+  }
+  &__small {
+    color: #e4002e;
+    font-size: 10px;
+    line-height: 150%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
   &_textarea {
     .ui-input3__label {
       top: 14px;
       transform: unset;
+    }
+    .ui-input3__icon {
+      position: absolute;
+      top: 25px;
+      right: 20px;
+      transition: all 0.3s ease;
+      pointer-events: none;
+      opacity: 0;
     }
   }
 }

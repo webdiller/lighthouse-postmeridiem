@@ -16,20 +16,28 @@
                     form.product-ordering__form.js-product-ordering-form
                         .product-ordering__items
                             .ui-input3.product-ordering__item
-                                input.ui-input3__input(type="text")
+                                input.ui-input3__input(type="text" minlength="2" maxlength="30")
                                 label.ui-input3__label Ваше имя
+                                img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                                small.ui-input3__small Проверьте правильность введенных данных
 
                             .ui-input3.product-ordering__item
-                                input.ui-input3__input(type="text")
+                                input.ui-input3__input(type="text" minlength="2" maxlength="30")
                                 label.ui-input3__label Ваша фамилия
+                                img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                                small.ui-input3__small Проверьте правильность введенных данных
 
                             .ui-input3.product-ordering__item
-                                input.ui-input3__input.js-imask-phone(type="text")
+                                input.ui-input3__input.js-imask-phone(type="text" minlength="2" maxlength="30")
                                 label.ui-input3__label Ваш телефон
+                                img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                                small.ui-input3__small Проверьте правильность введенных данных
 
                             .ui-input3.product-ordering__item.product-ordering__item_email
-                                input.ui-input3__input(type="email")
+                                input.ui-input3__input(type="email" minlength="2" maxlength="30")
                                 label.ui-input3__label Ваш e-mail адрес
+                                img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                                small.ui-input3__small Проверьте правильность введенных данных
 
                             .product-ordering__item.product-ordering__item_delivery
                                 .ui-radio.product-ordering__item.product-ordering__item_radio
@@ -41,25 +49,35 @@
                                     label(for="deliveryPickup") Самовывоз
 
                             .ui-input3.product-ordering__item.product-ordering__item_city.js-product-ordering-city
-                                input.ui-input3__input(type="text")
+                                input.ui-input3__input(type="text" minlength="2" maxlength="30")
                                 label.ui-input3__label Ваш город
+                                img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                                small.ui-input3__small Проверьте правильность введенных данных
 
                             .ui-input3.product-ordering__item.product-ordering__item_street.js-product-ordering-street
-                                input.ui-input3__input(type="text")
+                                input.ui-input3__input(type="text" minlength="2" maxlength="30")
                                 label.ui-input3__label Ваша улица
+                                img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                                small.ui-input3__small Проверьте правильность введенных данных
 
                             .product-ordering__item.product-ordering__item_address.js-product-ordering-address
                                 .ui-input3.product-ordering__item
-                                    input.ui-input3__input(type="text")
+                                    input.ui-input3__input(type="text" minlength="2" maxlength="30")
                                     label.ui-input3__label Ваша улица
+                                    img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                                    small.ui-input3__small Проверьте правильность введенных данных
 
                                 .ui-input3.product-ordering__item
-                                    input.ui-input3__input(type="text")
+                                    input.ui-input3__input(type="text" minlength="2" maxlength="30")
                                     label.ui-input3__label Картира
+                                    img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                                    small.ui-input3__small Проверьте правильность введенных данных
 
                             .ui-input3.ui-input3_textarea.product-ordering__item.product-ordering__item_comment
-                                textarea.ui-input3__input
+                                textarea.ui-input3__input(minlength="2" maxlength="30")
                                 label.ui-input3__label Комментарий к заказу
+                                img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                                small.ui-input3__small Проверьте правильность введенных данных
 
                             .product-ordering__item.product-ordering__item_payment
                                 .ui-radio.product-ordering__item.product-ordering__item_radio
@@ -76,13 +94,13 @@
                                 .product-ordering__total-item  
                                     p.product-ordering__total-key Вместе
                                     p.product-ordering__total-value 38 800 ₽
-                                    
+
                             .product-ordering__item.product-ordering__item_btn-wrapper
                                 button.btn-link.btn-link_fill-black(type="submit") Оплатить
 
             //- Товары
             .user-cart-alt__items-total
-            
+
                 p.user-cart-alt__title корзина
 
                 .user-cart-alt__items
@@ -134,7 +152,7 @@
                                 .ui-card__prices-and-delete 
                                     p.ui-card__price 14 000 ₽
                                     p.ui-card__delete удалить
-                        
+
                 .user-cart-alt__total
                     .user-cart-alt__total-items
                         .user-cart-alt__total-item.user-cart-alt__total-item_delivery

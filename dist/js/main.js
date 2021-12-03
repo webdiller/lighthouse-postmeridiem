@@ -428,6 +428,31 @@ var materialsSlider = new Swiper(".js-materials-swiper", {
 
 /***/ }),
 
+/***/ "./src/blocks/modules/modal-get-callback/modal-get-callback.js":
+/*!*********************************************************************!*\
+  !*** ./src/blocks/modules/modal-get-callback/modal-get-callback.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+try {
+  var modalGetCallback = document.querySelector(".js-modal-get-callback");
+  var modalGetCallbackCloseButton = document.querySelector(".js-modal-get-callback-close-btn");
+  modalGetCallbackCloseButton.addEventListener("click", function (e) {
+    modalGetCallback.classList.remove("active");
+    console.log(1);
+  });
+  modalGetCallback.addEventListener("click", function (e) {
+    if (e.target === modalGetCallback) {
+      modalGetCallback.classList.remove("active");
+    }
+  });
+} catch (error) {
+  console.log(error);
+}
+
+/***/ }),
+
 /***/ "./src/blocks/modules/modal-get-discount/modal-get-discount.js":
 /*!*********************************************************************!*\
   !*** ./src/blocks/modules/modal-get-discount/modal-get-discount.js ***!
@@ -698,6 +723,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_modal_product_added_modal_product_added__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_modules_modal_product_added_modal_product_added__WEBPACK_IMPORTED_MODULE_15__);
 /* harmony import */ var _modules_modal_get_discount_modal_get_discount__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! %modules%/modal-get-discount/modal-get-discount */ "./src/blocks/modules/modal-get-discount/modal-get-discount.js");
 /* harmony import */ var _modules_modal_get_discount_modal_get_discount__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_modules_modal_get_discount_modal_get_discount__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _modules_modal_get_callback_modal_get_callback__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! %modules%/modal-get-callback/modal-get-callback */ "./src/blocks/modules/modal-get-callback/modal-get-callback.js");
+/* harmony import */ var _modules_modal_get_callback_modal_get_callback__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_modules_modal_get_callback_modal_get_callback__WEBPACK_IMPORTED_MODULE_17__);
+
 
 
 
@@ -731,20 +759,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _import_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./import/components */ "./src/js/import/components.js");
 /* harmony import */ var _import_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_import_components__WEBPACK_IMPORTED_MODULE_1__);
 
+ // Кастомные инпуты
 
 var uiInputs = document.querySelectorAll(".ui-input3 .ui-input3__input");
 
-if (uiInputs.length > 0) {
-  uiInputs.forEach(function (item) {
-    item.addEventListener("change", function (e) {
-      if (e.target.value.length > 0) {
-        e.target.classList.add("has-value");
-      } else {
-        e.target.classList.remove("has-value");
-      }
+try {
+  if (uiInputs.length > 0) {
+    uiInputs.forEach(function (item) {
+      item.addEventListener("input", function (e) {
+        if (e.target.value.length > 0) {
+          e.target.classList.add("has-value");
+        } else {
+          e.target.classList.remove("has-value");
+        }
+      });
     });
-  });
-}
+  }
+} catch (error) {} // Вызвать модалку обратного звонка
+
+
+var getCallbackButtons = document.querySelectorAll('.js-get-callback-button');
+
+try {
+  if (getCallbackButtons.length > 0) {
+    getCallbackButtons.forEach(function (item) {
+      item.addEventListener("click", function (e) {
+        document.querySelector('.js-modal-get-callback').classList.add('active');
+      });
+    });
+  }
+} catch (error) {} // Автоматически показать модалку со скидкой
+
 
 if (window.location.pathname.includes("catalog")) {
   setTimeout(function () {

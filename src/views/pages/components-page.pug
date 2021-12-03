@@ -1,0 +1,36 @@
+extends ../layouts/default
+include ../helpers/mixins
+
+block variables
+    - const title = "gulp-pug-starter"
+
+block content
+    main.main
+        br
+        br
+
+        //- Обводка черная
+        .container 
+            p.title-5 Обводка черная
+        .container.review-site
+            button.btn-link.btn-link_outline-black В каталог  
+            button.btn-link.btn-link_outline-black(disabled) Не активная
+
+        //- Заливка черная
+        .container 
+            p.title-5 Заливка черная
+        .container.review-site
+            button.btn-link.btn-link_fill-black В каталог  
+            button.btn-link.btn-link_fill-black(disabled) Не активная
+
+        //- Обводка белая
+        .container
+            p.title-5 Обводка белая
+        .container.review-site(style="background:#2c2c2c; padding-top:20px; padding-bottom:20px;")
+            button.btn-link.btn-link_outline-white В каталог  
+            button.btn-link.btn-link_outline-white(disabled) Не активная
+
+block scripts
+    script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")
+    script(src="js/main.js")
+
