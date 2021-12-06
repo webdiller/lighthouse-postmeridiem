@@ -39,7 +39,7 @@ header.header
 
                 .header__results-items
                     .header__results-items-wrapper
-                        .ui-card.ui-card_search.header__results-card
+                        a.ui-card.ui-card_search.header__results-card(href="#")
                             .ui-card__container
                                 picture.ui-card__picture 
                                     img(src='./img/ui-card-1.png' alt="" loading="lazy").ui-card__img
@@ -52,7 +52,7 @@ header.header
                                         .ui-card__colors
                                             p.ui-card__color(style="--bgColor:#03A3BD")
                                     .ui-card__price 13 500 ₽
-                        .ui-card.ui-card_search.header__results-card
+                        a.ui-card.ui-card_search.header__results-card(href="#")
                             .ui-card__container
                                 picture.ui-card__picture 
                                     img(src='./img/ui-card-2.png' alt="" loading="lazy").ui-card__img
@@ -65,7 +65,7 @@ header.header
                                         .ui-card__colors
                                             p.ui-card__color(style="--bgColor:#03A3BD")
                                     .ui-card__price 13 500 ₽
-                        .ui-card.ui-card_search.header__results-card
+                        a.ui-card.ui-card_search.header__results-card(href="#")
                             .ui-card__container
                                 picture.ui-card__picture 
                                     img(src='./img/ui-card-2.png' alt="" loading="lazy").ui-card__img
@@ -78,7 +78,59 @@ header.header
                                         .ui-card__colors
                                             p.ui-card__color(style="--bgColor:#03A3BD")
                                     .ui-card__price 13 500 ₽
-                        .ui-card.ui-card_search.header__results-card
+                        a.ui-card.ui-card_search.header__results-card(href="#")
+                            .ui-card__container
+                                picture.ui-card__picture 
+                                    img(src='./img/ui-card-3.png' alt="" loading="lazy").ui-card__img
+                                .ui-card__content
+                                    p.text.ui-card__name Платье-миди на прямом корсете
+                                    p.text.ui-card__code Артикул: 00001868
+                                    .ui-card__sizes-and-colors
+                                        .ui-card__sizes
+                                            p.text.ui-card__size XS
+                                        .ui-card__colors
+                                            p.ui-card__color(style="--bgColor:#03A3BD")
+                                    .ui-card__price 13 500 ₽
+                        a.ui-card.ui-card_search.header__results-card(href="#")
+                            .ui-card__container
+                                picture.ui-card__picture 
+                                    img(src='./img/ui-card-1.png' alt="" loading="lazy").ui-card__img
+                                .ui-card__content
+                                    p.text.ui-card__name Платье-миди на прямом корсете
+                                    p.text.ui-card__code Артикул: 00001868
+                                    .ui-card__sizes-and-colors
+                                        .ui-card__sizes
+                                            p.text.ui-card__size XS
+                                        .ui-card__colors
+                                            p.ui-card__color(style="--bgColor:#03A3BD")
+                                    .ui-card__price 13 500 ₽
+                        a.ui-card.ui-card_search.header__results-card(href="#")
+                            .ui-card__container
+                                picture.ui-card__picture 
+                                    img(src='./img/ui-card-2.png' alt="" loading="lazy").ui-card__img
+                                .ui-card__content
+                                    p.text.ui-card__name Платье-миди на прямом корсете
+                                    p.text.ui-card__code Артикул: 00001868
+                                    .ui-card__sizes-and-colors
+                                        .ui-card__sizes
+                                            p.text.ui-card__size XS
+                                        .ui-card__colors
+                                            p.ui-card__color(style="--bgColor:#03A3BD")
+                                    .ui-card__price 13 500 ₽
+                        a.ui-card.ui-card_search.header__results-card(href="#")
+                            .ui-card__container
+                                picture.ui-card__picture 
+                                    img(src='./img/ui-card-2.png' alt="" loading="lazy").ui-card__img
+                                .ui-card__content
+                                    p.text.ui-card__name Платье-миди на прямом корсете
+                                    p.text.ui-card__code Артикул: 00001868
+                                    .ui-card__sizes-and-colors
+                                        .ui-card__sizes
+                                            p.text.ui-card__size XS
+                                        .ui-card__colors
+                                            p.ui-card__color(style="--bgColor:#03A3BD")
+                                    .ui-card__price 13 500 ₽
+                        a.ui-card.ui-card_search.header__results-card(href="#")
                             .ui-card__container
                                 picture.ui-card__picture 
                                     img(src='./img/ui-card-3.png' alt="" loading="lazy").ui-card__img
@@ -139,3 +191,16 @@ header.header
                         a(href="#").ttu.header__navigation-item.header__navigation-item_title О нас
                         a(href="#").ttu.header__navigation-item.header__navigation-item_title Доставка и возврат
                         a(href="#").ttu.header__navigation-item.header__navigation-item_title Контакты
+                    .header__bottom
+                
+            .container.header__bottom-container
+                form.header__bottom-form
+                    .ui-input2.header__bottom-form-input
+                        input.ui-input2__input(type="email" placeholder="Подписаться на рассылку" value=" ")
+                        img.ui-input2__icon-arrow(src="./img/svg/icon-middle-right.svg", alt="")
+                        img.ui-input2__icon-alert(src="./img/svg/icon-alert.svg", alt="")
+                        img.ui-input2__icon-checkbox(src="./img/svg/icon-checkbox.svg", alt="")
+                        small.ui-input2__small Проверьте правильность введенных данных
+                    p.header__bottom-form-text Будьте в курсе наших акиций и поступлений!
+                a.text.header__bottom-item(href="tel:+79671305522") +7 (967) 130-55-22
+                p.text.header__bottom-item Москва, ул. Большая Садовая, д. 5, корпус 2. 

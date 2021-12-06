@@ -26,10 +26,6 @@ footer.footer
                     a.footer__item-nav-item(href="#") контакты
 
             form.footer__item-form
-                //- .ui-input2.footer__item-form-input-wrapper
-                //-     input.footer__item-form-input(type="email" placeholder="Подписаться на рассылку")
-                //-     img.footer__item-form-input-icon(src="./img/svg/icon-middle-right.svg", alt="")
-
                 .ui-input2.footer__item-form-input-wrapper
                     input.ui-input2__input(type="email" placeholder="Подписаться на рассылку" value=" ")
                     img.ui-input2__icon-arrow(src="./img/svg/icon-middle-right.svg", alt="")
@@ -39,8 +35,8 @@ footer.footer
                 p.footer__item-form-text Будьте в курсе наших акиций и поступлений!
 
         nav.footer__copyright  
-            a.footer__copyright-item(href="#") Публичная оферта 
-            a.footer__copyright-item(href="#") Политика конфиденциальности
+            a.text.footer__copyright-item(href="#") Публичная оферта 
+            a.text.footer__copyright-item(href="#") Политика конфиденциальности
 
 //- На всех страницах есть возможность вызвать модалку 'всплывающее окно рассылка'
 include ../../../blocks/modules/modal-get-discount/modal-get-discount

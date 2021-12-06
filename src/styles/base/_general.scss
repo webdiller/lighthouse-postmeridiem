@@ -516,6 +516,7 @@ input {
   }
 
   &_search {
+    display: block;
     .ui-card__container {
       @include media("<=991px") {
         display: block;

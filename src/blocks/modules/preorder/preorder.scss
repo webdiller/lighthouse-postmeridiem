@@ -1,8 +1,8 @@
 .preorder {
-  overflow: hidden;
   &__container {
     margin-bottom: 100px;
     position: relative;
+    overflow: hidden;
     @include media("<=991px") {
       margin-bottom: 50px;
     }
@@ -44,13 +44,21 @@
   &__overlay-link {
   }
 
-  &__picture {
+  &__video-wrapper {
+    position: relative;
+    height: 753px;
+    @include media("<=768px") {
+      height: 753px;
+    }
   }
 
-  &__img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+  &__video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: auto;
+    height: 100%;
   }
 }

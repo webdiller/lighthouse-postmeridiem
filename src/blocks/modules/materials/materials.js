@@ -1,6 +1,6 @@
 const materialsSlider = new Swiper(".js-materials-swiper", {
   loop: true,
-  slidesPerView: 1.4,
+  slidesPerView: 1.32,
   spaceBetween: 10,
   centeredSlides: true,
   breakpoints: {

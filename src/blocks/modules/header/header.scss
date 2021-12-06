@@ -585,4 +585,37 @@
       margin-bottom: 10px;
     }
   }
+
+  &__bottom-container {
+    display: none;
+    margin-top: 105px;
+    padding-bottom: 18px;
+    @include media("<=991px") {
+      display: block;
+    }
+  }
+  &__bottom-form {
+    margin-bottom: 43px;
+  }
+  &__bottom-form-input {
+    margin-bottom: 20px;
+  }
+  &__bottom-form-text {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 150%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #000000;
+  }
+  &__bottom-item {
+    display: block;
+    font-family: "MontserratDev";
+    font-size: 15px;
+    line-height: 150%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #2c2c2c;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
 }

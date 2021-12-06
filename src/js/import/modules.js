@@ -1,5 +1,6 @@
 import "%modules%/header/header";
 import "%modules%/welcome/welcome";
+import "%modules%/preorder/preorder";
 import "%modules%/large-slider/large-slider";
 import "%modules%/materials/materials";
 import "%modules%/compilations/compilations";
