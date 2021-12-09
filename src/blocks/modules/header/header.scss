@@ -6,7 +6,7 @@
     left: 0;
     width: 100%;
     background-color: #fff;
-    z-index: 100;
+    z-index: 500;
   }
 
   &.fixed {
@@ -523,6 +523,8 @@
     @include media("<=991px") {
       width: 100%;
       height: auto;
+      overflow-x: hidden;
+      margin-bottom: 20px;
     }
     @include media("<=768px") {
       background-color: #fafafa;

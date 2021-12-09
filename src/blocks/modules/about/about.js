@@ -4,18 +4,20 @@ try {
     ".js-about-models-title-arrow"
   );
 
+  let firstInit = true;
   const aboutModelsSwiper = new Swiper(".js-about-models-swiper", {
     loop: true,
     slidesPerView: 1.3,
     spaceBetween: 10,
+    centeredSlides: true,
     breakpoints: {
       1200: {
+        loop: true,
         centeredSlides: false,
         draggable: false,
         allowTouchMove: false,
         slidesPerView: "auto",
         spaceBetween: 20,
-        centerInsufficientSlides:true,
       },
     },
     on: {
@@ -55,9 +57,6 @@ try {
           }
         } catch (error) {}
       },
-      reachBeginning: () => {
-        console.log('reachBeginning');
-      }
     },
   });
   aboutModelsArrowRight.addEventListener("click", function (e) {

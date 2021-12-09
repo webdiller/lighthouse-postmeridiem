@@ -96,18 +96,20 @@
 // Наши модели
 try {
   var aboutModelsArrowRight = document.querySelector(".js-about-models-title-arrow");
+  var firstInit = true;
   var aboutModelsSwiper = new Swiper(".js-about-models-swiper", {
     loop: true,
     slidesPerView: 1.3,
     spaceBetween: 10,
+    centeredSlides: true,
     breakpoints: {
       1200: {
+        loop: true,
         centeredSlides: false,
         draggable: false,
         allowTouchMove: false,
         slidesPerView: "auto",
-        spaceBetween: 20,
-        centerInsufficientSlides: true
+        spaceBetween: 20
       }
     },
     on: {
@@ -147,9 +149,6 @@ try {
             }, 10);
           }
         } catch (error) {}
-      },
-      reachBeginning: function reachBeginning() {
-        console.log('reachBeginning');
       }
     }
   });
