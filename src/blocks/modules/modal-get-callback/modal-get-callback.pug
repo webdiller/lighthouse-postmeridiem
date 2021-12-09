@@ -17,14 +17,18 @@
                 br 
                 | течении вух часов
 
-            .modal-get-discount__form
+            form.modal-get-discount__form.js-form-with-validation
 
                 .ui-input3.modal-get-discount__input
-                        input.ui-input3__input(type="text")
+                        input.ui-input3__input(type="text" minlength="2" maxlength="30")
                         label.ui-input3__label Ваше имя
+                        img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                        small.ui-input3__small Проверьте правильность введенных данных
 
                 .ui-input3.modal-get-discount__input
-                    input.ui-input3__input.js-imask-phone(type="text")
+                    input.ui-input3__input.js-imask-phone(type="text" minlength="2" maxlength="30")
                     label.ui-input3__label Ваш номер телефона
+                    img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                    small.ui-input3__small Проверьте правильность введенных данных
 
                 button.btn-link.btn-link_fill-black.modal-get-discount__btn Заказать звонок

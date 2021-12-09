@@ -1,0 +1,35 @@
+.cooperation
+    .container.cooperation__container
+        .cooperation__items
+            .cooperation__item.cooperation__item_content
+                p.title-2.cooperation__title Сотрудничество
+                p.text.cooperation__text Вы можете стать нашим партнером в своем городе или стране.
+                p.text.cooperation__text Мы настроены на долгосрочные дружеские отношения, поэтому очень тщательно подходим к выбору партнеров.
+                p.text.cooperation__text Оставьте заявку и мы с вами свяжемся.
+
+            form.cooperation__item.cooperation__item_form
+                .ui-input3.cooperation__item-group
+                    input.ui-input3__input(type="text" minlength="2" maxlength="30")
+                    label.ui-input3__label Ваше имя
+                    img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                    small.ui-input3__small Проверьте правильность введенных данных
+
+                .ui-input3.cooperation__item-group.js-product-ordering-city
+                    input.ui-input3__input(type="text" minlength="2" maxlength="30")
+                    label.ui-input3__label Ваш город
+                    img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                    small.ui-input3__small Проверьте правильность введенных данных
+
+                .ui-input3.cooperation__item-group
+                    input.ui-input3__input(type="email" minlength="2" maxlength="30")
+                    label.ui-input3__label Ваш e-mail адрес
+                    img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                    small.ui-input3__small Проверьте правильность введенных данных
+
+                .ui-input3.ui-input3_textarea.cooperation__item-group.cooperation__item-group_textarea
+                    textarea.ui-input3__input(minlength="2" maxlength="30")
+                    label.ui-input3__label Расскажите о своем магазине, где бы вы хотели реализовать наши изделия
+                    img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                    small.ui-input3__small Проверьте правильность введенных данных
+
+                button.btn-link.btn-link_fill-black.cooperation__item-submit-button(type="submit") Отправить заявку

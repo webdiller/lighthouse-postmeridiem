@@ -3,15 +3,16 @@
 
         //- Якоря
         .product-card__anchors
-            a.product-card__anchor(href="#item1") 
-                picture.product-card__anchor-picture 
-                    img(src='./img/ui-card-1.png' alt="" loading="lazy").product-card__anchor-img
-            a.product-card__anchor(href="#item2") 
-                picture.product-card__anchor-picture 
-                    img(src='./img/ui-card-2.png' alt="" loading="lazy").product-card__anchor-img
-            a.product-card__anchor(href="#item3") 
-                picture.product-card__anchor-picture 
-                    img(src='./img/ui-card-3.png' alt="" loading="lazy").product-card__anchor-img
+            .product-card__anchors-wrapper
+                a.product-card__anchor(href="#item1") 
+                    picture.product-card__anchor-picture 
+                        img(src='./img/ui-card-1.png' alt="" loading="lazy").product-card__anchor-img
+                a.product-card__anchor(href="#item2") 
+                    picture.product-card__anchor-picture 
+                        img(src='./img/ui-card-2.png' alt="" loading="lazy").product-card__anchor-img
+                a.product-card__anchor(href="#item3") 
+                    picture.product-card__anchor-picture 
+                        img(src='./img/ui-card-3.png' alt="" loading="lazy").product-card__anchor-img
 
         //- Большие изображения / Свайпер на мобилке 
         .product-card__swiper-wrapper 
@@ -39,13 +40,37 @@
                 .product-card__sizes-button
                     .product-card__sizes-items
                         p.product-card__sizes-title Размер:
-                        button.product-card__size.active XS
-                        button.product-card__size S
-                        button.product-card__size M
-                        button.product-card__size L
-                        button.product-card__size XL
+
+                        input.product-card__size-input(type="radio" checked name="productSize" id="sizeXS")
+                        label.product-card__size-label(for="sizeXS") XS
+
+                        input.product-card__size-input(type="radio" name="productSize" id="sizeS")
+                        label.product-card__size-label(for="sizeS") S
+
+                        input.product-card__size-input(type="radio" name="productSize" id="sizeM")
+                        label.product-card__size-label(for="sizeM") M
+
+                        input.product-card__size-input(type="radio" name="productSize" id="sizeL")
+                        label.product-card__size-label(for="sizeL") L
+
+                        input.product-card__size-input(type="radio" name="productSize" id="sizeXL")
+                        label.product-card__size-label(for="sizeXL") XL
+
                     .product-card__sizes-btn-wrapper
                         button.product-card__sizes-btn Гид по размерам
+
+                .product-card__colors
+                    .product-card__colors-items
+                        .product-card__colors-title Цвет:
+
+                        input.product-card__color-input(type="radio" checked name="productColor" id="color1")
+                        label.product-card__color-label(for="color1" style="--bgColor:red")
+
+                        input.product-card__color-input(type="radio" name="productColor" id="color2")
+                        label.product-card__color-label(for="color2" style="--bgColor:green")
+
+                        input.product-card__color-input(type="radio" name="productColor" id="color3")
+                        label.product-card__color-label(for="color3" style="--bgColor:blue")
 
                 .product-card__tabs
 

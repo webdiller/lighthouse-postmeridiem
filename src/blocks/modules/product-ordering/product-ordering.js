@@ -8,7 +8,7 @@ try {
 } catch (error) {}
 
 // Проверка на самовывоз.
-const forms = document.querySelectorAll(".js-product-ordering-form");
+const forms = document.querySelectorAll(".js-form-with-validation");
 
 try {
   if (forms.length > 0) {

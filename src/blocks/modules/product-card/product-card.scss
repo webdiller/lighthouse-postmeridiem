@@ -30,8 +30,11 @@
     @include media("<=768px") {
       display: none;
     }
-    @include media("<=576px") {
-    }
+  }
+
+  &__anchors-wrapper {
+    position: sticky;
+    top: 30px;
   }
 
   &__anchor {
@@ -144,7 +147,7 @@
     border-radius: 0;
     flex: 1;
     margin: 0 !important;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     &-active {
       background-color: #000;
     }
@@ -196,7 +199,7 @@
 
   &__content-wrapper {
     position: sticky;
-    top: 10px;
+    top: 30px;
     @include media("<=768px") {
       position: static;
       display: grid;
@@ -295,17 +298,15 @@
   &__sizes-button {
     display: flex;
     align-items: center;
-    margin-bottom: 58px;
+    margin-bottom: 20px;
     @include media("<=991px") {
     }
     @include media("<=768px") {
       order: 1;
       display: block;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       padding-left: 15px;
       padding-right: 15px;
-    }
-    @include media("<=576px") {
     }
   }
 
@@ -316,7 +317,7 @@
     @include media("<=991px") {
     }
     @include media("<=768px") {
-      margin-bottom: 25px;
+      margin-bottom: 5px;
     }
     @include media("<=576px") {
     }
@@ -333,28 +334,40 @@
     }
   }
 
-  &__size {
-    @include reset-btn();
+  &__size-input {
+    position: absolute;
+    left: -9999px;
+    &:checked {
+      + label {
+        color: #5c5c5c;
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__size-label {
     position: relative;
     font-size: 15px;
     line-height: 150%;
     font-feature-settings: "pnum" on, "lnum" on;
     color: #a0a0a0;
+    cursor: pointer;
     &:not(:last-child) {
       margin-right: 10px;
     }
-    &.active {
-      color: #5c5c5c;
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -7px;
-        height: 1px;
-        width: 100%;
-        background-color: #5c5c5c;
-      }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -7px;
+      height: 1px;
+      width: 100%;
+      background-color: #5c5c5c;
+      opacity: 0;
+      transition: all .3s ease;
     }
   }
 
@@ -379,6 +392,76 @@
     @include media("<=768px") {
     }
     @include media("<=576px") {
+    }
+  }
+
+  &__colors {
+    display: flex;
+    align-items: center;
+    margin-bottom: 58px;
+    @include media("<=991px") {
+    }
+    @include media("<=768px") {
+      order: 1;
+      display: block;
+      margin-bottom: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &__colors-items {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  &__colors-title {
+    margin-right: 13px;
+    font-size: 15px;
+    line-height: 150%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #2c2c2c;
+    @include media("<=768px") {
+      margin-right: 11px;
+    }
+  }
+
+  &__color-input {
+    position: absolute;
+    left: -9999px;
+    &:checked {
+      color: #5c5c5c;
+      + label {
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__color-label {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #a0a0a0;
+    background-color: var(--bgColor);
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -7px;
+      height: 1px;
+      width: 100%;
+      background-color: #5c5c5c;
+      opacity: 0;
+      transition: all .3s ease;
     }
   }
 
@@ -450,7 +533,7 @@
     font-feature-settings: "pnum" on, "lnum" on;
     color: #a0a0a0;
     cursor: pointer;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     @include media("<=991px") {
       margin-right: 20px;
     }

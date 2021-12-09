@@ -8,7 +8,7 @@
                     img.logo-with-description__img(src="./img/svg/icon-logo.svg" alt="")
                 p.logo-with-description__text Оформление заказа
 
-        form.product-ordering__form.js-product-ordering-form
+        form.product-ordering__form.js-form-with-validation
             .product-ordering__items
                 .ui-input3.product-ordering__item
                     input.ui-input3__input(type="text" minlength="2" maxlength="30")
@@ -63,13 +63,14 @@
                     small.ui-input3__small Проверьте правильность введенных данных
 
                 .product-ordering__item.product-ordering__item_address.js-product-ordering-address
-                    .ui-input3.product-ordering__item
-                        input.ui-input3__input(type="text" minlength="2" maxlength="30")
-                        label.ui-input3__label Квартира
-
+                
                     .ui-input3.product-ordering__item
                         input.ui-input3__input(type="text" minlength="2" maxlength="30")
                         label.ui-input3__label Дом
+
+                    .ui-input3.product-ordering__item
+                        input.ui-input3__input(type="text" minlength="2" maxlength="30")
+                        label.ui-input3__label Квартира
 
                 .ui-input3.ui-input3_textarea.product-ordering__item.product-ordering__item_comment
                     textarea.ui-input3__input(minlength="2" maxlength="30")

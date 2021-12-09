@@ -15,8 +15,10 @@
 
             p.text.modal-get-discount__text Подпишитесь на нашу рассылку и получите промокод на покупку в течении 30 дней, после подписки.
 
-            .modal-get-discount__form
+            form.modal-get-discount__form.js-form-with-validation
                 .ui-input3.modal-get-discount__input
-                    input.ui-input3__input(type="text")
+                    input.ui-input3__input(type="email" minlength="2" maxlength="30")
                     label.ui-input3__label Ваш e-mail адрес
+                    img.ui-input3__icon(src="./img/svg/icon-alert.svg", alt="")
+                    small.ui-input3__small Проверьте правильность введенных данных
                 button.btn-link.btn-link_fill-black.modal-get-discount__btn Подписаться на рассылку

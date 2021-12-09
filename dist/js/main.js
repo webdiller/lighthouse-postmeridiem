@@ -99,57 +99,57 @@ try {
   var aboutModelsSwiper = new Swiper(".js-about-models-swiper", {
     loop: true,
     slidesPerView: 1.3,
-    centeredSlides: true,
     spaceBetween: 10,
     breakpoints: {
       1200: {
         centeredSlides: false,
-        loop: false,
         draggable: false,
         allowTouchMove: false,
         slidesPerView: "auto",
-        spaceBetween: 20
+        spaceBetween: 20,
+        centerInsufficientSlides: true
       }
     },
     on: {
+      init: function init(e) {
+        if (window.innerWidth >= 1201) {
+          var allSlides = document.querySelectorAll(".swiper-slide.about-models__slide");
+
+          for (var i = 0; i < allSlides.length; i++) {
+            if (!allSlides[i].nextElementSibling.classList.contains('swiper-slide-active')) {
+              allSlides[i].classList.add('hide');
+            } else if (allSlides[i].nextElementSibling.classList.contains('swiper-slide-active')) {
+              allSlides[i].classList.add('hide');
+              break;
+            } else {
+              break;
+            }
+          }
+        }
+      },
       slideChange: function slideChange(e) {
         try {
           if (window.innerWidth >= 1201) {
             var countSlides = aboutModelsSwiper.slides.length;
             var activeSlide = aboutModelsSwiper.realIndex;
             var allSlides = document.querySelectorAll(".swiper-slide.about-models__slide");
-            allSlides.forEach(function (el) {
-              var labelIndex = parseInt(el.getAttribute("aria-label").split("/")[0]);
-
-              if (labelIndex - 1 < activeSlide) {
-                el.classList.add("hide");
-              } else {
-                el.classList.remove("hide");
+            setTimeout(function () {
+              for (var i = 0; i < allSlides.length; i++) {
+                if (!allSlides[i].nextElementSibling.classList.contains('swiper-slide-active')) {
+                  allSlides[i].classList.add('hide');
+                } else if (allSlides[i].nextElementSibling.classList.contains('swiper-slide-active')) {
+                  allSlides[i].classList.add('hide');
+                  break;
+                } else {
+                  break;
+                }
               }
-
-              if (activeSlide + 2 == countSlides) {
-                aboutModelsSwiper.slideTo(0);
-                allSlides.forEach(function (slide) {
-                  return slide.classList.remove('hide');
-                });
-              }
-            });
+            }, 10);
           }
         } catch (error) {}
-
-        try {
-          if (window.innerWidth <= 1200) {
-            setTimeout(function () {
-              document.querySelectorAll(".swiper-slide.about-models__slide").forEach(function (el) {
-                return el.classList.remove("to-lift");
-              });
-              document.querySelector(".swiper-slide.about-models__slide.swiper-slide-prev").classList.add("to-lift");
-              document.querySelector(".swiper-slide.about-models__slide.swiper-slide-next").classList.add("to-lift");
-            }, 100);
-          }
-        } catch (error) {
-          console.log(error);
-        }
+      },
+      reachBeginning: function reachBeginning() {
+        console.log('reachBeginning');
       }
     }
   });
@@ -309,6 +309,7 @@ try {
   });
   headerMenu.addEventListener("click", function (e) {
     e.target.classList.toggle("active");
+    document.querySelector("html").classList.toggle('disable-scroll');
     headerNavigation.classList.toggle("active");
   });
   headerNavigationItemsTitle.forEach(function (item) {
@@ -564,7 +565,7 @@ try {
 } catch (error) {} // Проверка на самовывоз.
 
 
-var forms = document.querySelectorAll(".js-product-ordering-form");
+var forms = document.querySelectorAll(".js-form-with-validation");
 
 try {
   if (forms.length > 0) {

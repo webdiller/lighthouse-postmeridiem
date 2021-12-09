@@ -5,6 +5,7 @@
     @include media("<=991px") {
       margin-top: 26px;
       margin-bottom: 50px;
+      overflow-x: hidden;
     }
     @include media("<=768px") {
     }

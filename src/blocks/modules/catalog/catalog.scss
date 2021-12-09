@@ -30,7 +30,10 @@
   }
 
   &__aside-items {
-    @include media("<=768px") {
+    position: sticky;
+    top: 30px;
+    @include media("<=991px") {
+      position: static;
     }
   }
 

@@ -15,7 +15,7 @@ header.header
                     img.header__input-icon(src="./img/svg/icon-search.svg", alt="")
             .header__center.js-header-center
                 a.header__logo-link(href="/index.html") 
-                    img.header__logo-img(src="./img/svg/icon-logo.svg", alt="")
+                    img.header__logo-img(src="./img/svg/icon-logo.svg", alt="" width="300" height="25")
             .header__right 
                 nav.header__items.header__items_right
                     a.text.header__item.header__item_phone(href="tel:+7 (967) 130-55-22") +7 (967) 130-55-22
@@ -143,6 +143,11 @@ header.header
                                         .ui-card__colors
                                             p.ui-card__color(style="--bgColor:#03A3BD")
                                     .ui-card__price 13 500 ₽
+                
+                //- Смотреть все результаты. Для 991px и ниже
+                .show-flex-991.header__results-show-more
+                    a.btn-link.btn-link_outline-black.header__results-show-more-link(href="#") Смотреть все результаты поиска
+                     
 
     .header__navigation.js-header-navigation
         .header__navigation-main-container

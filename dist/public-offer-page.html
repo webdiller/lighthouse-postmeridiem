@@ -44,7 +44,7 @@
                 <input class="ui-input header__input" type="text" placeholder="Платье-комбинации"><img class="header__input-icon" src="./img/svg/icon-search.svg" alt="">
               </div>
             </div>
-            <div class="header__center js-header-center"><a class="header__logo-link" href="/index.html"> <img class="header__logo-img" src="./img/svg/icon-logo.svg" alt=""></a></div>
+            <div class="header__center js-header-center"><a class="header__logo-link" href="/index.html"> <img class="header__logo-img" src="./img/svg/icon-logo.svg" alt="" width="300" height="25"></a></div>
             <div class="header__right"> 
               <nav class="header__items header__items_right"><a class="text header__item header__item_phone" href="tel:+7 (967) 130-55-22">+7 (967) 130-55-22</a><a class="text header__item" href="#">О нас</a><a class="text ttu header__item header__item_lang" href="#">RU</a></nav>
               <button class="header__item header__item_search js-header-item-search"><img class="header__item-icon" width="19" height="19" src="./img/svg/icon-search.svg" alt=""></button><a class="header__item header__item_cart" href="#"> <img class="header__item-icon" width="15" height="15" src="./img/svg/icon-cart.svg" alt=""></a>
@@ -189,6 +189,7 @@
                       </div>
                     </div></a></div>
               </div>
+              <div class="show-flex-991 header__results-show-more"><a class="btn-link btn-link_outline-black header__results-show-more-link" href="#">Смотреть все результаты поиска</a></div>
             </div>
           </div>
         </div>
@@ -338,9 +339,10 @@
       </div>
       <footer class="footer">
         <div class="container footer__container"> 
-          <p class="footer__top-text">Магазин дизайнерской одежды POST MERIDIEM</p>
+          <p class="footer__top-text"> <span class="hide-576">Магазин дизайнерской одежды POST MERIDIEM</span><span class="show-block-576">
+               Магазин дизайнерской одежды <br>POST MERIDIEM</span></p>
           <div class="footer__items">
-            <div class="footer__item-main"><a class="text footer__item-main-logo-link" href="#"> <img class="footer__item-main-logo-img" src="./img/svg/icon-logo.svg" alt="" loading="lazy"></a><a class="text footer__item-main-link" href="tel:+7 (967) 130-55-22">+7 (967) 130-55-22</a><a class="text footer__item-main-link" href="mailto:shop@postmeridiem-brand.com">shop@postmeridiem-brand.com</a>
+            <div class="footer__item-main"><a class="text footer__item-main-logo-link" href="#"> <img class="footer__item-main-logo-img" src="./img/svg/icon-logo.svg" alt="" loading="lazy" width="300" height="25"></a><a class="text footer__item-main-link" href="tel:+7 (967) 130-55-22">+7 (967) 130-55-22</a><a class="text footer__item-main-link" href="mailto:shop@postmeridiem-brand.com">shop@postmeridiem-brand.com</a>
               <p class="text footer__item-main-text">Москва, ул. Большая Садовая, д. 5, корпус 2. </p>
             </div>
             <div class="footer__item-navs"> 
@@ -365,13 +367,13 @@
           <div class="modal-get-discount__content">
             <p class="modal-get-discount__title"> на следующую покупку</p>
             <p class="text modal-get-discount__text">Подпишитесь на нашу рассылку и получите промокод на покупку в течении 30 дней, после подписки.</p>
-            <div class="modal-get-discount__form">
+            <form class="modal-get-discount__form js-form-with-validation">
               <div class="ui-input3 modal-get-discount__input">
-                <input class="ui-input3__input" type="text">
-                <label class="ui-input3__label">Ваш e-mail адрес</label>
+                <input class="ui-input3__input" type="email" minlength="2" maxlength="30">
+                <label class="ui-input3__label">Ваш e-mail адрес</label><img class="ui-input3__icon" src="./img/svg/icon-alert.svg" alt=""><small class="ui-input3__small">Проверьте правильность введенных данных</small>
               </div>
               <button class="btn-link btn-link_fill-black modal-get-discount__btn">Подписаться на рассылку</button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -382,17 +384,17 @@
           <div class="modal-get-discount__content">
             <p class="text modal-get-discount__text">
                И наш менеджер свяжется с вами в<br>течении вух часов</p>
-            <div class="modal-get-discount__form">
+            <form class="modal-get-discount__form js-form-with-validation">
               <div class="ui-input3 modal-get-discount__input">
-                <input class="ui-input3__input" type="text">
-                <label class="ui-input3__label">Ваше имя</label>
+                <input class="ui-input3__input" type="text" minlength="2" maxlength="30">
+                <label class="ui-input3__label">Ваше имя</label><img class="ui-input3__icon" src="./img/svg/icon-alert.svg" alt=""><small class="ui-input3__small">Проверьте правильность введенных данных</small>
               </div>
               <div class="ui-input3 modal-get-discount__input">
-                <input class="ui-input3__input js-imask-phone" type="text">
-                <label class="ui-input3__label">Ваш номер телефона</label>
+                <input class="ui-input3__input js-imask-phone" type="text" minlength="2" maxlength="30">
+                <label class="ui-input3__label">Ваш номер телефона</label><img class="ui-input3__icon" src="./img/svg/icon-alert.svg" alt=""><small class="ui-input3__small">Проверьте правильность введенных данных</small>
               </div>
               <button class="btn-link btn-link_fill-black modal-get-discount__btn">Заказать звонок</button>
-            </div>
+            </form>
           </div>
         </div>
       </div>

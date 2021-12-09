@@ -47,8 +47,8 @@
       padding: 30px;
     }
     @include media("<=991px") {
-        margin-bottom: 40px;
-      }
+      margin-bottom: 40px;
+    }
     @include media("<=768px") {
       padding: 0;
       background-color: transparent;
@@ -72,12 +72,15 @@
     }
   }
 
-  &__picture {
+  &__link {
     flex-shrink: 0;
     margin-right: 37px;
     @include media("<=768px") {
       margin-right: 19px;
     }
+  }
+
+  &__picture {
   }
 
   &__img {

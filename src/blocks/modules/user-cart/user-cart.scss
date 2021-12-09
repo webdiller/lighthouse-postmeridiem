@@ -59,12 +59,16 @@
     }
   }
 
-  &__picture {
+  &__item-link {
     flex-shrink: 0;
     margin-right: 37px;
     @include media("<=768px") {
       margin-right: 19px;
     }
+  }
+
+  &__picture {
+    
   }
 
   &__img {

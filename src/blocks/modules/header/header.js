@@ -30,6 +30,7 @@ try {
 
   headerMenu.addEventListener("click", function (e) {
     e.target.classList.toggle("active");
+    document.querySelector("html").classList.toggle('disable-scroll')
     headerNavigation.classList.toggle("active");
   });
 
