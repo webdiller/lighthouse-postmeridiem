@@ -1,12 +1,31 @@
 .header {
-  @include media("<=1200px") {
-  }
+  transition: all 0.3s ease;
   @include media("<=991px") {
+    position: fixed;
+    top: 28px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
   }
-  @include media("<=768px") {
+
+  &.fixed {
+    top: 0;
+    .header__navigation,
+    .header__results {
+      top: 65px;
+      @include media("<=768px") {
+        top: 41px;
+      }
+    }
+    .header__navigation-main-container {
+      height: calc(100vh - 65px);
+      @include media("<=768px") {
+        height: calc(100vh - 41px);
+      }
+    }
   }
-  @include media("<=576px") {
-  }
+
   &__container {
     position: relative;
     display: flex;
@@ -345,12 +364,11 @@
       z-index: 100;
     }
 
-    @include media("<=1200px") {
-    }
     @include media("<=991px") {
+      top: calc(65px);
     }
     @include media("<=768px") {
-      top: calc(41px + 28px);
+      top: calc(41px);
       height: auto;
     }
     @include media("<=576px") {
@@ -363,9 +381,9 @@
     height: 100%;
     @include media("<=991px") {
       width: 100%;
-      height: calc(100vh - 95px);
+      height: calc(100vh - 93px);
       overflow-y: scroll;
-      
+
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -486,14 +504,14 @@
       visibility: visible;
       z-index: 100;
     }
-    @include media("<=1200px") {
-    }
     @include media("<=991px") {
+      overflow-y: scroll;
+      top: calc(65px);
+      height: calc(100vh - 65px);
     }
     @include media("<=768px") {
-      top: calc(41px + 28px);
-    }
-    @include media("<=576px") {
+      top: calc(41px);
+      height: calc(100vh - 41px);
     }
   }
 

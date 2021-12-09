@@ -1,3 +1,4 @@
+const header = document.querySelector(".js-header");
 const headerSearch = document.querySelector(".js-header-search");
 const headerMobileSearch = document.querySelector(".js-header-item-search"); // mobile search
 const headerContainer = document.querySelector(".js-header-container"); // mobile search
@@ -6,13 +7,19 @@ const headerSearchInput = document.querySelector(".js-header-search input");
 
 const headerMenu = document.querySelector(".js-header-menu");
 const headerNavigation = document.querySelector(".js-header-navigation");
-const headerNavigationContainer = document.querySelector(".js-header-navigation-container");
-const headerResultsNavigationContainer = document.querySelector(".js-header-results-container");
+const headerNavigationContainer = document.querySelector(
+  ".js-header-navigation-container"
+);
+const headerResultsNavigationContainer = document.querySelector(
+  ".js-header-results-container"
+);
 
 const headerResults = document.querySelector(".js-header-results");
 
 const headerCenter = document.querySelector(".js-header-center");
-const headerNavigationItemsTitle = document.querySelectorAll(".js-header-navigation-all-items .header__navigation-item_title");
+const headerNavigationItemsTitle = document.querySelectorAll(
+  ".js-header-navigation-all-items .header__navigation-item_title"
+);
 
 try {
   headerSearch.addEventListener("click", function (e) {
@@ -30,7 +37,7 @@ try {
 
   headerMenu.addEventListener("click", function (e) {
     e.target.classList.toggle("active");
-    document.querySelector("html").classList.toggle('disable-scroll')
+    document.querySelector("html").classList.toggle("disable-scroll");
     headerNavigation.classList.toggle("active");
   });
 
@@ -46,6 +53,7 @@ try {
 
   headerMobileSearch.addEventListener("click", function (e) {
     headerResults.classList.toggle("active");
+    document.querySelector("html").classList.toggle("disable-scroll");
   });
 } catch (error) {}
 
@@ -73,4 +81,24 @@ try {
       headerResultsNavigationContainer.style.marginLeft = `${offsetContainer}px`;
     }
   });
+} catch (error) {}
+
+try {
+  window.addEventListener("scroll", function (e) {
+    let topOffset = document.querySelector("html").getBoundingClientRect().top;
+    if (topOffset <= -28) {
+      header.classList.add("fixed");
+    } else {
+      header.classList.remove("fixed");
+    }
+  });
+} catch (error) {}
+
+try {
+  let topOffset = document.querySelector("html").getBoundingClientRect().top;
+  if (topOffset <= -28) {
+    header.classList.add("fixed");
+  } else {
+    header.classList.remove("fixed");
+  }
 } catch (error) {}

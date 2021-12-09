@@ -279,6 +279,7 @@ try {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+var header = document.querySelector(".js-header");
 var headerSearch = document.querySelector(".js-header-search");
 var headerMobileSearch = document.querySelector(".js-header-item-search"); // mobile search
 
@@ -309,7 +310,7 @@ try {
   });
   headerMenu.addEventListener("click", function (e) {
     e.target.classList.toggle("active");
-    document.querySelector("html").classList.toggle('disable-scroll');
+    document.querySelector("html").classList.toggle("disable-scroll");
     headerNavigation.classList.toggle("active");
   });
   headerNavigationItemsTitle.forEach(function (item) {
@@ -323,6 +324,7 @@ try {
   });
   headerMobileSearch.addEventListener("click", function (e) {
     headerResults.classList.toggle("active");
+    document.querySelector("html").classList.toggle("disable-scroll");
   });
 } catch (error) {} // Меню адаптивность
 
@@ -352,6 +354,28 @@ try {
       headerResultsNavigationContainer.style.marginLeft = "".concat(offsetContainer, "px");
     }
   });
+} catch (error) {}
+
+try {
+  window.addEventListener("scroll", function (e) {
+    var topOffset = document.querySelector("html").getBoundingClientRect().top;
+
+    if (topOffset <= -28) {
+      header.classList.add("fixed");
+    } else {
+      header.classList.remove("fixed");
+    }
+  });
+} catch (error) {}
+
+try {
+  var topOffset = document.querySelector("html").getBoundingClientRect().top;
+
+  if (topOffset <= -28) {
+    header.classList.add("fixed");
+  } else {
+    header.classList.remove("fixed");
+  }
 } catch (error) {}
 
 /***/ }),
