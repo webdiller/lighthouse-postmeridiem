@@ -4,7 +4,14 @@ try {
     ".js-about-models-title-arrow"
   );
 
-  let firstInit = true;
+  let slideState = {
+    inited: false,
+    firstInit: true,
+    prev: null,
+    current: null,
+    next: null,
+  };
+
   const aboutModelsSwiper = new Swiper(".js-about-models-swiper", {
     loop: true,
     slidesPerView: 1.3,
@@ -23,15 +30,25 @@ try {
     on: {
       init: (e) => {
         if (window.innerWidth >= 1201) {
-          const allSlides = document.querySelectorAll(".swiper-slide.about-models__slide");
+          const allSlides = document.querySelectorAll(
+            ".swiper-slide.about-models__slide"
+          );
           for (let i = 0; i < allSlides.length; i++) {
-            if (!allSlides[i].nextElementSibling.classList.contains('swiper-slide-active')) {
-              allSlides[i].classList.add('hide')
-            } else if (allSlides[i].nextElementSibling.classList.contains('swiper-slide-active')) {
-              allSlides[i].classList.add('hide')
-              break
+            if (
+              !allSlides[i].nextElementSibling.classList.contains(
+                "swiper-slide-active"
+              )
+            ) {
+              allSlides[i].classList.add("hide");
+            } else if (
+              allSlides[i].nextElementSibling.classList.contains(
+                "swiper-slide-active"
+              )
+            ) {
+              allSlides[i].classList.add("hide");
+              break;
             } else {
-              break
+              break;
             }
           }
         }
@@ -39,30 +56,73 @@ try {
       slideChange: (e) => {
         try {
           if (window.innerWidth >= 1201) {
-            let countSlides = aboutModelsSwiper.slides.length;
-            let activeSlide = aboutModelsSwiper.realIndex;
-            const allSlides = document.querySelectorAll(".swiper-slide.about-models__slide");
+            if (aboutModelsSwiper) {
+              slideState.inited = true;
+            }
+
+            if (slideState.inited) {
+              slideState.prev = aboutModelsSwiper.realIndex - 1;
+              slideState.current = aboutModelsSwiper.realIndex;
+              slideState.next = aboutModelsSwiper.realIndex + 1;
+            }
+
+            if (
+              slideState.inited &&
+              slideState.current >= 2 &&
+              slideState.firstInit == true
+            ) {
+              slideState.firstInit = false;
+            }
+
+            if (!slideState.firstInit && slideState.current === 1) {
+              document
+                .querySelector(
+                  ".swiper-slide.about-models__slide.hide.swiper-slide-active"
+                )
+                .classList.remove("hide");
+              document
+                .querySelectorAll(
+                  ".swiper-slide.about-models__slide.hide:not(.swiper-slide-duplicate):not(.swiper-slide-prev)"
+                )
+                .forEach((item) => item.classList.remove("hide"));
+            }
+
+            const allSlides = document.querySelectorAll(
+              ".swiper-slide.about-models__slide"
+            );
             setTimeout(() => {
               for (let i = 0; i < allSlides.length; i++) {
-                if (!allSlides[i].nextElementSibling.classList.contains('swiper-slide-active')) {
-                  allSlides[i].classList.add('hide')
-                } else if (allSlides[i].nextElementSibling.classList.contains('swiper-slide-active')) {
-                  allSlides[i].classList.add('hide')
-                  break
+                if (
+                  !allSlides[i].nextElementSibling.classList.contains(
+                    "swiper-slide-active"
+                  )
+                ) {
+                  allSlides[i].classList.add("hide");
+                } else if (
+                  allSlides[i].nextElementSibling.classList.contains(
+                    "swiper-slide-active"
+                  )
+                ) {
+                  allSlides[i].classList.add("hide");
+                  break;
                 } else {
-                  break
+                  break;
                 }
               }
             }, 10);
           }
-        } catch (error) {}
+        } catch (error) {
+          console.log(error);
+        }
       },
     },
   });
   aboutModelsArrowRight.addEventListener("click", function (e) {
     aboutModelsSwiper.slideNext();
   });
-} catch (error) {}
+} catch (error) {
+  console.log(error);
+}
 
 // Отзывы
 try {

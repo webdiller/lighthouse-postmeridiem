@@ -1,4 +1,5 @@
 .about {
+  overflow-x: hidden;
   &__container {
     @include media("<=768px") {
       padding-left: 0;
@@ -420,8 +421,11 @@
     right: 0;
     height: 610px;
     width: 935px;
-    @include media("<=1450px") {
-      width: 600px;
+    @include media("<=1900px") {
+      width: 700px;
+    }
+    @include media("<=1400px") {
+      width: 500px;
     }
     @include media("<=1200px") {
       position: static;

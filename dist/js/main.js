@@ -96,7 +96,13 @@
 // Наши модели
 try {
   var aboutModelsArrowRight = document.querySelector(".js-about-models-title-arrow");
-  var firstInit = true;
+  var slideState = {
+    inited: false,
+    firstInit: true,
+    prev: null,
+    current: null,
+    next: null
+  };
   var aboutModelsSwiper = new Swiper(".js-about-models-swiper", {
     loop: true,
     slidesPerView: 1.3,
@@ -118,10 +124,10 @@ try {
           var allSlides = document.querySelectorAll(".swiper-slide.about-models__slide");
 
           for (var i = 0; i < allSlides.length; i++) {
-            if (!allSlides[i].nextElementSibling.classList.contains('swiper-slide-active')) {
-              allSlides[i].classList.add('hide');
-            } else if (allSlides[i].nextElementSibling.classList.contains('swiper-slide-active')) {
-              allSlides[i].classList.add('hide');
+            if (!allSlides[i].nextElementSibling.classList.contains("swiper-slide-active")) {
+              allSlides[i].classList.add("hide");
+            } else if (allSlides[i].nextElementSibling.classList.contains("swiper-slide-active")) {
+              allSlides[i].classList.add("hide");
               break;
             } else {
               break;
@@ -132,15 +138,34 @@ try {
       slideChange: function slideChange(e) {
         try {
           if (window.innerWidth >= 1201) {
-            var countSlides = aboutModelsSwiper.slides.length;
-            var activeSlide = aboutModelsSwiper.realIndex;
+            if (aboutModelsSwiper) {
+              slideState.inited = true;
+            }
+
+            if (slideState.inited) {
+              slideState.prev = aboutModelsSwiper.realIndex - 1;
+              slideState.current = aboutModelsSwiper.realIndex;
+              slideState.next = aboutModelsSwiper.realIndex + 1;
+            }
+
+            if (slideState.inited && slideState.current >= 2 && slideState.firstInit == true) {
+              slideState.firstInit = false;
+            }
+
+            if (!slideState.firstInit && slideState.current === 1) {
+              document.querySelector(".swiper-slide.about-models__slide.hide.swiper-slide-active").classList.remove("hide");
+              document.querySelectorAll(".swiper-slide.about-models__slide.hide:not(.swiper-slide-duplicate):not(.swiper-slide-prev)").forEach(function (item) {
+                return item.classList.remove("hide");
+              });
+            }
+
             var allSlides = document.querySelectorAll(".swiper-slide.about-models__slide");
             setTimeout(function () {
               for (var i = 0; i < allSlides.length; i++) {
-                if (!allSlides[i].nextElementSibling.classList.contains('swiper-slide-active')) {
-                  allSlides[i].classList.add('hide');
-                } else if (allSlides[i].nextElementSibling.classList.contains('swiper-slide-active')) {
-                  allSlides[i].classList.add('hide');
+                if (!allSlides[i].nextElementSibling.classList.contains("swiper-slide-active")) {
+                  allSlides[i].classList.add("hide");
+                } else if (allSlides[i].nextElementSibling.classList.contains("swiper-slide-active")) {
+                  allSlides[i].classList.add("hide");
                   break;
                 } else {
                   break;
@@ -148,14 +173,18 @@ try {
               }
             }, 10);
           }
-        } catch (error) {}
+        } catch (error) {
+          console.log(error);
+        }
       }
     }
   });
   aboutModelsArrowRight.addEventListener("click", function (e) {
     aboutModelsSwiper.slideNext();
   });
-} catch (error) {} // Отзывы
+} catch (error) {
+  console.log(error);
+} // Отзывы
 
 
 try {
