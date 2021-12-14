@@ -61,6 +61,60 @@ input {
   }
 }
 
+.main {
+  &_default {
+    margin-top: 94px;
+    @include media("<=768px") {
+      margin-top: 69px;
+    }
+  }
+  &_404 {
+    margin-top: calc(94px + 53px);
+  }
+  &_catalog {
+    margin-top: calc(94px + 30px);
+    @include media("<=768px") {
+      margin-top: calc(69px + 22px);
+    }
+  }
+  &_about {
+    margin-top: calc(94px + 11px);
+    @include media("<=768px") {
+      margin-top: calc(69px + 11px);
+    }
+  }
+  &_contacts {
+    margin-top: calc(94px + 50px);
+    @include media("<=768px") {
+      margin-top: calc(69px + 21px);
+    }
+  }
+  &_cooperation {
+    margin-top: calc(94px + 50px);
+    @include media("<=768px") {
+      margin-top: calc(69px + 21px);
+    }
+  }
+  &_info {
+    margin-top: calc(94px + 50px);
+    @include media("<=768px") {
+      margin-top: calc(69px + 21px);
+    }
+  }
+  &_cart {
+    margin-top: calc(94px + 30px);
+    @include media("<=768px") {
+      margin-top: 69px;
+    }
+  }
+  &_ordering {
+    margin-top: calc(94px + 29px);
+    @include media("<=768px") {
+      margin-top: calc(69px + 21px);
+    }
+  }
+}
+
 .container {
   width: 100%;
   max-width: calc(1320px + 40px);
