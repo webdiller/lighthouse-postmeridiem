@@ -397,9 +397,9 @@ input {
       color: #a0a0a0;
       font-feature-settings: "pnum" on, "lnum" on;
     }
-    &:not(:focus):invalid,
-    &:focus:invalid {
-      ~ .ui-input2__icon-arrow {
+    &:not([value=""]):not(:focus):invalid,
+    &:not([value=""]):focus:invalid {
+      ~ .ui-input2__icon-arrow, ~ button .ui-input2__icon-arrow {
         opacity: 0;
       }
       ~ .ui-input2__icon-alert {
@@ -410,25 +410,8 @@ input {
       }
     }
     &:focus:valid {
-      ~ .ui-input2__icon-arrow {
-        opacity: 0;
-      }
-      ~ .ui-input2__icon-alert {
-        opacity: 0;
-      }
-      ~ .ui-input2__icon-checkbox {
+      ~ .ui-input2__icon-arrow, ~ button .ui-input2__icon-arrow {
         opacity: 1;
-      }
-      ~ .ui-input2__small {
-        opacity: 0;
-      }
-    }
-    &:focus:valid:placeholder-shown {
-      ~ .ui-input2__icon-arrow {
-        opacity: 1;
-      }
-      ~ .ui-input2__icon-checkbox {
-        opacity: 0;
       }
       ~ .ui-input2__icon-alert {
         opacity: 0;
