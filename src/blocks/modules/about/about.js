@@ -117,9 +117,11 @@ try {
       },
     },
   });
-  aboutModelsArrowRight.addEventListener("click", function (e) {
-    aboutModelsSwiper.slideNext();
-  });
+  if (aboutModelsArrowRight) {
+    aboutModelsArrowRight.addEventListener("click", function (e) {
+      aboutModelsSwiper.slideNext();
+    });
+  }
 } catch (error) {
   console.log(error);
 }

@@ -71,7 +71,7 @@
         "intl-tel-input": "^17.0.13",
         "jquery": "^3.6.0",
         "smart-grid": "^2.1.2",
-        "swiper": "^7.0.9"
+        "swiper": "^7.3.4"
     },
     "husky": {
         "hooks": {

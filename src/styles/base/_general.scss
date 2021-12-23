@@ -420,6 +420,21 @@ input {
         opacity: 0;
       }
     }
+    &.success {
+      ~ .ui-input2__icon-arrow, ~ button .ui-input2__icon-arrow {
+        opacity: 0;
+      }
+      ~ .ui-input2__icon-alert {
+        opacity: 0;
+      }
+      ~ .ui-input2__small {
+        opacity: 0;
+      }
+
+      ~ .ui-input2__icon-checkbox {
+        opacity: 1;
+      }
+    }
   }
   &__icon-arrow {
     position: absolute;

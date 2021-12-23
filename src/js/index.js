@@ -38,3 +38,14 @@ if (window.location.pathname.includes("catalog")) {
     document.querySelector(".js-modal-get-discount").classList.add("active");
   }, 2000);
 }
+
+// Переключение языка
+window.selectLang = (lang) => {
+  let appendLang = (lang == 'en' ? 'en' : 'ru');
+  BX.setCookie('postLang', (appendLang), {
+      'path': '/'
+  });
+  let urlParams = new URLSearchParams(window.location.search);
+  urlParams.set('lang', appendLang);
+  window.location.search = urlParams.toString();
+}
