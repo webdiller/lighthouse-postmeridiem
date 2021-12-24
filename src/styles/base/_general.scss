@@ -61,6 +61,28 @@ input {
   }
 }
 
+// for admin
+#bx-panel {
+  &~ div .top-message, &~ .top-message  {
+    top: 40px;
+  }
+  &~ .header {
+    top: 68px;
+  }
+  &:not(.bx-panel-fixed) {
+    &~ div .top-message, &~ .top-message {
+      &.fixed {
+        top: 0px;
+      }
+    }
+    &~ .header {
+      &.fixed{
+        top: 28px;
+      }
+    }
+  }
+}
+
 .main {
   &_default {
     margin-top: 94px;
@@ -441,6 +463,10 @@ input {
     top: 50%;
     right: 0;
     transform: translateY(calc(-50% - 5px));
+    min-width: 22px;
+    height: 22px;
+    border: 0;
+    background: none;
     @include media("<=991px") {
     }
   }
@@ -736,7 +762,10 @@ input {
     letter-spacing: 0.15em;
     font-feature-settings: "pnum" on, "lnum" on;
     color: #2c2c2c;
+    flex: 1 0 auto;
+    margin-left: 1em;
     @include media("<=991px") {
+      margin-left: 0px;
       font-size: 11px;
       line-height: 150%;
     }
@@ -874,6 +903,9 @@ input {
 
   &__img {
     display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     @include media("<=991px") {
     }
     @include media("<=768px") {
@@ -884,8 +916,7 @@ input {
 
   &__bottom {
     position: absolute;
-    height: 89px;
-    padding: 35px 20px 10px 20px;
+    padding: 15px 20px 10px 20px;
 
     display: flex;
     justify-content: space-between;

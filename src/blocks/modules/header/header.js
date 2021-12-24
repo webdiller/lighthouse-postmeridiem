@@ -1,4 +1,5 @@
 const header = document.querySelector(".js-header");
+const headerMessage = document.querySelector(".js-header-message");
 const headerSearch = document.querySelector(".js-header-search");
 const headerMobileSearch = document.querySelector(".js-header-item-search"); // mobile search
 const headerContainer = document.querySelector(".js-header-container"); // mobile search
@@ -92,7 +93,18 @@ try {
       header.classList.remove("fixed");
     }
   });
-} catch (error) {}
+} catch (error) { }
+
+try {
+  window.addEventListener("scroll", function (e) {
+    let topOffset = document.querySelector("html").getBoundingClientRect().top;
+    if (topOffset <= -28) {
+      headerMessage.classList.add("fixed");
+    } else {
+      headerMessage.classList.remove("fixed");
+    }
+  });
+} catch (error) { }
 
 try {
   let topOffset = document.querySelector("html").getBoundingClientRect().top;

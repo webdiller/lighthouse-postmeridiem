@@ -32,13 +32,6 @@ try {
   
 }
 
-// Автоматически показать модалку со скидкой
-if (window.location.pathname.includes("catalog")) {
-  setTimeout(() => {
-    document.querySelector(".js-modal-get-discount").classList.add("active");
-  }, 2000);
-}
-
 // Переключение языка
 window.selectLang = (lang) => {
   let appendLang = (lang == 'en' ? 'en' : 'ru');

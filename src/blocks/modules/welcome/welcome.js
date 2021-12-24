@@ -6,11 +6,6 @@ try {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-      },
-    },
+    }
   });
 } catch (error) {}
