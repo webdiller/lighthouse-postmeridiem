@@ -1,14 +1,18 @@
 .compilations {
+  .ui-card2__name-and-price {
+    @include media("<=768px") {
+     align-items: flex-start;
+    }
+  }
+  .ui-card2__img {
+    height: 426px;
+    object-fit: cover;
+    @include media("<=768px") {
+      height: 353px;
+    }
+  }
   &__container {
     position: relative;
-    // display: grid;
-    // grid-template-columns: 350px 1fr;
-    // column-gap: 95px;
-
-    // padding-left: 20px;
-    // padding-right: 20px;
-    // margin-left: auto;
-    // margin-right: auto;
 
     margin-top: 100px;
     margin-bottom: 125px;

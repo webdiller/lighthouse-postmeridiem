@@ -35,6 +35,11 @@
     font-size: 15px;
     line-height: 150%;
     color: #5c5c5c;
+    text-decoration: none;
+    a {
+      text-decoration: none;
+      color: #5c5c5c;
+    }
     @include media("<768px") {
       font-size: 13px;
     }

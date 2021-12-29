@@ -6,8 +6,9 @@
   background-color: #fff;
   z-index: 500;
   transition: all 0.3s ease;
-
-  
+  @include media("<=768px") {
+    background-color: #fafafa;
+  }
 
   &__container {
     position: relative;
@@ -448,7 +449,7 @@
 
     &_link {
       display: block;
-      color: $greyLight;
+      color: #5C5C5C;
     }
   }
 
@@ -505,7 +506,7 @@
     width: 50vw;
     background-color: #fff;
     height: 100%;
-    min-height: 490px;
+    min-height: 491px;
     @include media("<=991px") {
       width: 100%;
       height: auto;

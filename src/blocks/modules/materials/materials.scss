@@ -1,4 +1,11 @@
 .materials {
+  .ui-card3__img {
+    height: 442px;
+    object-fit: cover;
+    @include media("<=768px") {
+      height: 350px;
+    }
+  }
   &__container {
     display: grid;
     grid-template-columns: 1fr 310px;

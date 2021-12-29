@@ -1,5 +1,4 @@
 .about {
-  overflow-x: hidden;
   &__container {
     @include media("<=768px") {
       padding-left: 0;

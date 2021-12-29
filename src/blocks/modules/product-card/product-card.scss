@@ -34,16 +34,20 @@
 
   &__anchors-wrapper {
     position: sticky;
-    top: 30px;
+    top: 90px;
   }
 
   &__anchor {
     display: block;
+    opacity: .6;
     &:not(:last-child) {
       margin-bottom: 20px;
       @include media("<=991px") {
         margin-bottom: 10px;
       }
+    }
+    &.active {
+      opacity: 1;
     }
     @include media("<=991px") {
     }
@@ -199,7 +203,7 @@
 
   &__content-wrapper {
     position: sticky;
-    top: 30px;
+    top: 90px;
     @include media("<=768px") {
       position: static;
       display: grid;

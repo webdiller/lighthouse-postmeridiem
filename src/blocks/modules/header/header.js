@@ -43,13 +43,14 @@ try {
   });
 
   headerNavigationItemsTitle.forEach((item) => {
-    if (window.innerWidth <= 991) {
-      try {
-        item.addEventListener("click", function (e) {
+    try {
+      item.addEventListener("click", function (e) {
+        if (window.innerWidth <= 991) {
           item.classList.toggle("active");
-        });
-      } catch (error) {}
-    }
+        }
+      });
+    } catch (error) {}
+    
   });
 
   headerMobileSearch.addEventListener("click", function (e) {

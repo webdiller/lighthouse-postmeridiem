@@ -1,4 +1,16 @@
 .large-slider {
+  .ui-card2__name-and-price {
+    @include media("<=768px") {
+     align-items: flex-start;
+    }
+  }
+  .ui-card2__img {
+    height: 618px;
+    object-fit: cover;
+    @include media("<=768px") {
+      height: 356px;
+    }
+  }
   &__container {
     margin-top: 50px;
     margin-bottom: 80px;
@@ -84,6 +96,8 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    border: 0;
+    outline: none;
     @include media("<=991px") {
     }
     @include media("<=768px") {

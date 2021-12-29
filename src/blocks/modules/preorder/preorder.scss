@@ -43,11 +43,14 @@
   }
 
   &__overlay-link {
+    min-height: 53px;
+    max-height: 53px;
   }
 
   &__video-wrapper {
     position: relative;
     height: 753px;
+    overflow: hidden;
     @include media("<=768px") {
       height: 753px;
     }

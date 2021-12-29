@@ -31,7 +31,7 @@
 
   &__aside-items {
     position: sticky;
-    top: 30px;
+    top: 90px;
     @include media("<=991px") {
       position: static;
     }
@@ -54,12 +54,8 @@
   }
 
   &__main {
-    padding: 70px 0 0 20px;
     flex: 1 1 auto;
     overflow: hidden;
-    @include media("<=1200px") {
-      padding-left: 0;
-    }
     @include media("<=991px") {
       padding-top: 0;
     }
@@ -236,7 +232,8 @@
         bottom: -7px;
         height: 1px;
         width: 100%;
-        background-color: #5c5c5c;
+        min-width: 20px;
+        background-color: #A0A0A0;
       }
     }
   }

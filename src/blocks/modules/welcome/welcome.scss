@@ -118,6 +118,7 @@
     height: 14px;
     border: 1px solid #ffffff;
     background-color: transparent;
+    opacity: 1;
     @include media("<=991px") {
     }
     @include media("<=768px") {
@@ -127,6 +128,7 @@
   }
   .swiper-pagination-bullet-active {
     background-color: #ffffff;
+    opacity: 1;
     @include media("<=991px") {
     }
     @include media("<=768px") {

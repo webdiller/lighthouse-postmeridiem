@@ -270,9 +270,8 @@
   //   mobile
   &__item {
     overflow: hidden;
-    &:not(:first-child) {
-      padding: 10px 0 0 0;
-    }
+    border-bottom: 1px solid #a0a0a0;
+    
   }
 
   &__item-input-title {
@@ -308,7 +307,6 @@
     padding-right: 30px;
     padding: 10px 30px 10px 0;
     line-height: 150%;
-    border-bottom: 1px solid #a0a0a0;
 
     font-size: 13px;
 

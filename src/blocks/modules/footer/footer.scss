@@ -111,7 +111,8 @@
   }
 
   &__item-main-logo-link {
-    margin-bottom: 8px;
+    display: block;
+    margin-bottom: 13px;
     @include media("<=991px") {
       margin-bottom: 20px;
     }
@@ -133,6 +134,7 @@
   &__item-main-link {
     display: block;
     margin-bottom: 15px;
+    font-family: "MontserratDev";
     &:last-child {
       margin-bottom: 22px;
       @include media("<=991px") {
@@ -309,7 +311,8 @@
   &__copyright {
     display: none;
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 30px 0 0 0;
     padding-top: 20px;
     &::before {
@@ -331,8 +334,8 @@
   }
 
   &__copyright-item {
-    display: block;
     text-align: center;
+    margin: 0 auto;
     color: #5c5c5c;
     &:not(:last-child) {
       margin-bottom: 14px;
