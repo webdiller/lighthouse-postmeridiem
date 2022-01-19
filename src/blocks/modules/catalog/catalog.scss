@@ -218,6 +218,7 @@
 
   &__main-size {
     @include reset-btn();
+    cursor: pointer;
     position: relative;
     font-size: 15px;
     line-height: 150%;

@@ -14,6 +14,5 @@ import "%modules%/contacts/contacts";
 import "%modules%/qan/qan";
 import "%modules%/exchange/exchange";
 import "%modules%/delivery-payment/delivery-payment";
-import "%modules%/modal-product-added/modal-product-added";
 import "%modules%/modal-get-discount/modal-get-discount";
 import "%modules%/modal-get-callback/modal-get-callback";
